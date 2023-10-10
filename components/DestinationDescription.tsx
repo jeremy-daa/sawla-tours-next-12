@@ -2,6 +2,7 @@ import Link from "next/link";
 
 interface Props {
   destination?: string;
+  description?: string[];
   reasons?: {
     title: string;
     description: string[];
@@ -9,10 +10,19 @@ interface Props {
   }[];
 }
 
-const DestinationDescription = ({ destination, reasons }: Props) => {
+const DestinationDescription = ({
+  destination,
+  reasons,
+  description,
+}: Props) => {
   return (
     <div className="destination-reasons-wrapper">
       <h1>{destination}</h1>
+      <div className="destination-reasons-wrapper-description">
+        {description?.map((paragraph, index) => (
+          <p key={index}>{paragraph}</p>
+        ))}
+      </div>
       <div className="destination-reasons">
         {reasons?.map((reason, index) => (
           <div className="destination-reason" key={index}>

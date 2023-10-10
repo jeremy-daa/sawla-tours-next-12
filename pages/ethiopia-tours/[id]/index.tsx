@@ -85,7 +85,7 @@ export default function page({ id }: any) {
                   description={tour?.tourdescription.description}
                   lr={true}
                   img1={tour?.tourdescription.image}
-                  img2={tour?.tourdescription.image || Images.hamer2}
+                  img2={tour?.tourdescription.image2 || Images.hamer2}
                   button={"More on the Itinerary"}
                   link={`/tours-by-experience/${tour?.experience}`}
                 />

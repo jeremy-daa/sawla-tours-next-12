@@ -772,7 +772,7 @@ export const PopularDestinationsArray: Destination[] = [
         {
           title: "Unwind in New Resorts",
           description: [
-            "Enhance your journey at Chebera Churchura National Park by staying in the newly established lodges. Halala Kela Resort, located within the park, offers comfortable accommodations amidst the wilderness, allowing you to fully immerse yourself in nature. Indulge in the serenity of the surroundings and rejuvenate after a day of adventure.",
+            "Enhance your journey at Chebera Churchura National Park by staying in the newly established lodges. Halala Kela Lodge, located within the park, offers comfortable accommodations amidst the wilderness, allowing you to fully immerse yourself in nature. Indulge in the serenity of the surroundings and rejuvenate after a day of adventure.",
           ],
           image: images.chebera2,
         },

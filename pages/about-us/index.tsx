@@ -1,3 +1,4 @@
+import DestinationDescription from "@/components/DestinationDescription";
 import Hero from "@/components/Hero";
 import Intro from "@/components/Intro";
 import ItineraryDescription from "@/components/ItineraryDescription";
@@ -215,18 +216,51 @@ const page = () => {
       </div>
       <div id="camping-crew">
         <Intro
-          title="Meet Our Mobile Camp Crew!"
+          title="Embrace the Soul of Ethiopia with Sawla Mobile Safari"
           subtitle="Join the Sawla Tours Outdoor Family"
           description={[
-            "At Sawla Tours, we aren't just a crew – we are a tribe of outdoor lovers, bound by the allure of nature's beauty and adventure's thrill. Our team is a vibrant blend of seasoned hikers, campers, and wilderness enthusiasts, all fuelled by a shared passion for exploring the great outdoors.",
-            "We celebrate diversity and foster inclusivity, crafting a warm and welcoming environment that transcends social boundaries. For us, the outdoors is an open playground where everyone is invited.",
-            "Safety and satisfaction are our cornerstones. Our experienced guides and camp leaders boast robust training in wilderness survival, first aid, and emergency response. We ensure that our campsites are immaculate and adhere strictly to the 'Leave No Trace' principles, making sure we leave Mother Nature as untouched as we found her.",
-            "Our wilderness offerings span a broad spectrum, from tranquil weekend getaways to extended nature expeditions. With activities like hiking, fishing, and kayaking, we cater to all, be it the seasoned camper or the curious newbie.",
-            "Camping with Sawla is more than just an adventure – it's a journey towards reconnecting with nature, unplugging from the digital world, and forging enduring friendships. Our crew isn't just a team; it's a family that grows with every new member.",
+            "Journey into the very heart of Ethiopia, a land where history weaves with wild beauty, where each horizon offers a tale as old as time. With Sawla Tours, every 2-3 days brings a new enchanting landscape waiting to embrace you, paired with the serene luxury of solitude and our unmatched camping experience.",
           ]}
           img1={Images.chebera1}
           img2={Images.tigray1}
           lr={true}
+        />
+        <Intro
+          title="Meet the Spirits Behind Your Adventure: Our Mobile Camping Crew"
+          description={[
+            "At Sawla Tours, it's not just about the journey; it's about the people who make it unforgettable. Our camping crew, with their undying love for Ethiopia's splendors, ensures that your sojourn is more than just a trip.",
+            "They are your storytellers, your chefs, your guides – making sure you relish not just the sight, but the very spirit of Ethiopia.",
+          ]}
+          img1={Images.awash2}
+          img2={Images.adey1}
+          lr={false}
+        />
+        <DestinationDescription
+          destination="Dwell Amidst the Whispers of Nature with Our Tailored Accommodations"
+          description={[
+            "No two travelers are the same, and neither are their dreams. Whether it's the allure of Ethiopia’s grand legacy like Lalibela, Gondar, and Axum, or the call of the unknown, our camping accommodations promise to be your haven.",
+          ]}
+          reasons={[
+            {
+              title: "•	Expeditions mobile Tented Camps",
+              image: Images.hamer2,
+              description: [
+                "Step into a realm where traditional Ethiopian camping melds with luxury. Our walk-in tents, equipped with twin beds and ensuite facilities, are your cocoon amidst nature.",
+                "Indulge in culinary delights, three courses of authentic Ethiopian gastronomy, prepared with love and the freshest ingredients.",
+                "Let our seasoned camp staff cater to your every whim, crafting moments you’ll treasure forever.",
+              ],
+            },
+            {
+              title: "•	Fly Camp Expeditions",
+              image: Images.benna1,
+
+              description: [
+                "If your spirit seeks the thrill of discovery, our mobile camps are designed to be your moving sanctuaries.",
+                "After a day of exploration, let the bow-down tents cradle you, and a designated dining area awaits for those heartfelt conversations.",
+                "Each camping spot is handpicked not just for its beauty, but also with a promise to leave nature untouched.",
+              ],
+            },
+          ]}
         />
       </div>
     </div>

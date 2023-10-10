@@ -3132,6 +3132,20 @@ input[type="number"]::-webkit-outer-spin-button {
   border-top: 5px solid var(--theme);
   border-bottom: 2px solid var(--theme);
 }
+.destination-reasons-wrapper-description {
+  width: 75%;
+  margin: auto;
+  margin-bottom: 30px;
+  border-bottom: 2px solid var(--theme);
+  padding-bottom: 30px;
+}
+.destination-reasons-wrapper-description p {
+  width: 85%;
+  margin: auto;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  font-family: "Lato", sans-serif;
+}
 .destination-reasons {
   width: 100%;
   display: flex;

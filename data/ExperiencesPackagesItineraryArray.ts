@@ -453,16 +453,16 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
   {
     id: 3,
     experience: 1,
-    title: "Ethiopian Odyssey",
+    title: "Enchanting Ethiopia",
     index: false,
     image: images.yemata2,
-    description: "Unveiling Ancient Churches and Majestic Landscapes",
+    description: "An Expedition to Ancient Wonders and Scenic Marvels",
     link: "/enquire",
     linkname: "Start Planning",
     intro: [
       {
-        title: "Introducing Ethiopian Odyssey",
-        subtitle: "Unveiling Ancient Churches and Majestic Landscapes",
+        title: "Introducing Enchanting Ethiopia",
+        subtitle: "An Expedition to Ancient Wonders and Scenic Marvels",
         description: [
           "Embark on a captivating 11-day journey through Ethiopia, a land steeped in history and adorned with breathtaking landscapes that will leave you spellbound. This thoughtfully curated itinerary takes you on an immersive exploration of Ethiopia's cultural heritage and natural wonders. From the bustling streets of Addis Ababa to the tranquil shores of Lake Tana, discover the hidden gems of this enchanting country.",
           "Marvel at the medieval castles and ornate churches of Gondar, once the royal capital. Immerse yourself in the awe-inspiring beauty of the Simien Mountains, where panoramic vistas and abundant wildlife await your discovery. Experience the architectural marvels of Lalibela's rock-hewn churches, carved meticulously from solid volcanic rock. Explore the ancient treasures of Axum, where legends of the Queen of Sheba and the Ark of the Covenant come to life. ",
@@ -895,16 +895,16 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
   {
     id: 5,
     experience: 1,
-    title: "Ethiopian Odyssey",
+    title: "Lost in Time",
     index: false,
     image: images.danakil3,
-    description: "Unveiling Ancient Marvels and Majestic Landscapes",
+    description: "Exploring Ethiopia's Treasures and Enchanting Landscapes",
     link: "/enquire",
     linkname: "Start Planning",
     intro: [
       {
-        title: "Introducing Ethiopian Odyssey",
-        subtitle: "Unveiling Ancient Marvels and Majestic Landscapes",
+        title: "Introducing Lost in Time",
+        subtitle: "Exploring Ethiopia's Treasures and Enchanting Landscapes",
         description: [
           "Embark on a captivating journey through the heart of Ethiopia, where ancient wonders and awe-inspiring landscapes await your discovery. From the bustling streets of Addis Ababa to the tranquil shores of Lake Tana, prepare to immerse yourself in the captivating cultural heritage and breathtaking beauty of this extraordinary nation. ",
           'Explore the medieval castles and magnificent churches of Gondar, often referred to as the "Camelot of Africa." Traverse the dramatic landscapes of the Simien Mountains National Park, a UNESCO World Heritage Site, where encounters with endemic wildlife and sweeping vistas will leave you spellbound.',
@@ -1560,205 +1560,16 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
   {
     id: 2,
     experience: 2,
-    title: "Enchanting Ethiopia",
+    title: "Colors of the Omo Valley",
     index: false,
     image: images.omo2,
-    description: "Exploring the Tribes and Natural Wonders of the Omo Valley",
+    description: "An Exploration into Ethiopia's Tribal Heartland",
     link: "/enquire",
     linkname: "Start Planning",
     intro: [
       {
-        title: "Introducing Enchanting Ethiopia",
-        subtitle: "Exploring the Tribes and Natural Wonders of the Omo Valley",
-        description: [
-          "Embark on a journey of awe-inspiring beauty and cultural immersion as we venture into the heart of Ethiopia's Omo Valley. This extraordinary expedition will take you through a kaleidoscope of experiences, from the breathtaking landscapes of the Rift Valley Lakes to encounters with fascinating tribes whose rich traditions and vibrant way of life have captivated the world.",
-          "Prepare to be enthralled by the diverse avian and wildlife species that inhabit the region, and be enchanted by the extraordinary adornments of the Hamer and Mursi people, who proudly wear their heritage on their sleeves – or rather, their lips. With each passing day, you'll witness the wonders of nature and the tapestry of human culture intertwine, creating an unforgettable odyssey of discovery. Join us on this remarkable journey through Ethiopia's Omo Valley and be transported to a world where time-honored traditions and captivating landscapes converge in a mesmerizing symphony of colors, traditions, and authenticity. ",
-        ],
-        lr: true,
-        img1: images.omo1,
-        img2: images.mursi1,
-        button: "Destination Highlights",
-        link: "#destination-highlights",
-      },
-    ],
-    tourdescription2: [
-      {
-        title: "Highlighted Destinations",
-        description: "",
-        destinations: [
-          {
-            title: "Rift Valley Lakes",
-            description:
-              "Discover the abundant birdlife and wildlife that grace the scenic shores of Ethiopia's Rift Valley.",
-          },
-          {
-            title: "Tribal Encounters",
-            description:
-              "Immerse yourself in the cultural diversity of the region, engaging with tribes renowned for their unique customs and practices.",
-          },
-          {
-            title: "Hamer Villages",
-            description:
-              "Witness the vibrant beauty of the Hamer people, renowned for their elaborate hairstyles, copper jewelry, and colorful costumes.",
-          },
-          {
-            title: "The Mursi Tribe",
-            description:
-              "Explore the world of the Mursi, known for their warrior heritage and the distinctive lip plates worn by women.",
-          },
-          {
-            title: "Mago National Park",
-            description:
-              "Journey into this national park for a glimpse into the daily lives and traditions of the Mursi tribe.",
-          },
-          {
-            title: "Dassenech Village",
-
-            description:
-              "Cross the Omo River by traditional canoe to reach the Dassenech village and learn about their agro-pastoralist lifestyle.",
-          },
-          {
-            title: "Karo Tribe",
-            description:
-              "Encounter the Karo tribe and their incredible body painting techniques, which adorn their faces and bodies with intricate patterns.",
-          },
-        ],
-      },
-      {
-        title: "Itinerary at a Glance",
-        description: "",
-
-        destinations: [
-          {
-            title: "Day 1",
-            description: "Arrive in Addis Ababa & a city tour",
-          },
-          {
-            title: "Day 2",
-            description: "Fly to Jinka",
-          },
-          {
-            title: "Day 3",
-            description:
-              "Excursion to Mago National Park to visit the Mursi tribe and drive to Turmi",
-          },
-          {
-            title: "Day 4",
-            description: "Excursion to visit Dassenech and Hamer villages",
-          },
-          {
-            title: "Day 5",
-            description: "Excursion to visit the Karo tribe",
-          },
-          {
-            title: "Day 6",
-            description:
-              "Drive to Arba Minch via Elbore and visit Konso village",
-          },
-          {
-            title: "Day 7",
-            description: "Boat trip on Lake Chamo & excursion to Dorze village",
-          },
-          {
-            title: "Day 8",
-            description: "Fly to Addis Ababa & Departure",
-          },
-        ],
-      },
-    ],
-    itinerarydescription: {
-      title: "Day by day Tour Itinerary",
-      itineraries: [
-        {
-          title: "DAY 1: ARRIVE IN ADDIS ABABA & CITY TOUR",
-          description: [
-            "Fly to Addis Ababa; upon arrival at Bole international airport, your hospitality begins. We provide you with a meet-and-greet service at the airport and then transfer you to your hotel.",
-            "This afternoon, enjoy a tour of Addis Ababa, a pleasant capital city with wide jacaranda-edged avenues, interesting museums, and lively markets. Start our visit with the Ethnological Museum for an overview of Ethiopia's history, culture, and traditions, and its collections from thousand-year-old nomadic tribes.",
-            "Next, see the beautiful baroque-styled Holy Trinity Cathedral which contains the thrones and the tomb of Emperor Haile Selassie (the last king of Ethiopia) and some other members of the royal family. We end up the city tour by inviting you to the oldest and best coffee roaster and coffee shop-Tomoca. Not only do they serve fantastic Ethiopian coffee, but they also offer other fine coffees.",
-            "Overnight in Addis Ababa",
-          ],
-          image: images.addis1,
-        },
-        {
-          title: "DAY 2: FLY TO JINKA",
-          description: [
-            "A short domestic flight takes you to Jinka where you will meet your vehicle waiting at the airport. You are entering an area where the people living their authentic tribal life. Nowadays a vanishing lifestyle. More than at any other place we shouldn't forget that we are the visitors and act responsibly.",
-            "In the afternoon, we visit the Jinka museum at the South Omo Research Centre to learn more about the people living in the area and we visit the Ari people who have adopted a much more 'Western' lifestyle than their neighbors we are going to meet in the coming days.",
-            "Overnight in Jinka",
-          ],
-          image: images.omo3,
-        },
-        {
-          title: "DAY 3: EXCURSION TO MAGO NATIONAL PARK AND VISIT MURSI TRIBE",
-          description: [
-            "Today your journey begins early in the morning with an excursion to Mago National Park to visit the Mursi village. They are possibly the most famous residents of the South Omo Valley. The men of the Mursi tribe are renowned warriors, and Mursi women are famous for the lip plates they use for adornment. Learn about the incredibly unique culture.",
-            "Having lunch in Jinka, continue to Turmi, crossing an area where Ari, Benna, and eventually Hamer people are living.",
-            "Overnight in Turmi",
-          ],
-          image: images.mursi1,
-        },
-        {
-          title: "DAY 4: EXCURSION TO VISIT DASSENECH",
-          description: [
-            "After breakfast, your drive will take you through flat-open savannah land and go via Omorate on the eastern banks of the Omo River. Crossing the river by local dugout canoe, you reach the homeland of Dassenech and visit one of their villages. They are agro-pastoralists and herd cattle and practice flood retreat cultivation on both sides of the river.",
-            "You return to Turmi and spend the afternoon visiting some small Hamer villages. The Hamer people are particularly beautiful and are most distinguishable by their hair, which they style into thick braids with red mud and lard. They wear thick copper bracelets and necklaces, and elaborate costumes with cowrie shells, beads, and leather.",
-            "Overnight in Turmi",
-          ],
-          image: images.omo1,
-        },
-        {
-          title: "DAY 5: EXCURSION TO VISIT KARA",
-          description: [
-            "This morning you take an excursion to Korcho and visit the Karo tribe who are very famous for their body painting. The Karo people use clays and locally available vegetable pigments to trace fantastic patterns on each other's faces, chests, arms, and legs. Karo men, as with neighboring tribes, are also famous for their unique hairstyle.",
-            "Overnight in Turmi",
-          ],
-          image: images.karo1,
-        },
-        {
-          title: "DAY 6: DRIVE TO ARBA MINCH VIA ELBORE",
-          description: [
-            "Departing Turmi after breakfast, we head for Weyto. Lying midway between Konso and Key Afar, the village is home to the Tsemai and Arbore peoples. These people are mainly farmers and pastoralists, tending their herds and growing sorghum and maize and supplementing it with honey.",
-            "Continuing from here, we cross the Weyto Valley and head for Konso. After lunch in Karat-Konso village, we meet the Konso people with their maze-like villages and terraces for agriculture. They are also well known for their Waqa stelae, grave markers for the brave and important men of this people. The cultural landscape of Konso is the youngest World Heritage Site in Ethiopia.",
-            "Then you proceed to Arba Minch.",
-            "Overnight in Arba Minch",
-          ],
-          image: images.erbore1,
-        },
-        {
-          title: "DAY 7: BOAT TRIP ON LAKE CHAMO & EXCURSION TO DORZE",
-          description: [
-            "This morning, not far from Arba Minch, you will take a relaxing boat trip on Lake Chamo to spot wildlife such as crocodiles, and hippos as well as many beautiful aquatic birds.",
-            "In the afternoon, drive from Arba Minch to the highland village of Dorze. They are one of the small segments of ethnical groups in southern Ethiopia. Once warriors, the Dorze have now turned to farming and weaving to earn a living. Their success in the field of weaving has been phenomenal and the Dorze name is synonymous with best-woven cotton cloth. Monday is market day and well worth a visit.",
-            "Overnight in Arba Minch",
-          ],
-          image: images.konso2,
-        },
-        {
-          title: "DAY 8: FLY TO ADDIS ABABA & DEPARTURE",
-          description: [
-            "You will have this morning at your leisure. At noon transfer you to the airport for your flight to Addis. On arrival in Addis, you transfer to a hotel where you can freshen up and have lunch.",
-            "You have the afternoon free for shopping in Addis Ababa.",
-            "Depending on your flight schedule, a transfer is arranged to Addis Ababa Bole international airport for the flight back home.",
-            "Thanks for vacationing with Sawla Tours.",
-          ],
-          image: images.addis4,
-        },
-      ],
-    },
-  },
-  {
-    id: 2,
-    experience: 2,
-    title: "Enchanting Ethiopia",
-    index: false,
-    image: images.omo2,
-    description: "Exploring the Tribes and Natural Wonders of the Omo Valley",
-    link: "/enquire",
-    linkname: "Start Planning",
-    intro: [
-      {
-        title: "Introducing Enchanting Ethiopia",
-        subtitle: "Exploring the Tribes and Natural Wonders of the Omo Valley",
+        title: "Introducing Colors of the Omo Valley",
+        subtitle: "An Exploration into Ethiopia's Tribal Heartland",
         description: [
           "Embark on a journey of awe-inspiring beauty and cultural immersion as we venture into the heart of Ethiopia's Omo Valley. This extraordinary expedition will take you through a kaleidoscope of experiences, from the breathtaking landscapes of the Rift Valley Lakes to encounters with fascinating tribes whose rich traditions and vibrant way of life have captivated the world.",
           "Prepare to be enthralled by the diverse avian and wildlife species that inhabit the region, and be enchanted by the extraordinary adornments of the Hamer and Mursi people, who proudly wear their heritage on their sleeves – or rather, their lips. With each passing day, you'll witness the wonders of nature and the tapestry of human culture intertwine, creating an unforgettable odyssey of discovery. Join us on this remarkable journey through Ethiopia's Omo Valley and be transported to a world where time-honored traditions and captivating landscapes converge in a mesmerizing symphony of colors, traditions, and authenticity. ",
@@ -1949,7 +1760,7 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
         title: "Introducing Ethiopia's Enigmatic Tribes",
         subtitle: "A Journey through Cultural Diversity and Natural Splendor",
         description: [
-          "Embark on a captivating expedition to Ethiopia's Omo Valley, where a tapestry of ancient tribes and breathtaking landscapes awaits. This itinerary is tailor-made for the intrepid traveler with a passion for exploring indigenous tribes and their rich heritage. This extraordinary journey will immerse you in the cultural diversity and vibrant traditions of the region, as you encounter the renowned Hamer people, adorned in their distinctive attire and mesmerizing hairstyles, and witness the Mursi tribe's captivating lip plates.",
+          "A captivating expedition to Ethiopia's Omo Valley, where a tapestry of ancient tribes and breathtaking landscapes awaits. This itinerary is tailor-made for the intrepid traveler with a passion for exploring indigenous tribes and their rich heritage. This extraordinary journey will immerse you in the cultural diversity and vibrant traditions of the region, as you encounter the renowned Hamer people, adorned in their distinctive attire and mesmerizing hairstyles, and witness the Mursi tribe's captivating lip plates.",
           "Amidst the scenic beauty of Rift Valley Lakes and the lush greenery surrounding Arba Minch, you'll delve into the traditional lifestyle of the Dorze, famed for their exceptional weaving skills. Journey through picturesque villages, such as Konso and Turmi, where the customs of the Karo and Dassenech tribes will captivate your senses.",
           "As you explore the wildlife-rich Mago National Park, you'll gain a profound appreciation for the unique culture and natural wonders that make Ethiopia's Omo Valley an unrivaled destination. Join us on this unforgettable voyage of discovery and be forever touched by the enchantment of Ethiopia's enigmatic tribes and awe-inspiring landscapes. ",
         ],
@@ -2109,7 +1920,7 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
         title: "Introducing Discovering the Hidden Realms",
         subtitle: "Ethiopia's Tribal Odyssey and Pristine Wilderness",
         description: [
-          "Embark on an extraordinary expedition through Ethiopia's captivating landscapes and delve into the rich tapestry of tribal cultures that have remained untouched by time. From the bustling streets of Addis Ababa to the serene shores of Lake Chamo, this journey will unveil the secrets of the Rift Valley Lakes, where diverse birdlife and wildlife flourish.",
+          "An extraordinary expedition through Ethiopia's captivating landscapes and delve into the rich tapestry of tribal cultures that have remained untouched by time. From the bustling streets of Addis Ababa to the serene shores of Lake Chamo, this journey will unveil the secrets of the Rift Valley Lakes, where diverse birdlife and wildlife flourish.",
           "Venture deep into the South Omo Valley, where encounters with the highly adorned Hamer and famous Mursi tribes will leave you in awe of their ancient traditions, including the mesmerizing lip plates worn by Mursi women. As you traverse the rugged terrains of Omo National Park and witness the extraordinary body paintings of the Kara tribe, prepare to be immersed in a world where nature and humanity intertwine harmoniously.",
           "Unveil the hidden realms of Ethiopia as you wander through Suri villages and traverse the coffee plantations of Jimma, before bidding farewell to this remarkable journey. Join us as we uncover the captivating beauty and cultural richness of Ethiopia's tribal odyssey and pristine wilderness.",
         ],
@@ -2343,7 +2154,7 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
         title: "Introducing Unveiling Ethiopia's Tribal Tapestry",
         subtitle: "Cultural Encounters and Scenic Splendors",
         description: [
-          "Embark on a captivating journey through the diverse landscapes and vibrant cultures of Ethiopia's enigmatic South. This extraordinary expedition will immerse you in the awe-inspiring beauty of Rift Valley Lakes, where a plethora of birdlife and wildlife thrive. Prepare to be captivated by the cultural tapestry of the region as you encounter the highly adorned Hamer villages and the famous Mursi tribe with their mesmerizing lip plates.",
+          "An enchanting journey through the diverse landscapes and vibrant cultures of Ethiopia's enigmatic South. This extraordinary expedition will immerse you in the awe-inspiring beauty of Rift Valley Lakes, where a plethora of birdlife and wildlife thrive. Prepare to be captivated by the cultural tapestry of the region as you encounter the highly adorned Hamer villages and the famous Mursi tribe with their mesmerizing lip plates.",
           "Traverse the dramatic scenery of the South Omo Valley, visiting the Karo and Dassenech tribes known for their unique body painting and agro-pastoralist lifestyles. From the archaeological wonders of Konso to the serene shores of Lake Chamo, every moment of this journey will leave you spellbound.",
           "Experience the warm hospitality of Arba Minch and Hawassa, and indulge in the vibrant flavors of Ethiopia's renowned coffee plantations. Join us on this extraordinary adventure as we unveil the tribal treasures and lakeside wonders of Ethiopia's enigmatic south. ",
         ],
@@ -2562,7 +2373,7 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
         title: "Introducing Meskel Marvels",
         subtitle: "Celebrating Ethiopia's Religious and Cultural Treasures",
         description: [
-          "Embark on a remarkable journey through Ethiopia to witness the vibrant celebration of Meskel, an ancient festival marking the finding of the True Cross. This carefully curated itinerary combines the grandeur of Meskel festivities with the exploration of Ethiopia's historical and natural wonders. From the bustling capital of Addis Ababa to the rock-hewn churches of Lalibela and the castles of Gonder, experience the rich cultural heritage and architectural marvels of this captivating land.",
+          "Venture on a remarkable journey through Ethiopia to witness the vibrant celebration of Meskel, an ancient festival marking the finding of the True Cross. This carefully curated itinerary combines the grandeur of Meskel festivities with the exploration of Ethiopia's historical and natural wonders. From the bustling capital of Addis Ababa to the rock-hewn churches of Lalibela and the castles of Gonder, experience the rich cultural heritage and architectural marvels of this captivating land.",
           'Marvel at the breathtaking landscapes of the Simien Mountains, home to endemic wildlife, and immerse yourself in the ancient history of Axum. This journey promises a unique blend of festive traditions, awe-inspiring monuments, and unforgettable experiences. Let "Ethiopian Treasures" be your guide to an unforgettable voyage, where the past intertwines with the present, and the beauty of Ethiopia unfolds at every turn.',
         ],
         lr: true,
@@ -2770,7 +2581,7 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
         title: "Introducing Genna Celebration",
         subtitle: "Celebrating Ethiopian Christmas amidst Ancient Marvels",
         description: [
-          "Embark on an extraordinary journey to Ethiopia, immersing yourself in the joyous festivities of Genna, the Ethiopian Christmas. This meticulously crafted itinerary takes you on a captivating exploration of Ethiopia's remarkable destinations, where ancient traditions and cultural heritage intertwine with the celebration of Genna.",
+          "Set forth on an extraordinary journey to Ethiopia, immersing yourself in the joyous festivities of Genna, the Ethiopian Christmas. This meticulously crafted itinerary takes you on a captivating exploration of Ethiopia's remarkable destinations, where ancient traditions and cultural heritage intertwine with the celebration of Genna.",
           "From the bustling streets of Addis Ababa to the awe-inspiring landscapes of the Simien Mountains, the mystical rock-hewn churches of Lalibela, and the historical treasures of Gonder and Axum, experience the enchantment of Ethiopian Christmas like never before. Witness vibrant processions, attend special church services, and immerse yourself in the spiritual atmosphere of this sacred occasion. This journey promises an unforgettable blend of cultural discovery, breathtaking scenery, and a once-in-a-lifetime celebration of Genna.",
         ],
         lr: true,
@@ -3144,7 +2955,7 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
         subtitle:
           "Unveiling Ethiopia's Ancient Treasures and Sacred Celebrations",
         description: [
-          'Embark on a journey that transcends time and immerses you in the captivating heritage of Ethiopia. Our meticulously crafted itinerary, "Hidar Tsion in Axum," unveils a tapestry of wonders, where ancient history and spiritual traditions intertwine.',
+          'Quest on a journey that transcends time and immerses you in the captivating heritage of Ethiopia. Our meticulously crafted itinerary, "Hidar Tsion in Axum," unveils a tapestry of wonders, where ancient history and spiritual traditions intertwine.',
           'From the bustling streets of Addis Ababa, adorned with jacaranda trees, to the majestic castles of Gondar, known as "The Camelot of Africa," and the mystical rock-hewn churches of Lalibela, a UNESCO World Heritage Site, this expedition will transport you to a realm of awe-inspiring beauty.',
           "As the journey unfolds, your path leads to Axum, where the air is charged with anticipation for the eve and grand celebration of St. Mary Zion, known as Hidar Tsion. Witness the vibrant processions, immerse yourself in the rich cultural tapestry, and explore the fascinating historical treasures of Axum, including the enigmatic Stelae and the Queen of Sheba's Bath. Let Sawla Tours guide you through this extraordinary odyssey, where ancient wonders come alive amidst breathtaking landscapes and where the spirit of Ethiopia reveals itself in all its glory. ",
         ],
@@ -3304,7 +3115,7 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
   {
     id: 5,
     experience: 3,
-    title: "Epiphany Reverie",
+    title: "Timket Reverie",
     index: false,
     image: images.lalibela11,
     description: "Celebrating Timket in Colorful Addis Ababa",
@@ -3312,7 +3123,7 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
     linkname: "Start Planning",
     intro: [
       {
-        title: "Introducing Epiphany Reverie",
+        title: "Introducing Timket Reverie",
         subtitle: "Celebrating Timket in Colorful Addis Ababa",
         description: [
           "Embark on an extraordinary journey to Ethiopia, where ancient traditions and vibrant celebrations come alive during the enchanting festival of Timket (Commemoration of the Baptism of Christ) in Addis Ababa. This meticulously crafted itinerary invites you to immerse yourself in the rich cultural tapestry and spiritual heritage of Ethiopia.",

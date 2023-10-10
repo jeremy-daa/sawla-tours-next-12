@@ -75,10 +75,10 @@ export const EthiopiaToursArray: Tour[] = [
         link: "/enquire",
       },
       {
-        title: "What to Expect?",
+        title: "What more can you visit?",
         description: [
-          "Ethiopia's Historic and Cultural Tours offer a unique opportunity to discover the country's rich history and diverse cultures. Unlike other African nations, Ethiopia's identity is deeply rooted in its independence, with a history that stretches back thousands of years. From the ancient city of Axum to the rock-hewn churches of Tigray and Lalibela and the stelae fields at Tiya, Ethiopia's Historic Route through the North is a must-see destination for any history enthusiast.",
-          "The Historic Route is easily accessible by road or a combination of road and air travel. The best-known historic sites include Axum, Lalibela, Gondar, and Bahir Dar, and to make the most out of your trip, it is recommended to spend at least two days in each destination. The Historic Route is a living testimony to Ethiopia's rich cultural heritage, showcasing the country's architectural wonders and the breathtaking beauty of its natural landscapes.",
+          "Aside from the well-known destinations, there are also other hidden gems that are worth exploring. Visitors can discover the sacred Church of Gishen Mariam in Wollo, the neolithic site at Melka Kunture near Addis Ababa, and the beautiful churches and monasteries on the road from Addis Ababa to Bahir Dar, such as Mertulle Mariam.",
+          'For those interested in archaeology, the Hadar site is where "Lucy" and other hominid species were discovered in the Afar Regional State. For a unique cultural experience, visitors can also explore the Muslim city of Harar with its 99 mosques, old walled city, and particular architectural style.',
         ],
         lr: false,
         img1: Images.axum5,
@@ -306,11 +306,12 @@ export const EthiopiaToursArray: Tour[] = [
       {
         title: "Experiencing Spiritual Energy",
         description: [
-          "Additionally, pilgrims can join the mass gatherings at famous pilgrimage sites like Hidar Tsion in Axum and Kulubi Gabriel near Dire Dawa, experiencing the powerful spiritual energy that permeates the air. For those seeking contemporary urban festivities, Addis Ababa offers the Great Ethiopia Run and the Acacia Jazz Festival, providing an electrifying atmosphere. In the Northern part of Ethiopia, the cultural celebration of Ashenda or Shadey spreads joy throughout Tigray and Northern Amhara regions. The itinerary promises unforgettable moments and a deep immersion into Ethiopian culture through its diverse festivals.",
+          "But that's not all! Join over 100,000 pilgrims in the most famous pilgrimage sites like Hidar Tsion in Axum and Kulubi Gabriel near Dire Dawa, and experience the powerful spiritual energy that resonates throughout.  Additionally, pilgrims can join the mass gatherings at famous pilgrimage sites like Hidar Tsion in Axum and Kulubi Gabriel near Dire Dawa, experiencing the powerful spiritual energy that permeates the air.",
+          "In the Northern part of Ethiopia, the cultural celebration of Ashenda or Shadey spreads joy throughout Tigray and Northern Amhara regions. The itinerary promises unforgettable moments and a deep immersion into Ethiopian culture through its diverse festivals. ",
         ],
         img1: Images.lalibela2,
+        img2: Images.axum5,
         lr: false,
-        img2: Images.addis2,
         button: "Start Planning",
         link: "/enquire",
       },
@@ -319,7 +320,7 @@ export const EthiopiaToursArray: Tour[] = [
       title: "Festivals and Special Events Destinations",
       description:
         "Some of the destinations included in the Festivals and Special Events Tour are: Axum, Lalibela, Gondar, Bahir Dar, and many more...",
-      image: "/assets/maps/TribalTours.jpg",
+      image: "/assets/maps/FestivalTours.jpg",
     },
     tourdescription: {
       title: "For the Contemporary Urban Festivals Enthusiasts",
@@ -327,6 +328,7 @@ export const EthiopiaToursArray: Tour[] = [
         "For those who prefer contemporary urban festivals, Addis Ababa is the place to be! Be a part of the Great Ethiopia Run, the Acacia Jazz Festival, and indulge in the lively atmosphere that electrifies the city. So mark your calendar and get ready to experience the unforgettable moments that await you!",
       ],
       image: Images.addis1,
+      image2: Images.addis2,
     },
     tourdescription2: {
       title: "Festivals included in the Itinerary",
