@@ -28,6 +28,7 @@ export interface Tour {
     title: string;
     description: string[];
     image: string;
+    image2?: string;
   };
   tourdescription2?: {
     title: string;
@@ -181,17 +182,18 @@ export const EthiopiaToursArray: Tour[] = [
         button: "Start Planning",
         link: "/enquire",
       },
+
       {
-        title: "The Wonders of Ethiopia's Tribal Areas",
+        title: "Meeting the tribes & explore their territories.",
         description: [
-          "To fully experience the wonders of the Omo Valley, at least eight days should be allowed, with the east bank offering lodges for accommodation while the west bank requires camping. We can provide all the necessary gear for a comfortable camping experience. ",
-          "In the far west in Gambella, along the Baro River, visitors can discover the Anuak, Nuer, and Mizingir people, accessible by air or a two-day road trip. Ethiopia's Tribal Tours offer a unique and unforgettable journey through the customs and traditions of these remarkable ethnic groups, providing a rare insight into their pre-materialist cultures and anthropology.",
+          "Before reaching the Omo River, visitors can explore the home of the Dorze people in Chencha, renowned for their bamboo bee-hive-shaped houses and colorful weaving skills. Further south are the Konso people, known for their intricately terraced hillsides and wooden totems that adorn their cemeteries.",
+          "Along the Omo River, visitors can discover the Kara, who are famous for body painting and Mursi’s women wearing lip plates, and experience the extraordinary rite of passage of the Hamer people called the Bull Jumping ceremony (Ukuli Bula), representing a life-changing event for young men who pass from boyhood into adulthood.",
         ],
+        img1: Images.karo1,
+        img2: Images.hamer1,
+        button: "MORE ON THE ITINERARY",
+        link: "/tours-by-experience/2",
         lr: false,
-        img1: Images.intro3,
-        img2: Images.hamer2,
-        button: "Start Planning",
-        link: "/enquire",
       },
     ],
     map: {
@@ -201,12 +203,12 @@ export const EthiopiaToursArray: Tour[] = [
       image: "/assets/maps/TribalTours.jpg",
     },
     tourdescription: {
-      title: "Meeting the tribes & explore their territories.",
+      title: "The Wonders of Ethiopia's Tribal Areas",
       description: [
-        "Before reaching the Omo River, visitors can explore the home of the Dorze people in Chencha, renowned for their bamboo bee-hive-shaped houses and colorful weaving skills. Further south are the Konso people, known for their intricately terraced hillsides and wooden totems that adorn their cemeteries.",
-        "Along the Omo River, visitors can discover the Surma, who are famous for body painting and women wearing lip plates, and experience the extraordinary rite of passage of the Hamer people called the Bull Jumping ceremony (Ukuli Bula), representing a life-changing event for young men who pass from boyhood into adulthood.",
+        "To fully experience the wonders of the Omo Valley, at least eight days should be allowed, with the east bank offering lodges for accommodation while the west bank requires camping. We can provide all the necessary gear for a comfortable camping experience. ",
+        "In the far west in Gambella, along the Baro River, visitors can discover the Anuak, Nuer, and Mizingir people, accessible by air or a two-day road trip. Ethiopia's Tribal Tours offer a unique and unforgettable journey through the customs and traditions of these remarkable ethnic groups, providing a rare insight into their pre-materialist cultures and anthropology.",
       ],
-      image: Images.hamer1,
+      image: Images.intro3,
     },
     tourdescription2: {
       title: "Places included in the Itinerary",
@@ -300,13 +302,14 @@ export const EthiopiaToursArray: Tour[] = [
         button: "Start Planning",
         link: "/enquire",
       },
+
       {
-        title: "For the Contemporary Urban Festivals Enthusiasts",
+        title: "Experiencing Spiritual Energy",
         description: [
-          "For those who prefer contemporary urban festivals, Addis Ababa is the place to be! Be a part of the Great Ethiopia Run, the Acacia Jazz Festival, and indulge in the lively atmosphere that electrifies the city.",
+          "Additionally, pilgrims can join the mass gatherings at famous pilgrimage sites like Hidar Tsion in Axum and Kulubi Gabriel near Dire Dawa, experiencing the powerful spiritual energy that permeates the air. For those seeking contemporary urban festivities, Addis Ababa offers the Great Ethiopia Run and the Acacia Jazz Festival, providing an electrifying atmosphere. In the Northern part of Ethiopia, the cultural celebration of Ashenda or Shadey spreads joy throughout Tigray and Northern Amhara regions. The itinerary promises unforgettable moments and a deep immersion into Ethiopian culture through its diverse festivals.",
         ],
+        img1: Images.lalibela2,
         lr: false,
-        img1: Images.addis1,
         img2: Images.addis2,
         button: "Start Planning",
         link: "/enquire",
@@ -319,11 +322,11 @@ export const EthiopiaToursArray: Tour[] = [
       image: "/assets/maps/TribalTours.jpg",
     },
     tourdescription: {
-      title: "Experiencing Spiritual Energy",
+      title: "For the Contemporary Urban Festivals Enthusiasts",
       description: [
-        "Additionally, pilgrims can join the mass gatherings at famous pilgrimage sites like Hidar Tsion in Axum and Kulubi Gabriel near Dire Dawa, experiencing the powerful spiritual energy that permeates the air. For those seeking contemporary urban festivities, Addis Ababa offers the Great Ethiopia Run and the Acacia Jazz Festival, providing an electrifying atmosphere. In the Northern part of Ethiopia, the cultural celebration of Ashenda or Shadey spreads joy throughout Tigray and Northern Amhara regions. The itinerary promises unforgettable moments and a deep immersion into Ethiopian culture through its diverse festivals.",
+        "For those who prefer contemporary urban festivals, Addis Ababa is the place to be! Be a part of the Great Ethiopia Run, the Acacia Jazz Festival, and indulge in the lively atmosphere that electrifies the city. So mark your calendar and get ready to experience the unforgettable moments that await you!",
       ],
-      image: Images.lalibela2,
+      image: Images.addis1,
     },
     tourdescription2: {
       title: "Festivals included in the Itinerary",

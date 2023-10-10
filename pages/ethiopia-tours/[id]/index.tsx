@@ -8,6 +8,7 @@ import Map from "@/components/Map";
 import React from "react";
 import { getTour } from "@/data/EthiopiaToursArray";
 import Head from "next/head";
+import Images from "@/data/Images";
 
 type Params = {
   params: {
@@ -83,8 +84,8 @@ export default function page({ id }: any) {
                   title={tour?.tourdescription.title}
                   description={tour?.tourdescription.description}
                   lr={true}
-                  img1={tour?.intro[0].img1}
-                  img2={tour?.tourdescription.image}
+                  img1={tour?.tourdescription.image}
+                  img2={tour?.tourdescription.image || Images.hamer2}
                   button={"More on the Itinerary"}
                   link={`/tours-by-experience/${tour?.experience}`}
                 />
