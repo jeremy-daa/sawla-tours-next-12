@@ -22,6 +22,11 @@ export default function Home() {
           name="description"
           content="A boutique tour specialist celebrated for our personalized, bespoke Ethiopian experiences. Our two-decade legacy in crafting exceptional tours and safaris aligns our thrill for exploration with a profound commitment to community conservation and development."
         />
+        <link
+          rel="canonical"
+          href="https://www.sawlatours.com/"
+          key="canonical"
+        />
       </Head>
       <>
         <Hero background={Images.lalibela5} index title="Home" link="#about" />
