@@ -24,7 +24,7 @@ export default function Home() {
         />
         <link
           rel="canonical"
-          href="https://www.sawlatours.com/"
+          href="https://www.sawlatours.com"
           key="canonical"
         />
       </Head>
