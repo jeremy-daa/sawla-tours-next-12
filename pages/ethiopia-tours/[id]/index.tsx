@@ -29,6 +29,11 @@ export default function page({ id }: any) {
           name="description"
           content={tour ? tour.description : "Not Found"}
         />
+        <link
+          rel="canonical"
+          href={`https://www.sawlatours.com/ethiopia-tours/${id}`}
+          key="canonical"
+        />
       </Head>
       {tour ? (
         !isFourth ? (

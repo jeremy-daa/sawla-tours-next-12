@@ -29,6 +29,11 @@ const page = ({ id }: params) => {
           name="description"
           content={guide ? guide.description : "Not Found"}
         />
+        <link
+          rel="canonical"
+          href={`https://www.sawlatours.com/ethiopia-guide/${id}`}
+          key="canonical"
+        />
       </Head>
       {guide ? (
         <>

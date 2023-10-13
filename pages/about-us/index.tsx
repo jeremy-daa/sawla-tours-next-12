@@ -17,6 +17,11 @@ const page = () => {
       <Head>
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
+        <link
+          rel="canonical"
+          href={`https://www.sawlatours.com/about-us`}
+          key="canonical"
+        />
       </Head>
       <Hero
         background={Images.lalibela8}

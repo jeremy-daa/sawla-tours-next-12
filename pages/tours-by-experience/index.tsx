@@ -26,6 +26,11 @@ const page = () => {
           name="description"
           content="Your pathfinder to extraordinary Ethiopian experiences. As seasoned experts, we pair passion with decades of local knowledge to create tours as unique as you."
         />
+        <link
+          rel="canonical"
+          href="https://www.sawlatours.com/tours-by-experience"
+          key="canonical"
+        />
       </Head>
       <article>
         <Hero

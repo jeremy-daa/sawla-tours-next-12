@@ -27,6 +27,11 @@ const page = ({ id }: any) => {
           name="description"
           content={destination ? destination.description : "Not Found"}
         />
+        <link
+          rel="canonical"
+          href={`https://www.sawlatours.com/top-destinations/${id}`}
+          key="canonical"
+        />
       </Head>
       {destination ? (
         <>

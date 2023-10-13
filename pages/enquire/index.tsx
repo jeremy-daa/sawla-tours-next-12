@@ -14,6 +14,11 @@ const page = () => {
       <Head>
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
+        <link
+          rel="canonical"
+          href={`https://www.sawlatours.com/enquire`}
+          key="canonical"
+        />
       </Head>
       <Hero
         title="Enquire"

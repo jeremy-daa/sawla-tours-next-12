@@ -24,6 +24,11 @@ const page = ({ id }: params) => {
           name="description"
           content={experience ? experience.description : "Not Found"}
         />
+        <link
+          rel="canonical"
+          href={`https://www.sawlatours.com/tours-by-experience/${id}`}
+          key="canonical"
+        />
       </Head>
       <div className="historic-wrapper">
         {experience ? (
