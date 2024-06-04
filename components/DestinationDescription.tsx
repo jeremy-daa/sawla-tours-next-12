@@ -17,7 +17,7 @@ const DestinationDescription = ({
 }: Props) => {
   return (
     <div className="destination-reasons-wrapper">
-      <h1>{destination}</h1>
+      <h2>{destination}</h2>
       <div className="destination-reasons-wrapper-description">
         {description?.map((paragraph, index) => (
           <p key={index}>{paragraph}</p>

@@ -11,8 +11,8 @@ import React from "react";
 import Accordion from "@/components/Accordion";
 import Head from "next/head";
 const metadata = {
-  title: "Ethiopia Tour Themes - Sawla Tours",
-  description: `Bespoke Ethiopian Expeditions. Anywhere in Ethiopia. The journey themes you witness on our platform serve merely as an appetizer to the grand banquet of travel experiences we're capable of orchestrating. It's just a glimpse of what Sawla can offer. With a treasure trove of experience in crafting exceptional Ethiopian journeys, our team is ready to design an unforgettable adventure just for you. Every journey is unique, just like you, and always with a positive spin.`,
+  title: "Ethiopia Travel Guide | Sawla Tours Expert Tips & Insights",
+  description: `Explore our Ethiopia Travel Guide for expert tips and insights. Sawla Tours offers bespoke expeditions across Ethiopia, showcasing a glimpse of our unique travel experiences. Let us craft an unforgettable adventure tailored just for you.`,
 };
 const page = () => {
   return (

@@ -48,9 +48,9 @@ const Hero = ({
       {index ? (
         <div className="home-hero" data-aos="fade-up">
           <h1 className="heading">Embark on Extraordinary Journeys with us!</h1>
-          <h3 className="heading-description">
-            Creating memories that will last a lifetime
-          </h3>
+          <h2 className="heading-description">
+            Discover unforgettable experiences across Ethiopia
+          </h2>
           {link ? (
             <a className="offset" href="#about">
               Explore
@@ -61,7 +61,7 @@ const Hero = ({
         <div className="other-hero" data-aos="fade-up">
           <div className="hero-description">
             <h1 className="heading">{title}</h1>
-            <h3 className="heading-description">{description}</h3>
+            <h2 className="heading-description">{description}</h2>
             {link ? (
               <a className="offset" href={link}>
                 {linkname ? linkname : "Start Planning"}

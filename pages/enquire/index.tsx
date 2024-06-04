@@ -5,8 +5,8 @@ import Images from "@/data/Images";
 import Head from "next/head";
 
 const metadata = {
-  title: "Booking & Enquiry - Sawla Tours",
-  description: `We are here to help you plan your next trip to Ethiopia. Please fill out the form below and we will get back to you as soon as possible.`,
+  title: "Book Your Ethiopia Tour | Sawla Tours Enquiry",
+  description: `Plan your next trip to Ethiopia with Sawla Tours. Fill out our enquiry form, and our team will respond promptly to help you craft the perfect Ethiopian tour.`,
 };
 const page = () => {
   return (

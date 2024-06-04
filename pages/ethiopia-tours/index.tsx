@@ -8,8 +8,8 @@ import { EthiopiaTourPackagesArraySimplified } from "@/data/PackagesArray";
 import Head from "next/head";
 
 const metadata = {
-  title: "Ethiopia Tour Themes - Sawla Tours",
-  description: `Bespoke Ethiopian Expeditions. Anywhere in Ethiopia. The journey themes you witness on our platform serve merely as an appetizer to the grand banquet of travel experiences we're capable of orchestrating. It's just a glimpse of what Sawla can offer. With a treasure trove of experience in crafting exceptional Ethiopian journeys, our team is ready to design an unforgettable adventure just for you. Every journey is unique, just like you, and always with a positive spin.`,
+  title: "Explore Ethiopia Tour Themes | Unique Experiences with Sawla Tours",
+  description: `Discover unique Ethiopia tour themes with Sawla Tours. Our bespoke expeditions across Ethiopia offer just a glimpse of the exceptional travel experiences we create. Let us design an unforgettable adventure tailored to your preferences.`,
 };
 const page = () => {
   return (

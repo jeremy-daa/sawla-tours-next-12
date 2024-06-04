@@ -66,18 +66,16 @@ const page = ({ id, id2 }: params) => {
             <div id="destination-highlights">
               {itinerary.tourdescription2 &&
                 itinerary.tourdescription2.map((tourdescription2, index) => (
-                  <>
-                    <Accordion
-                      key={index}
-                      title={
-                        index === 0
-                          ? "Highlighted Destinations"
-                          : "Itinerary at a Glance"
-                      }
-                      destinations={tourdescription2.destinations}
-                      concact={index === 1 ? true : false}
-                    />
-                  </>
+                  <Accordion
+                    key={index}
+                    title={
+                      index === 0
+                        ? "Highlighted Destinations"
+                        : "Itinerary at a Glance"
+                    }
+                    destinations={tourdescription2.destinations}
+                    concact={index === 1 ? true : false}
+                  />
                 ))}
             </div>
             {itinerary.itinerarydescription && (

@@ -20,9 +20,9 @@ const Footer = () => {
           </Link>
         </div>
         <div className="footer-contact">
-          <h1 className="contact-us">
-            <Link href={"/contact"}>Contact Us</Link>
-          </h1>
+          <h2 className="contact-us">
+            <Link href={"/contact-us"}>Contact Us</Link>
+          </h2>
           <ul>
             <li>
               <Link href="tel:+25170578306">+251 705 783 06</Link>

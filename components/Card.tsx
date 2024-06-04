@@ -19,7 +19,7 @@ const Card = (props: Props) => {
         <Image src={props.image} alt={props.title} width={500} height={500} />
       </div>
       <div className="card-content">
-        <h2 className="card-title">{props.title}</h2>
+        <h3 className="card-title">{props.title}</h3>
         <p className="card-description">{cropString(props.description, 300)}</p>
         <div className="card-bottom">
           {props.days ? (

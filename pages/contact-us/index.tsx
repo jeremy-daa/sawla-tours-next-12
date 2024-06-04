@@ -7,8 +7,8 @@ import Head from "next/head";
 
 import React from "react";
 const metadata = {
-  title: "Contact Us - Sawla Tours",
-  description: `What would you like to know? We are here to help.`,
+  title: "Contact Sawla Tours | Plan Your Ethiopian Adventure Today",
+  description: `Reach out to Sawla Tours to plan your Ethiopian adventure. Our team is here to assist with all your travel inquiries, ensuring a seamless and memorable experience in Ethiopia.`,
 };
 const page = () => {
   return (

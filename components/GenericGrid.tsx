@@ -19,7 +19,7 @@ const GenericGrid = () => {
                 />
               </div>
               <div className="grid-package-description">
-                <h1 className="grid-package-title">{item.title}</h1>
+                <h2 className="grid-package-title">{item.title}</h2>
                 <a href={item.link} className="offset grid-package-button">
                   Discover More
                 </a>

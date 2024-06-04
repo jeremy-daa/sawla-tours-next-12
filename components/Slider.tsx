@@ -48,8 +48,8 @@ const Slider = ({ title, description, cards }: Props) => {
   }, []);
   return screenSize ? (
     <div className="slider-wrapper">
-      <h1 className="slider-title">{title}</h1>
-      <h1 className="slider-title-description">{description}</h1>
+      <h2 className="slider-title">{title}</h2>
+      <h3 className="slider-title-description">{description}</h3>
 
       <Carousel
         additionalTransfrom={0}
@@ -122,8 +122,8 @@ const Slider = ({ title, description, cards }: Props) => {
     </div>
   ) : (
     <div className="slider-wrapper">
-      <h1 className="slider-title">{title}</h1>
-      <h1 className="slider-title-description">{description}</h1>
+      <h2 className="slider-title">{title}</h2>
+      <h3 className="slider-title-description">{description}</h3>
       <Carousel
         additionalTransfrom={0}
         arrows

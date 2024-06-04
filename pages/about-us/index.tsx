@@ -8,8 +8,8 @@ import Head from "next/head";
 
 import React from "react";
 const metadata = {
-  title: "About Us - Sawla Tours",
-  description: `We are Sawla Tours - a team of seasoned Ethiopian tourism professionals, united by passion and unparalleled industry knowledge. Our distinct blend of expertise and professionalism makes us your trustworthy compass in navigating the vast landscapes of Ethiopian adventures.`,
+  title: "About Sawla Tours | Your Trusted Ethiopian Travel Experts",
+  description: `Discover Sawla Tours, your trusted Ethiopian travel experts. With a passionate team and unparalleled industry knowledge, we provide professional guidance through the vast landscapes of Ethiopia, ensuring unforgettable adventures.`,
 };
 const page = () => {
   return (

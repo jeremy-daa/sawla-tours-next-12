@@ -58,7 +58,7 @@ const TrekkingDescription = ({ title, itineraries }: Props) => {
 
   return (
     <div className="trekking-container">
-      <h1>{title}</h1>
+      <h2>{title}</h2>
       {itineraries?.map((itinerary, index) => {
         const itineraryTitle = itinerary.title || title;
         return (

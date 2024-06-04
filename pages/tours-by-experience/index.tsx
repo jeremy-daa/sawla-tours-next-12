@@ -21,10 +21,12 @@ const page = () => {
   return (
     <>
       <Head>
-        <title>Itineraries By Experience - Sawla Ethiopia Tours</title>
+        <title>
+          Customized Ethiopia Itineraries | Experiences with Sawla Tours
+        </title>
         <meta
           name="description"
-          content="Your pathfinder to extraordinary Ethiopian experiences. As seasoned experts, we pair passion with decades of local knowledge to create tours as unique as you."
+          content="Discover customized Ethiopia itineraries with Sawla Tours. As seasoned experts, we combine passion and local knowledge to create unique and extraordinary Ethiopian travel experiences tailored to you."
         />
         <link
           rel="canonical"

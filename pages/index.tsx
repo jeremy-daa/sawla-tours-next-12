@@ -17,10 +17,12 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Home - Sawla Tours</title>
+        <title>
+          Discover Ethiopia with Sawla Tours | Premier Tour and Travel Agency
+        </title>
         <meta
           name="description"
-          content="A boutique tour specialist celebrated for our personalized, bespoke Ethiopian experiences. Our two-decade legacy in crafting exceptional tours and safaris aligns our thrill for exploration with a profound commitment to community conservation and development."
+          content="Explore Ethiopia with Sawla Tours, your premier boutique tour specialist. With over 20 years of experience, we offer personalized, bespoke tours and safaris. Our commitment to community conservation and development ensures an enriching travel experience."
         />
         <link
           rel="canonical"

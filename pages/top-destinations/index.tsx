@@ -10,8 +10,8 @@ import Head from "next/head";
 import React from "react";
 
 const metadata = {
-  title: "Popular Destinations - Sawla Tours",
-  description: `Prepare to immerse yourself in the authentic Ethiopia as we guide you on a transformative journey to explore the abundant wealth of history, culture, and wildlife that this spectacular country has to offer.`,
+  title: "Popular Ethiopian Destinations | Sawla Tours Highlights",
+  description: `Explore popular Ethiopian destinations with Sawla Tours. Immerse yourself in the rich history, culture, and wildlife of Ethiopia as we guide you on a transformative journey through this spectacular country.`,
 };
 
 const page = () => {

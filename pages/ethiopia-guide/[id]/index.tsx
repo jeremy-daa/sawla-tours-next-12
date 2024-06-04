@@ -64,7 +64,7 @@ const page = ({ id }: params) => {
           {guide.content && (
             <>
               {guide.content.map((content, index) => (
-                <>
+                <div key={index}>
                   {content.destinationdescription && (
                     <DestinationDescription
                       key={index}
@@ -74,18 +74,15 @@ const page = ({ id }: params) => {
                   )}
 
                   {content.simpledescription && (
-                    <>
-                      {}
-                      <Accordion
-                        key={index}
-                        title={content.simpledescription.title}
-                        destinations={restructureDescription(
-                          content.simpledescription.description
-                        )}
-                      />
-                    </>
+                    <Accordion
+                      key={index}
+                      title={content.simpledescription.title}
+                      destinations={restructureDescription(
+                        content.simpledescription.description
+                      )}
+                    />
                   )}
-                </>
+                </div>
               ))}
             </>
           )}

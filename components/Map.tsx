@@ -9,7 +9,7 @@ const Map = ({ title, description, image }: Props) => {
   return (
     <div className="map-container inset-blurr">
       <div className="map-description-container">
-        <h1 className="map-title">{title}</h1>
+        <h2 className="map-title">{title}</h2>
         <p className="map-description">{description}</p>
       </div>
       <Image

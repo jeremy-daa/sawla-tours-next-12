@@ -30,7 +30,7 @@ const PackagesGrid = ({ title, placeholder, packages: array }: Props) => {
   };
   return (
     <div className="grid-packages-container">
-      <h1 className="grid-packages-title">{title}</h1>
+      <h2 className="grid-packages-title">{title}</h2>
       <div className={`${textBoxFocus ? "focus" : ""} search-container`}>
         <input
           onChange={(e) => {
@@ -70,7 +70,7 @@ const PackagesGrid = ({ title, placeholder, packages: array }: Props) => {
                   />
                 </div>
                 <div className="grid-package-description">
-                  <h1 className="grid-package-title">{item.title}</h1>
+                  <h2 className="grid-package-title">{item.title}</h2>
                   <a href={item.link} className="offset grid-package-button">
                     Discover More
                   </a>

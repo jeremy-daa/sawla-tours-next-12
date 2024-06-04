@@ -144,10 +144,10 @@ const EnquireForm = () => {
   return (
     <div className="inset-blurr enquire-wrapper">
       <div className="enquire-form-container">
-        <h1 className="title">
+        <h2 className="title">
           <BsInfoCircle />
           Ready to Book Your Trip?
-        </h1>
+        </h2>
         <h2 ref={errorRef}>
           If you want to talk to us about your travel plans, please share as
           much information as you can.

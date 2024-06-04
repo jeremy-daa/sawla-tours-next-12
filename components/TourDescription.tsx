@@ -19,9 +19,9 @@ const TourDescription = ({ title, description, image, link }: Props) => {
         height={500}
       />
       <div className="tour-description">
-        <h1 className="tour-description-title">
+        <h2 className="tour-description-title">
           <BsInfoCircle /> {title}
-        </h1>
+        </h2>
         <p className="tour-description-text">
           {description.map((paragraph, index) => (
             <span key={index}>

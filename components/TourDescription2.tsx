@@ -11,7 +11,7 @@ const TourDescription2 = ({ title, description, destinations }: Props) => {
   return (
     <div className="descriptions-wrapper inset-blurr">
       <div className="description">
-        <h1 className="description-title">{title}</h1>
+        <h2 className="description-title">{title}</h2>
         <p className="description-text">{description}</p>
       </div>
       <div className="destinations-list">

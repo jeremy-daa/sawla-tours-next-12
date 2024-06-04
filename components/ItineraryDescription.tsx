@@ -14,10 +14,10 @@ interface Props {
 const ItineraryDescription = ({ title, description, itineraries }: Props) => {
   return (
     <div className="itinerary-wrapper">
-      <h1 className="itinerary-heading">
+      <h2 className="itinerary-heading">
         <BsInfoCircle />
         {title}
-      </h1>
+      </h2>
       {description && (
         <div className="itinerary-description">
           {description &&

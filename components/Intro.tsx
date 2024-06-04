@@ -19,7 +19,7 @@ const Intro = (props: Props) => {
         <div className="intro-container">
           <div className="intro-text" data-aos="fade-left">
             <h2 className="intro-heading">{props.title}</h2>
-            <h2 className="intro-subheading">{props.subtitle}</h2>
+            <h3 className="intro-subheading">{props.subtitle}</h3>
             {props.description &&
               props.description.map((description, index) => (
                 <p className="intro-description" key={index}>
@@ -81,7 +81,7 @@ const Intro = (props: Props) => {
             >
               {props.title}
             </h2>
-            <h2
+            <h3
               className="intro-subheading"
               style={
                 props.color
@@ -92,7 +92,7 @@ const Intro = (props: Props) => {
               }
             >
               {props.subtitle}
-            </h2>
+            </h3>
             {props.description &&
               props.description.map((description, index) => (
                 <p className="intro-description" key={index}>
