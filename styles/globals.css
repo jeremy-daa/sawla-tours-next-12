@@ -450,9 +450,27 @@ nav ul li:hover>.submenu {
   margin: 0 auto;
 }
 
+.intro-container2 {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 50px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
 .intro-text {
   flex: 0.45;
   text-align: start;
+}
+
+.intro-text2 {
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .intro-heading {
@@ -462,10 +480,27 @@ nav ul li:hover>.submenu {
   margin-bottom: 20px;
 }
 
+.intro-heading2 {
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: "Averia Serif Libre", cursive;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
 .intro-subheading {
   font-size: 2rem;
   font-weight: 100;
   color: var(--theme);
+  font-family: "Arizonia", cursive;
+  margin-bottom: 20px;
+}
+
+.intro-subheading2 {
+  font-size: 2rem;
+  font-weight: 100;
+  color: var(--theme);
+  text-align: center;
   font-family: "Arizonia", cursive;
   margin-bottom: 20px;
 }
@@ -477,6 +512,16 @@ nav ul li:hover>.submenu {
   line-height: 1.4;
   font-family: "lato", sans-serif;
   margin-bottom: 20px;
+}
+
+.intro-description2 {
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  /* line spacing */
+  line-height: 1.5;
+  font-family: "lato", sans-serif;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .intro-img {
@@ -572,7 +617,21 @@ nav ul li:hover>.submenu {
     font-size: 1rem;
     margin-bottom: 10px;
   }
+  .intro-heading2 {
+    font-size: 1.35rem;
+  }
 
+  .intro-subheading2 {
+    font-size: 1.3rem;
+  }
+
+  .intro-description2 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  .intro-container2 {
+    padding: 40px 20px;
+  }
   .offset {
     font-size: 0.8rem;
     margin-bottom: 10px;

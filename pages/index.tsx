@@ -12,6 +12,7 @@ import IntroPackages from "../components/IntroPackages";
 import PackagesList from "../components/PackagesList";
 import PlannerPolaroid from "../components/PlannerPolaroid";
 import Slider from "../components/Slider";
+import Intro2 from "@/components/Intro2";
 
 export default function Home() {
   return (
@@ -32,18 +33,20 @@ export default function Home() {
       </Head>
       <>
         <Hero background={Images.lalibela5} index title="Home" link="#about" />
-        <Intro
+        <Intro2
           img1={Images.intro1}
           img2={Images.intro2}
           title="Welcome to Sawla Tours"
-          subtitle="Where Extraordinary Journeys Unfold"
+          subtitle="Curating Extraordinary Journeys Through Ethiopia"
           description={[
-            "We're not just a travel company; we're your key to unlocking unforgettable adventures in the heart of Ethiopia, the mesmerizing jewel of Africa.",
-            "Our mission? To unveil Ethiopia's enchanting magic, tailored uniquely to you. With us, travel is not a one-size-fits-all affair but a deeply personalized journey, sculpted around your desires, budget, and adventure spirit.",
+            "Sawla Tours is a boutique and deluxe tour company in Ethiopia, specializing in expertly curated, tailor-made adventures and expert-led explorations across Ethiopia. We offer private Ethiopia tours, catering to everything from intimate family journeys to solo expeditions that delve deep into Ethiopia’s most breathtaking landscapes, culture, and heritage.",
+            "With deep expertise in Ethiopia’s history, culture, and landscapes, we craft journeys that foster genuine connections and meaningful, immersive travel experiences. Committed to sustainable tourism, we ensure every trip is transformative and leaves a positive impact—on both travelers and the communities we visit.",
+            "At least 80% of our business comes from repeat clients and referrals, a testament to the exceptional service, care, and relationships we’ve built along the way.",
+            "If you're ready to embark on an authentic Ethiopian adventure, reach out to our expert travel designers to begin planning a journey that goes beyond the ordinary."
           ]}
           lr
-          button="About Us"
-          link="/about-us"
+          button="Start Planning Your Journey"
+          link="/enquire"
         />
         <IntroPackages
           title1="Our Popular"
