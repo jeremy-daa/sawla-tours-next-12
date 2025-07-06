@@ -79,7 +79,7 @@ const NavBar = () => {
               </NavLink>
             </li>
             <li>
-              <NavLink href="/ethiopia-tours" onClick={closeNavbar}>
+              <NavLink href="/ethiopian-tour-themes" onClick={closeNavbar}>
                 Ethiopia Tours <BsFillCaretDownFill className="down-icon" />
               </NavLink>
               <ul className="submenu">

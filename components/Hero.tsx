@@ -47,7 +47,9 @@ const Hero = ({
       />
       {index ? (
         <div className="home-hero" data-aos="fade-up">
-          <h1 className="heading">Embark on Extraordinary Journeys with us!</h1>
+          <h1 className="heading">
+            Sawla Tours | Bespoke & Tailor Ethiopian Tours
+          </h1>
           <h2 className="heading-description">
             Discover unforgettable experiences across Ethiopia
           </h2>

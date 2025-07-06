@@ -31,7 +31,7 @@ export default function page({ id }: any) {
         />
         <link
           rel="canonical"
-          href={`https://www.sawlatours.com/ethiopia-tours/${id}`}
+          href={`https://www.sawlatours.com/ethiopian-tour-themes/${id}`}
           key="canonical"
         />
       </Head>

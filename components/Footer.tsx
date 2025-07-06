@@ -67,7 +67,7 @@ const Footer = () => {
               </NavLink>
             </li>
             <li>
-              <NavLink href="/ethiopia-tours">
+              <NavLink href="/ethiopian-tour-themes">
                 <BsCaretRight />
                 Ethiopia Tours
               </NavLink>

@@ -227,70 +227,70 @@ export const EthiopiaTourPackagesArray: Package[] = [
     title: "Historic Tours in Ethiopia",
     description:
       "Embark on an extraordinary journey through Ethiopia's Historic tours, where ancient wonders and vibrant cultures intertwine harmoniously. These offer an unforgettable odyssey, celebrating a rich history and diverse cultures.",
-    link: "/ethiopia-tours/1",
+    link: "/ethiopian-tour-themes/ethiopias-historic-tours",
     image: Images.lalibela1,
   },
   {
     title: "Tribal Ethiopia Tours",
     description:
       "Dive into the unique cultural kaleidoscope of Ethiopia's Tribal Tours. Explore vibrant traditions, breathtaking vistas, and fascinating wildlife in Africa's heartland. Immerse in the dynamic spirit of Ethiopia, an unforgettable journey awaits! Make this radiant journey your next adventure - it's a celebration of diversity at every step.",
-    link: "/ethiopia-tours/2",
+    link: "/ethiopian-tour-themes/2",
     image: Images.benna1,
   },
   {
     title: "Festivals and Special Events",
     description:
       "Experience the vibrant world of Ethiopian festivals, where ancient traditions come alive through colorful celebrations and powerful spiritual energy. Immerse yourself in the heart and soul of Ethiopian culture, creating unforgettable moments that will stay with you forever.",
-    link: "/ethiopia-tours/3",
+    link: "/ethiopian-tour-themes/3",
     image: Images.gonder2,
   },
   {
     title: "Adventure Tours in Ethiopia",
     description:
       "A thrilling experience for those seeking an adrenaline-packed vacation. The tours include trekking through stunning landscapes, such as the Simien and Bale Mountains, where you will encounter unique flora and fauna, including the iconic Gelada baboons and the elusive Ethiopian wolf. For rock climbers, experienced guides will help navigate the challenging terrain, ensuring safety at all times. Paragliding tours offer a chance to soar above Ethiopia's stunning landscapes, while white water rafting tours provide a wild ride through thrilling rapids. Hot air ballooning tours offer a tranquil journey through Ethiopia's skies, providing breathtaking views of the country's majestic landscapes. Throughout your journey, our experienced guides will ensure your safety and comfort. Come explore the wild side of Ethiopia and discover the adventure of a lifetime!",
-    link: "/ethiopia-tours/4",
+    link: "/ethiopian-tour-themes/4",
     image: Images.abay1,
   },
   {
     title: "Photography Tours in Ethiopia",
     description:
       "A paradise for photographers. Capture stunning images of the fine church architecture of Lalibela, the breathtaking landscapes of the Ethiopian Highlands, vibrant festivals, bustling local markets, the unique lifestyles of the Omo Valley tribes, and the colorful birdlife of Ethiopia. The opportunities for capturing stunning photographs in Ethiopia are endless, and we at Sawla Tours are dedicated to providing exceptional tour itineraries that cater specifically to the needs of photographers.",
-    link: "/ethiopia-tours/5",
+    link: "/ethiopian-tour-themes/5",
     image: Images.yemata1,
   },
   {
     title: "Birdwatching Tours in Ethiopia",
     description:
       "Ethiopia, a haven for bird enthusiasts, unveils a treasure trove of avian wonders. From the endemic Ethiopian Siskin to the elusive Blue-winged Goose, the country's diverse landscapes and abundant habitats make it a paradise for birding, offering a feast for both the eyes and the soul.",
-    link: "/ethiopia-tours/6",
+    link: "/ethiopian-tour-themes/6",
     image: Images.bird1,
   },
   {
     title: "Wildlife Tours in Ethiopia",
     description:
       "Ethiopia is a country with diverse landscapes and abundant wildlife. If you are a wildlife enthusiast, you are in for a treat. Ethiopia offers some of the best wildlife tours in Africa, with its stunning national parks, game reserves, and sanctuaries that provide visitors with an opportunity to see a wide range of animals in their natural habitat.",
-    link: "/ethiopia-tours/7",
+    link: "/ethiopian-tour-themes/7",
     image: Images.kafta1,
   },
   {
     title: "Special Interest Tours in Ethiopia",
     description:
       "Special interest tours in Ethiopia offer travelers the opportunity to delve deeper into the country's unique culture, history, and natural wonders based on their interests. Ethiopia is a country of diverse landscapes, cultures, and traditions, and special interest tours can help travelers to explore and experience the country's hidden gems in a more meaningful way.",
-    link: "/ethiopia-tours/8",
+    link: "/ethiopian-tour-themes/8",
     image: Images.danakil1,
   },
   {
     title: "Business Trips or Short Day Tours in Ethiopia",
     description:
       "Are you looking for a way to make the most of your short stay in Ethiopia? Whether you're in Addis Ababa for a meeting or simply passing through, we've got you covered. Our team can help you plan an unforgettable day or multi-day tour, tailored to your specific budget and time constraints.",
-    link: "/ethiopia-tours/9",
+    link: "/ethiopian-tour-themes/9",
     image: Images.addis1,
   },
   {
     title: "Filming in Ethiopia",
     description:
       "If you need a fixer in Ethiopia, Sawla Tours is a one-stop shop for in-country media production services and location logistics. We have extensive experience in every aspect of press, film, and TV production. Whether you are developing a documentary series, feature film, music video, natural history program, commercial, or reality TV show; or planning a scientific research journey, a fashion shoot, a charity event or an expedition - Sawla Tours can make it happen.",
-    link: "/ethiopia-tours/10",
+    link: "/ethiopian-tour-themes/10",
     image: Images.bale1,
   },
 ];
@@ -433,70 +433,70 @@ export const EthiopiaTourPackagesArraySimplified: Package[] = [
     title: "Historic Tours",
     description:
       "Embark on an extraordinary journey through Ethiopia's Historic tours, where ancient wonders and vibrant cultures intertwine harmoniously. These offer an unforgettable odyssey, celebrating a rich history and diverse cultures.",
-    link: "/ethiopia-tours/1",
+    link: "/ethiopian-tour-themes/ethiopias-historic-tours",
     image: Images.axum2,
   },
   {
     title: "Tribal Tours",
     description:
       "Dive into the unique cultural kaleidoscope of Ethiopia's Tribal Tours. Explore vibrant traditions, breathtaking vistas, and fascinating wildlife in Africa's heartland. Immerse in the dynamic spirit of Ethiopia, an unforgettable journey awaits! Make this radiant journey your next adventure - it's a celebration of diversity at every step.",
-    link: "/ethiopia-tours/2",
+    link: "/ethiopian-tour-themes/2",
     image: Images.benna1,
   },
   {
     title: "Festival, Special Events",
     description:
       "Experience the vibrant world of Ethiopian festivals, where ancient traditions come alive through colorful celebrations and powerful spiritual energy. Immerse yourself in the heart and soul of Ethiopian culture, creating unforgettable moments that will stay with you forever.",
-    link: "/ethiopia-tours/3",
+    link: "/ethiopian-tour-themes/3",
     image: Images.gonder2,
   },
   {
     title: "Adventure Tours",
     description:
       "A thrilling experience for those seeking an adrenaline-packed vacation. The tours include trekking through stunning landscapes, such as the Simien and Bale Mountains, where you will encounter unique flora and fauna, including the iconic Gelada baboons and the elusive Ethiopian wolf. For rock climbers, experienced guides will help navigate the challenging terrain, ensuring safety at all times. Paragliding tours offer a chance to soar above Ethiopia's stunning landscapes, while white water rafting tours provide a wild ride through thrilling rapids. Hot air ballooning tours offer a tranquil journey through Ethiopia's skies, providing breathtaking views of the country's majestic landscapes. Throughout your journey, our experienced guides will ensure your safety and comfort. Come explore the wild side of Ethiopia and discover the adventure of a lifetime!",
-    link: "/ethiopia-tours/4",
+    link: "/ethiopian-tour-themes/4",
     image: Images.abay1,
   },
   {
     title: "Photography Tours",
     description:
       "A paradise for photographers. Capture stunning images of the fine church architecture of Lalibela, the breathtaking landscapes of the Ethiopian Highlands, vibrant festivals, bustling local markets, the unique lifestyles of the Omo Valley tribes, and the colorful birdlife of Ethiopia. The opportunities for capturing stunning photographs in Ethiopia are endless, and we at Sawla Tours are dedicated to providing exceptional tour itineraries that cater specifically to the needs of photographers.",
-    link: "/ethiopia-tours/5",
+    link: "/ethiopian-tour-themes/5",
     image: Images.yemata1,
   },
   {
     title: "Birdwatching Tours",
     description:
       "Ethiopia, a haven for bird enthusiasts, unveils a treasure trove of avian wonders. From the endemic Ethiopian Siskin to the elusive Blue-winged Goose, the country's diverse landscapes and abundant habitats make it a paradise for birding, offering a feast for both the eyes and the soul.",
-    link: "/ethiopia-tours/6",
+    link: "/ethiopian-tour-themes/6",
     image: Images.bird1,
   },
   {
     title: "Wildlife Tours",
     description:
       "Ethiopia is a country with diverse landscapes and abundant wildlife. If you are a wildlife enthusiast, you are in for a treat. Ethiopia offers some of the best wildlife tours in Africa, with its stunning national parks, game reserves, and sanctuaries that provide visitors with an opportunity to see a wide range of animals in their natural habitat.",
-    link: "/ethiopia-tours/7",
+    link: "/ethiopian-tour-themes/7",
     image: Images.kafta1,
   },
   {
     title: "Special Interest Tours",
     description:
       "Special interest tours in Ethiopia offer travelers the opportunity to delve deeper into the country's unique culture, history, and natural wonders based on their interests. Ethiopia is a country of diverse landscapes, cultures, and traditions, and special interest tours can help travelers to explore and experience the country's hidden gems in a more meaningful way.",
-    link: "/ethiopia-tours/8",
+    link: "/ethiopian-tour-themes/8",
     image: Images.danakil1,
   },
   {
     title: "Business, Short Trips",
     description:
       "Are you looking for a way to make the most of your short stay in Ethiopia? Whether you're in Addis Ababa for a meeting or simply passing through, we've got you covered. Our team can help you plan an unforgettable day or multi-day tour, tailored to your specific budget and time constraints.",
-    link: "/ethiopia-tours/9",
+    link: "/ethiopian-tour-themes/9",
     image: Images.addis1,
   },
   {
     title: "Filming in Ethiopia",
     description:
       "If you need a fixer in Ethiopia, Sawla Tours is a one-stop shop for in-country media production services and location logistics. We have extensive experience in every aspect of press, film, and TV production. Whether you are developing a documentary series, feature film, music video, natural history program, commercial, or reality TV show; or planning a scientific research journey, a fashion shoot, a charity event or an expedition - Sawla Tours can make it happen.",
-    link: "/ethiopia-tours/10",
+    link: "/ethiopian-tour-themes/10",
     image: Images.bale1,
   },
 ];
@@ -656,7 +656,7 @@ export const GridPackagesArray: GridPackage[] = [
   {
     title: "Ethiopia Tour Themes",
     image: Images.simien2,
-    link: "/ethiopia-tours",
+    link: "/ethiopian-tour-themes",
   },
   {
     title: "Popular Destinations",

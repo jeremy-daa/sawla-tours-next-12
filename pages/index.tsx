@@ -18,12 +18,10 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>
-          Discover Ethiopia with Sawla Tours | Premier Tour and Travel Agency
-        </title>
+        <title>Sawla Tours | Bespoke Ethiopian Tours & Tailored Journeys</title>
         <meta
           name="description"
-          content="Explore Ethiopia with Sawla Tours, your premier boutique tour specialist. With over 20 years of experience, we offer personalized, bespoke tours and safaris. Our commitment to community conservation and development ensures an enriching travel experience."
+          content="Discover Sawla Tours’ Bespoke Ethiopian Tours and Tailor Ethiopia Tours—private adventures that immerse you in Ethiopia’s culture, heritage, and landscapes."
         />
         <link
           rel="canonical"
@@ -39,10 +37,10 @@ export default function Home() {
           title="Welcome to Sawla Tours"
           subtitle="Curating Extraordinary Journeys Through Ethiopia"
           description={[
-            "Sawla Tours is a boutique and deluxe tour company in Ethiopia, specializing in expertly curated, tailor-made adventures and expert-led explorations across Ethiopia. We offer private Ethiopia tours, catering to everything from intimate family journeys to solo expeditions that delve deep into Ethiopia’s most breathtaking landscapes, culture, and heritage.",
-            "With deep expertise in Ethiopia’s history, culture, and landscapes, we craft journeys that foster genuine connections and meaningful, immersive travel experiences. Committed to sustainable tourism, we ensure every trip is transformative and leaves a positive impact—on both travelers and the communities we visit.",
-            "At least 80% of our business comes from repeat clients and referrals, a testament to the exceptional service, care, and relationships we’ve built along the way.",
-            "If you're ready to embark on an authentic Ethiopian adventure, reach out to our expert travel designers to begin planning a journey that goes beyond the ordinary."
+            "Sawla Tours is a boutique, deluxe tour company in Ethiopia, specializing in Bespoke Ethiopian Tours and expert-led explorations across the country. We offer private Ethiopia journeys, crafting Tailor Ethiopia Tours that span intimate family getaways to solo expeditions—each designed to immerse you in Ethiopia’s most breathtaking landscapes, vibrant culture, and rich heritage.",
+            "Drawing on deep expertise in Ethiopia’s history, culture, and terrain, Sawla Tours creates customized experiences that foster genuine connections and meaningful immersion. Committed to sustainable tourism, our Bespoke Ethiopian Tours ensure every trip is transformative, benefiting both travelers and the communities we visit.",
+            "At least 80% of our business comes from repeat clients and referrals—a testament to the exceptional care, service, and relationships we build on every Tailor Ethiopia Tours itinerary.",
+            "If you’re ready to embark on an authentic sustainable Ethiopian adventure, reach out to our expert travel designers at Sawla Tours to begin planning a journey that goes beyond the ordinary.",
           ]}
           lr
           button="Start Planning Your Journey"

@@ -8,8 +8,8 @@ import { EthiopiaTourPackagesArraySimplified } from "@/data/PackagesArray";
 import Head from "next/head";
 
 const metadata = {
-  title: "Explore Ethiopia Tour Themes | Unique Experiences with Sawla Tours",
-  description: `Discover unique Ethiopia tour themes with Sawla Tours. Our bespoke expeditions across Ethiopia offer just a glimpse of the exceptional travel experiences we create. Let us design an unforgettable adventure tailored to your preferences.`,
+  title: "Ethiopia Tour Themes | Tailor-Made Travel with Sawla Tours",
+  description: `Explore our Ethiopian Tour Themes. Bespoke Ethiopian Tours tailored to your interests—authentic culture, wildlife, and adventure anywhere in Ethiopia.`,
 };
 const page = () => {
   return (
@@ -19,19 +19,19 @@ const page = () => {
         <meta name="description" content={metadata.description} />
         <link
           rel="canonical"
-          href={`https://www.sawlatours.com/ethiopia-tours`}
+          href={`https://www.sawlatours.com/ethiopian-tour-themes`}
           key="canonical"
         />
       </Head>
       <Hero
-        title="Ethiopia Tour Themes"
+        title="Ethiopia Tour Themes | Bespoke & Tailor Ethiopian Tours"
         index={false}
         background={Images.simien2}
-        description="Bespoke Ethiopian Expeditions"
+        description=""
         link="/enquire"
       />
       <Intro
-        title="Bespoke Ethiopian Expeditions"
+        title="Ethiopian Tour Themes"
         subtitle="Anywhere in Ethiopia"
         description={[
           "The journey themes you witness on our platform serve merely as an appetizer to the grand banquet of travel experiences we're capable of orchestrating. It's just a glimpse of what Sawla can offer. With a treasure trove of experience in crafting exceptional Ethiopian journeys, our team is ready to design an unforgettable adventure just for you. Every journey is unique, just like you, and always with a positive spin.",
