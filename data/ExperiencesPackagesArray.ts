@@ -1,6 +1,9 @@
 import Images from "./Images";
 export interface ExperiencePackage {
   id: number;
+  slug?: string;
+  metaTitle?: string;
+  metaDescription?: string;
   title: string;
   description: string;
   image: string;
@@ -34,6 +37,10 @@ const images = Images;
 export const ExperiencesPackagesArray: ExperiencePackage[] = [
   {
     id: 1,
+    slug: "historic-and-cultural-tours",
+    metaTitle: "Historic and Cultural Tours in Ethiopia | Sawla Tours",
+    metaDescription:
+      "Explore Ethiopia's rich history and culture with our curated historic and cultural tours. Tailor your journey to your interests with Sawla Tours.",
     title: "Historic and Cultural Tours",
     description: "",
     image: images.gonder3,
@@ -777,9 +784,9 @@ export const ExperiencesPackagesArray: ExperiencePackage[] = [
   },
 ];
 
-export const getExperience = (id: number) => {
+export const getExperience = (id: string) => {
   const result = ExperiencesPackagesArray.filter(
-    (experience) => experience.id === id
+    (experience) => experience.slug === id
   );
   if (result.length === 0) {
     return null;

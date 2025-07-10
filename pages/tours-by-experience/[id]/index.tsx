@@ -12,17 +12,15 @@ type params = {
 };
 
 const page = ({ id }: params) => {
-  const experience = getExperience(Number(id));
+  const experience = getExperience(id);
 
   return (
     <>
       <Head>
-        <title>
-          {experience ? experience.title + " - Sawla Tours" : "Not Found"}
-        </title>
+        <title>{experience ? experience.metaTitle : "Not Found"}</title>
         <meta
           name="description"
-          content={experience ? experience.description : "Not Found"}
+          content={experience ? experience.metaDescription : "Not Found"}
         />
         <link
           rel="canonical"

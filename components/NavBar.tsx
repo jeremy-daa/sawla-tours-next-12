@@ -93,7 +93,10 @@ const NavBar = () => {
               </ul>
             </li>
             <li>
-              <NavLink href="/top-destinations" onClick={closeNavbar}>
+              <NavLink
+                href="/ethiopias-popular-destinations"
+                onClick={closeNavbar}
+              >
                 Popular Destinations{" "}
                 <BsFillCaretDownFill className="down-icon" />
               </NavLink>

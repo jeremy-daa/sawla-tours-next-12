@@ -32,28 +32,28 @@ export const DestinationPackagesArray: Package[] = [
     title: "Lalibela: \nA Journey to Ethiopia's Spiritual Heart",
     description:
       "Embark on a captivating journey to Lalibela, a destination that exudes faith, mystery, and rich legends. Nestled amidst expansive valleys and rugged escarpments, Lalibela stands as the vibrant heart of spiritual Ethiopia, captivating both the mind and the soul.",
-    link: "/top-destinations/1",
+    link: "/ethiopias-popular-destinations/lalibela",
     image: Images.lalibela2,
   },
   {
     title: "Simien Mountains: \nDiscover Africa's Sky-high Paradise",
     description:
       "Step into Ethiopia's well-kept secret, the Simien Mountains - a paradise perched high above the clouds, north of the ancient city of Gondar. This mesmerizing canvas of nature is a call to the heart of every wanderer, offering unparalleled landscapes, adrenaline-pumping trekking trails, and heart-stopping wildlife rendezvous. Traverse 220 square kilometers of stunning summits, sprawling plateaus, and verdant valleys. Delve into the pristine wilderness of Africa's most splendid mountain range.",
-    link: "/top-destinations/2",
+    link: "/ethiopias-popular-destinations/simien-mountain-national-park",
     image: Images.simien2,
   },
   {
     title: "Danakil Depression: \nThe Surreal Symphony of Fire and Brine!",
     description:
       "The otherworldly Danakil Depression is an awe-inspiring geological wonder that stands as one of the most unique environments on Earth. This extraordinary destination, known as the 'hottest place on the planet,' is home to salt lakes, lava lakes, volcanoes, and vibrant acidic springs, offering a truly captivating and alien experience.",
-    link: "/top-destinations/3",
+    link: "/ethiopias-popular-destinations/danakil-depression-tour-packages",
     image: Images.danakil1,
   },
   {
     title: "Omo Valley: \nA Melting Pot of Ancient Cultures",
     description:
       "Journey to the captivating Omo Valley, where you'll be immersed in the traditions and diversity of the 88 cultural communities that call this remote corner of Ethiopia home. Known for its rich cultural heritage and tribal tapestry, the Omo Valley stands as a timeless crossroads of humanity, inviting you to experience a way of life steeped in history and authenticity.",
-    link: "/top-destinations/4",
+    link: "/ethiopias-popular-destinations/omo-valley-tribes",
     image: Images.omo1,
   },
   {
@@ -61,7 +61,7 @@ export const DestinationPackagesArray: Package[] = [
       "Tigray: \nAn Oasis of Culture Cradled in the Heart of History" /*Where History and Natural Beauty Unite*/,
     description:
       "Tigray is a land steeped in history and blessed with rich culture and awe-inspiring landscapes. This captivating region invites you to embark on a journey of discovery, where ancient rock churches, people with rich culture, stunning vistas, and luxurious lodges await. Immerse yourself in the rich heritage of Tigray, where every step unveils the secrets of a bygone era.",
-    link: "/top-destinations/5",
+    link: "/ethiopias-popular-destinations/tigray-rock-hewn-churches-historical-sites",
     image: Images.tigray1,
   },
   {
@@ -69,14 +69,14 @@ export const DestinationPackagesArray: Package[] = [
       "Bahir Dar: \nA Mosaic of Monastic Magic and Mother Nature's Majesty!",
     description:
       "Bahir Dar is a picturesque city nestled on the shores of the magnificent Lake Tana in Ethiopia. This vibrant destination, known for its historic monasteries, charming lodges, vibrant local markets, beautiful lakes, and the renowned Blue Nile Falls, will leave you awe-inspired at every turn.",
-    link: "/top-destinations/6",
+    link: "/ethiopias-popular-destinations/bahir-dar",
     image: Images.bahirdar1,
   },
   {
     title: "Gonder: \nWhere African Allure Meets Medieval Majesty!",
     description:
       'Gonder is a captivating city in northern Ethiopia. Known as the "Camelot of Africa," Gonder\'s rich history and magnificent architectural wonders will transport you to a bygone era.',
-    link: "/top-destinations/7",
+    link: "/ethiopias-popular-destinations/gonder",
     image: Images.gonder1,
   },
   {
@@ -84,7 +84,7 @@ export const DestinationPackagesArray: Package[] = [
       "Bale Mountains National Park: \nAn Eden of Exotic Ecosystems and Endemic Encounters",
     description:
       "Bale Mountains National Park is one of Ethiopia's most captivating destinations. With its lush jungles, endemic wildlife, breathtaking vistas, boutique lodges, and exhilarating hiking routes, the Bale Mountains offer an unparalleled adventure in the heart of nature.",
-    link: "/top-destinations/8",
+    link: "/ethiopias-popular-destinations/bale-mountains-national-park",
     image: Images.bale1,
   },
   {
@@ -92,21 +92,21 @@ export const DestinationPackagesArray: Package[] = [
       "Chebera Churchura National Park: \nEmbrace Ethiopia's Unspoiled Wilderness",
     description:
       "Prepare to embark on an extraordinary journey into the untouched wilderness of Ethiopia at Chebera Churchura National Park. Immerse yourself in stunning landscapes, encounter unique wildlife, and embark on thrilling adventures that will leave an indelible mark on your soul. Get ready for an unforgettable experience that will awaken your sense of wonder.",
-    link: "/top-destinations/9",
+    link: "/ethiopias-popular-destinations/chebera-churchura-national-park",
     image: Images.chebera1,
   },
   {
     title: "Axum: \nThe Ancient Capital of Ethiopia",
     description:
       "Axum is the fascinating ancient capital of Ethiopia. Steeped in history and cultural significance, this vibrant city will transport you back in time to the days of the legendary Axumite Empire. Explore the relics that have stood the test of time and unravel the mysteries of this remarkable destination.",
-    link: "/top-destinations/10",
+    link: "/ethiopias-popular-destinations/axum",
     image: Images.axum2,
   },
   {
     title: "Harar: \nA Journey to Ancient Splendor",
     description:
       "Step into the enchanting city of Harar, one of Ethiopia's oldest and most revered destinations. This UNESCO World Heritage Site, nestled on the eastern border of the Somali region, offers a spiritual ambiance that transports you back to medieval times, immersing you in a unique atmosphere found nowhere else in Ethiopia.",
-    link: "/top-destinations/11",
+    link: "/ethiopias-popular-destinations/harar",
     image: Images.harar1,
   },
   {
@@ -114,7 +114,7 @@ export const DestinationPackagesArray: Package[] = [
       "Gambella National Park: \nAn untouched gem teeming with nature's grandeur",
     description:
       "Tucked away in the intriguing southwestern extremity of Ethiopia lies Gambella National Park - an untouched gem teeming with nature's grandeur. Straddling the serpentine Baro River, Gambella is a thrilling revelation of diverse cultures and landscapes that provoke nothing less than pure wonder.",
-    link: "/top-destinations/12",
+    link: "/ethiopias-popular-destinations/gambella-national-park",
     image: Images.gambella1,
   },
   {
@@ -122,7 +122,7 @@ export const DestinationPackagesArray: Package[] = [
       "Kafta Shiraro National Park: \nMarvel at Africa's Wild Northern Frontier",
     description:
       "Step into the unspoiled heart of Ethiopia's wilderness at Kafta Shiraro National Park, a refuge for the largest population of Heuglin’s Gazelles globally and the northernmost African elephants.",
-    link: "/top-destinations/13",
+    link: "/ethiopias-popular-destinations/kafta-shiraro-national-park-safari-ethiopia",
     image: Images.kafta1,
   },
   {
@@ -130,7 +130,7 @@ export const DestinationPackagesArray: Package[] = [
       "Awash National Park & Alledeghi Plains: \nEthiopia's Hidden Treasures",
     description:
       "Journey into Ethiopia's unsung wonders, where Awash National Park entwines with the raw and uncharted Alledeghi Plains, a stunning wildlife reserve. Set your compass 225 kilometers east of Addis Ababa, towards a landscape punctuated by the ebb and flow of the Awash River, and encircled by the dynamic Afar Region and the mysterious Danakil.",
-    link: "/top-destinations/14",
+    link: "/ethiopias-popular-destinations/awash-national-park-alledeghi-plains-safari",
 
     image: Images.awash1,
   },
@@ -139,7 +139,7 @@ export const DestinationPackagesArray: Package[] = [
       "Addis Ababa: \nCoffee, Culture, and Cathedrals Beckon in Ethiopia's Bustling Capital",
     description:
       'Addis Ababa is the world\'s third-highest capital city, sitting at 2,665 meters above sea level, and it has a rich history dating back to its founding by Emperor Menelik in 1892. The city is continuously changing, with new buildings and structures being constructed every day, making it a fascinating place to visit for more than just a quick stopover. The national language, Amharic, is widely spoken, but English, French, Italian, and Arabic are also common in the city. With a multitude of ethnic groups and a diverse foreign population, Addis Ababa truly represents the "rich cultural mosaic" of Ethiopia, as historian Carlo Conti Rossini once put it.',
-    link: "/top-destinations/15",
+    link: "/ethiopias-popular-destinations/addis-ababa-city-tour",
     image: Images.addis2,
   },
 ];
@@ -147,78 +147,78 @@ export const DestinationPackagesArray: Package[] = [
 export const DestinationPackagesNameArray: PackageName[] = [
   {
     title: "Lalibela",
-    link: "/top-destinations/1",
+    link: "/ethiopias-popular-destinations/lalibela",
     image: Images.lalibela1,
   },
   {
     title: "Simien Mountains",
-    link: "/top-destinations/2",
+    link: "/ethiopias-popular-destinations/simien-mountain-national-park",
     image: Images.simien2,
   },
   {
     title: "Danakil Depression",
-    link: "/top-destinations/3",
+    link: "/ethiopias-popular-destinations/danakil-depression-tour-packages",
     image: Images.danakil1,
   },
   {
     title: "Omo Valley",
-    link: "/top-destinations/4",
+    link: "/ethiopias-popular-destinations/omo-valley-tribes",
     image: Images.omo1,
   },
   {
     title: "Tigray",
-    link: "/top-destinations/5",
+    link: "/ethiopias-popular-destinations/tigray-rock-hewn-churches-historical-sites",
     image: Images.tigray1,
   },
   {
     title: "Bahir Dar",
 
-    link: "/top-destinations/6",
+    link: "/ethiopias-popular-destinations/bahir-dar",
     image: Images.bahirdar1,
   },
   {
     title: "Gonder",
-    link: "/top-destinations/7",
+    link: "/ethiopias-popular-destinations/gonder",
     image: Images.gonder1,
   },
   {
     title: "Bale Mountains",
-    link: "/top-destinations/8",
+    link: "/ethiopias-popular-destinations/bale-mountains-national-park",
     image: Images.bale1,
   },
   {
     title: "Chebera Churchura",
-    link: "/top-destinations/9",
+    link: "/ethiopias-popular-destinations/chebera-churchura-national-park",
     image: Images.chebera1,
   },
   {
     title: "Axum",
-    link: "/top-destinations/10",
+    link: "/ethiopias-popular-destinations/axum",
     image: Images.axum2,
   },
   {
     title: "Harar",
-    link: "/top-destinations/11",
+    link: "/ethiopias-popular-destinations/harar",
     image: Images.harar1,
   },
   {
     title: "Gambella",
-    link: "/top-destinations/12",
+    link: "/ethiopias-popular-destinations/gambella-national-park",
     image: Images.gambella1,
   },
   {
     title: "Kafta Shiraro",
-    link: "/top-destinations/13",
+    link: "/ethiopias-popular-destinations/kafta-shiraro-national-park-safari-ethiopia",
     image: Images.kafta1,
   },
   {
     title: "Awash National Park",
-    link: "/top-destinations/14",
+    link: "/ethiopias-popular-destinations/awash-national-park-alledeghi-plains-safari",
     image: Images.awash1,
   },
   {
     title: "Addis Ababa",
-    link: "/top-destinations/15",
+    link: "/ethiopias-popular-destinations/addis-ababa-city-tour",
     image: Images.addis2,
   },
 ];
@@ -234,63 +234,63 @@ export const EthiopiaTourPackagesArray: Package[] = [
     title: "Tribal Ethiopia Tours",
     description:
       "Dive into the unique cultural kaleidoscope of Ethiopia's Tribal Tours. Explore vibrant traditions, breathtaking vistas, and fascinating wildlife in Africa's heartland. Immerse in the dynamic spirit of Ethiopia, an unforgettable journey awaits! Make this radiant journey your next adventure - it's a celebration of diversity at every step.",
-    link: "/ethiopian-tour-themes/2",
+    link: "/ethiopian-tour-themes/tribal-cultural-tours-of-ethiopia",
     image: Images.benna1,
   },
   {
     title: "Festivals and Special Events",
     description:
       "Experience the vibrant world of Ethiopian festivals, where ancient traditions come alive through colorful celebrations and powerful spiritual energy. Immerse yourself in the heart and soul of Ethiopian culture, creating unforgettable moments that will stay with you forever.",
-    link: "/ethiopian-tour-themes/3",
+    link: "/ethiopian-tour-themes/ethiopian-festival-tours",
     image: Images.gonder2,
   },
   {
     title: "Adventure Tours in Ethiopia",
     description:
       "A thrilling experience for those seeking an adrenaline-packed vacation. The tours include trekking through stunning landscapes, such as the Simien and Bale Mountains, where you will encounter unique flora and fauna, including the iconic Gelada baboons and the elusive Ethiopian wolf. For rock climbers, experienced guides will help navigate the challenging terrain, ensuring safety at all times. Paragliding tours offer a chance to soar above Ethiopia's stunning landscapes, while white water rafting tours provide a wild ride through thrilling rapids. Hot air ballooning tours offer a tranquil journey through Ethiopia's skies, providing breathtaking views of the country's majestic landscapes. Throughout your journey, our experienced guides will ensure your safety and comfort. Come explore the wild side of Ethiopia and discover the adventure of a lifetime!",
-    link: "/ethiopian-tour-themes/4",
+    link: "/ethiopian-tour-themes/adventure-tours-ethiopia",
     image: Images.abay1,
   },
   {
     title: "Photography Tours in Ethiopia",
     description:
       "A paradise for photographers. Capture stunning images of the fine church architecture of Lalibela, the breathtaking landscapes of the Ethiopian Highlands, vibrant festivals, bustling local markets, the unique lifestyles of the Omo Valley tribes, and the colorful birdlife of Ethiopia. The opportunities for capturing stunning photographs in Ethiopia are endless, and we at Sawla Tours are dedicated to providing exceptional tour itineraries that cater specifically to the needs of photographers.",
-    link: "/ethiopian-tour-themes/5",
+    link: "/ethiopian-tour-themes/photography-tours-ethiopia",
     image: Images.yemata1,
   },
   {
     title: "Birdwatching Tours in Ethiopia",
     description:
       "Ethiopia, a haven for bird enthusiasts, unveils a treasure trove of avian wonders. From the endemic Ethiopian Siskin to the elusive Blue-winged Goose, the country's diverse landscapes and abundant habitats make it a paradise for birding, offering a feast for both the eyes and the soul.",
-    link: "/ethiopian-tour-themes/6",
+    link: "/ethiopian-tour-themes/bird-watching-tours-ethiopia",
     image: Images.bird1,
   },
   {
     title: "Wildlife Tours in Ethiopia",
     description:
       "Ethiopia is a country with diverse landscapes and abundant wildlife. If you are a wildlife enthusiast, you are in for a treat. Ethiopia offers some of the best wildlife tours in Africa, with its stunning national parks, game reserves, and sanctuaries that provide visitors with an opportunity to see a wide range of animals in their natural habitat.",
-    link: "/ethiopian-tour-themes/7",
+    link: "/ethiopian-tour-themes/wildlife-tours-ethiopia",
     image: Images.kafta1,
   },
   {
     title: "Special Interest Tours in Ethiopia",
     description:
       "Special interest tours in Ethiopia offer travelers the opportunity to delve deeper into the country's unique culture, history, and natural wonders based on their interests. Ethiopia is a country of diverse landscapes, cultures, and traditions, and special interest tours can help travelers to explore and experience the country's hidden gems in a more meaningful way.",
-    link: "/ethiopian-tour-themes/8",
+    link: "/ethiopian-tour-themes/special-interest-tours-ethiopia",
     image: Images.danakil1,
   },
   {
     title: "Business Trips or Short Day Tours in Ethiopia",
     description:
       "Are you looking for a way to make the most of your short stay in Ethiopia? Whether you're in Addis Ababa for a meeting or simply passing through, we've got you covered. Our team can help you plan an unforgettable day or multi-day tour, tailored to your specific budget and time constraints.",
-    link: "/ethiopian-tour-themes/9",
+    link: "/ethiopian-tour-themes/addis-ababa-day-business-tours",
     image: Images.addis1,
   },
   {
     title: "Filming in Ethiopia",
     description:
       "If you need a fixer in Ethiopia, Sawla Tours is a one-stop shop for in-country media production services and location logistics. We have extensive experience in every aspect of press, film, and TV production. Whether you are developing a documentary series, feature film, music video, natural history program, commercial, or reality TV show; or planning a scientific research journey, a fashion shoot, a charity event or an expedition - Sawla Tours can make it happen.",
-    link: "/ethiopian-tour-themes/10",
+    link: "/ethiopian-tour-themes/filming-ethiopia-fixer-production-logistics",
     image: Images.bale1,
   },
 ];
@@ -440,63 +440,63 @@ export const EthiopiaTourPackagesArraySimplified: Package[] = [
     title: "Tribal Tours",
     description:
       "Dive into the unique cultural kaleidoscope of Ethiopia's Tribal Tours. Explore vibrant traditions, breathtaking vistas, and fascinating wildlife in Africa's heartland. Immerse in the dynamic spirit of Ethiopia, an unforgettable journey awaits! Make this radiant journey your next adventure - it's a celebration of diversity at every step.",
-    link: "/ethiopian-tour-themes/2",
+    link: "/ethiopian-tour-themes/tribal-cultural-tours-of-ethiopia",
     image: Images.benna1,
   },
   {
     title: "Festival, Special Events",
     description:
       "Experience the vibrant world of Ethiopian festivals, where ancient traditions come alive through colorful celebrations and powerful spiritual energy. Immerse yourself in the heart and soul of Ethiopian culture, creating unforgettable moments that will stay with you forever.",
-    link: "/ethiopian-tour-themes/3",
+    link: "/ethiopian-tour-themes/ethiopian-festival-tours",
     image: Images.gonder2,
   },
   {
     title: "Adventure Tours",
     description:
       "A thrilling experience for those seeking an adrenaline-packed vacation. The tours include trekking through stunning landscapes, such as the Simien and Bale Mountains, where you will encounter unique flora and fauna, including the iconic Gelada baboons and the elusive Ethiopian wolf. For rock climbers, experienced guides will help navigate the challenging terrain, ensuring safety at all times. Paragliding tours offer a chance to soar above Ethiopia's stunning landscapes, while white water rafting tours provide a wild ride through thrilling rapids. Hot air ballooning tours offer a tranquil journey through Ethiopia's skies, providing breathtaking views of the country's majestic landscapes. Throughout your journey, our experienced guides will ensure your safety and comfort. Come explore the wild side of Ethiopia and discover the adventure of a lifetime!",
-    link: "/ethiopian-tour-themes/4",
+    link: "/ethiopian-tour-themes/adventure-tours-ethiopia",
     image: Images.abay1,
   },
   {
     title: "Photography Tours",
     description:
       "A paradise for photographers. Capture stunning images of the fine church architecture of Lalibela, the breathtaking landscapes of the Ethiopian Highlands, vibrant festivals, bustling local markets, the unique lifestyles of the Omo Valley tribes, and the colorful birdlife of Ethiopia. The opportunities for capturing stunning photographs in Ethiopia are endless, and we at Sawla Tours are dedicated to providing exceptional tour itineraries that cater specifically to the needs of photographers.",
-    link: "/ethiopian-tour-themes/5",
+    link: "/ethiopian-tour-themes/photography-tours-ethiopia",
     image: Images.yemata1,
   },
   {
     title: "Birdwatching Tours",
     description:
       "Ethiopia, a haven for bird enthusiasts, unveils a treasure trove of avian wonders. From the endemic Ethiopian Siskin to the elusive Blue-winged Goose, the country's diverse landscapes and abundant habitats make it a paradise for birding, offering a feast for both the eyes and the soul.",
-    link: "/ethiopian-tour-themes/6",
+    link: "/ethiopian-tour-themes/bird-watching-tours-ethiopia",
     image: Images.bird1,
   },
   {
     title: "Wildlife Tours",
     description:
       "Ethiopia is a country with diverse landscapes and abundant wildlife. If you are a wildlife enthusiast, you are in for a treat. Ethiopia offers some of the best wildlife tours in Africa, with its stunning national parks, game reserves, and sanctuaries that provide visitors with an opportunity to see a wide range of animals in their natural habitat.",
-    link: "/ethiopian-tour-themes/7",
+    link: "/ethiopian-tour-themes/wildlife-tours-ethiopia",
     image: Images.kafta1,
   },
   {
     title: "Special Interest Tours",
     description:
       "Special interest tours in Ethiopia offer travelers the opportunity to delve deeper into the country's unique culture, history, and natural wonders based on their interests. Ethiopia is a country of diverse landscapes, cultures, and traditions, and special interest tours can help travelers to explore and experience the country's hidden gems in a more meaningful way.",
-    link: "/ethiopian-tour-themes/8",
+    link: "/ethiopian-tour-themes/special-interest-tours-ethiopia",
     image: Images.danakil1,
   },
   {
     title: "Business, Short Trips",
     description:
       "Are you looking for a way to make the most of your short stay in Ethiopia? Whether you're in Addis Ababa for a meeting or simply passing through, we've got you covered. Our team can help you plan an unforgettable day or multi-day tour, tailored to your specific budget and time constraints.",
-    link: "/ethiopian-tour-themes/9",
+    link: "/ethiopian-tour-themes/addis-ababa-day-business-tours",
     image: Images.addis1,
   },
   {
     title: "Filming in Ethiopia",
     description:
       "If you need a fixer in Ethiopia, Sawla Tours is a one-stop shop for in-country media production services and location logistics. We have extensive experience in every aspect of press, film, and TV production. Whether you are developing a documentary series, feature film, music video, natural history program, commercial, or reality TV show; or planning a scientific research journey, a fashion shoot, a charity event or an expedition - Sawla Tours can make it happen.",
-    link: "/ethiopian-tour-themes/10",
+    link: "/ethiopian-tour-themes/filming-ethiopia-fixer-production-logistics",
     image: Images.bale1,
   },
 ];
@@ -513,63 +513,63 @@ export const EthiopiaTourPackagesRoutes: Route[] =
 export const TopDestinationsRoutes: Route[] = [
   {
     title: "Lalibela",
-    link: "/top-destinations/1",
+    link: "/ethiopias-popular-destinations/lalibela",
   },
   {
     title: "Simien Mountains",
-    link: "/top-destinations/2",
+    link: "/ethiopias-popular-destinations/simien-mountain-national-park",
   },
   {
     title: "Danakil Depression",
-    link: "/top-destinations/3",
+    link: "/ethiopias-popular-destinations/danakil-depression-tour-packages",
   },
   {
     title: "Omo Valley",
-    link: "/top-destinations/4",
+    link: "/ethiopias-popular-destinations/omo-valley-tribes",
   },
   {
     title: "Tigray",
-    link: "/top-destinations/5",
+    link: "/ethiopias-popular-destinations/tigray-rock-hewn-churches-historical-sites",
   },
   {
     title: "Bahir Dar",
-    link: "/top-destinations/6",
+    link: "/ethiopias-popular-destinations/bahir-dar",
   },
   {
     title: "Gonder",
-    link: "/top-destinations/7",
+    link: "/ethiopias-popular-destinations/gonder",
   },
   {
     title: "Bale Mountains",
-    link: "/top-destinations/8",
+    link: "/ethiopias-popular-destinations/bale-mountains-national-park",
   },
   {
     title: "Chebera Churchura",
-    link: "/top-destinations/9",
+    link: "/ethiopias-popular-destinations/chebera-churchura-national-park",
   },
   {
     title: "Axum",
-    link: "/top-destinations/10",
+    link: "/ethiopias-popular-destinations/axum",
   },
   {
     title: "Harar",
-    link: "/top-destinations/11",
+    link: "/ethiopias-popular-destinations/harar",
   },
   {
     title: "Gambella",
-    link: "/top-destinations/12",
+    link: "/ethiopias-popular-destinations/gambella-national-park",
   },
   {
     title: "Kafta Shiraro",
-    link: "/top-destinations/13",
+    link: "/ethiopias-popular-destinations/kafta-shiraro-national-park-safari-ethiopia",
   },
   {
     title: "Awash National Park",
-    link: "/top-destinations/14",
+    link: "/ethiopias-popular-destinations/awash-national-park-alledeghi-plains-safari",
   },
   {
     title: "Addis Ababa",
-    link: "/top-destinations/15",
+    link: "/ethiopias-popular-destinations/addis-ababa-city-tour",
   },
 ];
 export const ToursByExperienceRoutes: Route[] = [
@@ -661,7 +661,7 @@ export const GridPackagesArray: GridPackage[] = [
   {
     title: "Popular Destinations",
     image: Images.lalibela4,
-    link: "/top-destinations",
+    link: "/ethiopias-popular-destinations",
   },
   {
     title: "Itineraries By Experience",

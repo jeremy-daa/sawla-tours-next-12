@@ -23,7 +23,7 @@ const Intro = (props: Props) => {
             {props.description &&
               props.description.map((description, index) => (
                 <p className="intro-description" key={index}>
-                  {description}
+                  {<span dangerouslySetInnerHTML={{ __html: description }} />}
                 </p>
               ))}
             {props.button && (
@@ -96,7 +96,7 @@ const Intro = (props: Props) => {
             {props.description &&
               props.description.map((description, index) => (
                 <p className="intro-description" key={index}>
-                  {description}
+                  {<span dangerouslySetInnerHTML={{ __html: description }} />}
                 </p>
               ))}
 

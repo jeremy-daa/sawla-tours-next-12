@@ -17,17 +17,17 @@ type Params = {
 };
 
 export default function page({ id }: any) {
-  const tour = getTour(Number(id));
+  const tour = getTour(id);
   const isFourth = tour?.id === 4 || tour?.id === 8 ? true : false;
   const isEighth = tour?.id === 8 ? true : false;
 
   return (
     <div>
       <Head>
-        <title>{tour ? tour.title + " - Sawla Tours" : "Not Found"}</title>
+        <title>{tour ? tour.metaTitle : "Not Found"}</title>
         <meta
           name="description"
-          content={tour ? tour.description : "Not Found"}
+          content={tour ? tour.metaDescription : "Not Found"}
         />
         <link
           rel="canonical"

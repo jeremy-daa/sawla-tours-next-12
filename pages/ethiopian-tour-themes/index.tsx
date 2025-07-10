@@ -24,7 +24,7 @@ const page = () => {
         />
       </Head>
       <Hero
-        title="Ethiopia Tour Themes | Bespoke & Tailor Ethiopian Tours"
+        title="Ethiopia Tour Themes"
         index={false}
         background={Images.simien2}
         description=""

@@ -7,10 +7,10 @@ const PlannerPolaroid = () => {
   return (
     <>
       <Intro
-        title="How Can We Help You Create an Extraordinary Ethiopian Adventure?"
+        title="Begin Your Adventure with Sawla Tours"
         description={[
-          "At Sawla Tours, we are passionate about turning your travel dreams into reality. With years of hands-on experience in crafting unforgettable journeys to Ethiopia, we are your go-to experts in deciding when to travel, where to explore, and what to discover.",
-          "Whether you have a detailed itinerary in mind, seek professional advice, or simply don't know where to begin, we're eager to assist. Reach out to us today, and together, we'll create an extraordinary travel experience tailored just for you.",
+          "At Sawla Tours, we believe that every journey should be as unique as the traveler. Our expert team is dedicated to crafting personalized itineraries that reflect your interests and passions, ensuring an unforgettable Ethiopian experience.",
+          "Whether you're seeking cultural immersion, wildlife adventures, or breathtaking landscapes, we tailor each tour to your preferences. From the moment you reach out, our travel designers work closely with you to create a bespoke itinerary that captures the essence of Ethiopia.",
         ]}
         img1={Images.danakil3}
         img2={Images.wollo1}

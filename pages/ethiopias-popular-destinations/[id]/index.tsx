@@ -16,20 +16,20 @@ type Params = {
 };
 
 const page = ({ id }: any) => {
-  const destination = getDestination(Number(id));
+  const destination = getDestination(id);
   return (
     <div>
       <Head>
         <title>
-          {destination ? destination.title + " - Sawla Tours" : "Not Found"}
+          {destination ? destination.metaTitle : "Not Found"}
         </title>
         <meta
           name="description"
-          content={destination ? destination.description : "Not Found"}
+          content={destination ? destination.metaDescription : "Not Found"}
         />
         <link
           rel="canonical"
-          href={`https://www.sawlatours.com/top-destinations/${id}`}
+          href={`https://www.sawlatours.com/ethiopias-popular-destinations/${id}`}
           key="canonical"
         />
       </Head>

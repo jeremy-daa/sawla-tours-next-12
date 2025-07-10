@@ -34,8 +34,8 @@ export default function Home() {
         <Intro2
           img1={Images.intro1}
           img2={Images.intro2}
-          title="Welcome to Sawla Tours"
-          subtitle="Curating Extraordinary Journeys Through Ethiopia"
+          title="Curating Extraordinary Journeys Through Ethiopia"
+          subtitle=""
           description={[
             "Sawla Tours is a boutique, deluxe tour company in Ethiopia, specializing in Bespoke Ethiopian Tours and expert-led explorations across the country. We offer private Ethiopia journeys, crafting Tailor Ethiopia Tours that span intimate family getaways to solo expeditions—each designed to immerse you in Ethiopia’s most breathtaking landscapes, vibrant culture, and rich heritage.",
             "Drawing on deep expertise in Ethiopia’s history, culture, and terrain, Sawla Tours creates customized experiences that foster genuine connections and meaningful immersion. Committed to sustainable tourism, our Bespoke Ethiopian Tours ensure every trip is transformative, benefiting both travelers and the communities we visit.",
@@ -63,7 +63,7 @@ export default function Home() {
           ]}
           lr={false}
           button="Our Top Destinations"
-          link="/top-destinations"
+          link="/ethiopias-popular-destinations"
         />
         <Slider
           title="Banquet of Ethiopian Tour Themes"
@@ -74,7 +74,7 @@ export default function Home() {
           title="Ethiopia Popular Destinations"
           description="Dive into uncharted territories and wilderness, be part of meaningful conservation efforts, elevate your travel dreams in untouched spots, and soak in genuine cultural moments."
           packages={DestinationPackagesArray.slice(0, 6)}
-          link="/top-destinations"
+          link="/ethiopias-popular-destinations"
           linkname="View All Destinations"
         />
         <PlannerPolaroid />

@@ -10,8 +10,8 @@ import Head from "next/head";
 import React from "react";
 
 const metadata = {
-  title: "Popular Ethiopian Destinations | Sawla Tours Highlights",
-  description: `Explore popular Ethiopian destinations with Sawla Tours. Immerse yourself in the rich history, culture, and wildlife of Ethiopia as we guide you on a transformative journey through this spectacular country.`,
+  title: "Ethiopia Popular Destinations | Sawla Tours",
+  description: `Explore Ethiopia’s popular destinations with Sawla Tours. Enjoy tailor-made Ethiopia tours and guided Ethiopia holidays—culture, landscapes & luxury in one journey.`,
 };
 
 const page = () => {
@@ -22,12 +22,12 @@ const page = () => {
         <meta name="description" content={metadata.description} />
         <link
           rel="canonical"
-          href={`https://www.sawlatours.com/top-destinations`}
+          href={`https://www.sawlatours.com/ethiopias-popular-destinations`}
           key="canonical"
         />
       </Head>
       <Hero
-        title="Popular Destinations"
+        title="Ethiopia’s Popular Destinations"
         index={false}
         background={Images.lalibela4}
         description="Prepare to immerse yourself in the authentic Ethiopia as we guide you on a transformative journey to explore the abundant wealth of history, culture, and wildlife that this spectacular country has to offer."
@@ -36,12 +36,13 @@ const page = () => {
       <Intro
         title="About Our Popular Destinations"
         description={[
-          "As a deluxe intrepid tour agency, we curate exceptional journeys that go beyond the ordinary. Our itineraries are designed to showcase the hidden gems and iconic landmarks of Ethiopia, ensuring that every moment of your adventure is filled with awe and wonder. Whether you yearn to explore ancient historical sites, engage with vibrant local communities, or witness the diverse wildlife in its natural habitat, Sawal Tours will create a personalized itinerary that surpasses your expectations.",
-          "Join us on this unparalleled expedition and let us unveil the true essence of Ethiopia. From the rock-hewn churches of Lalibela to the ancient ruins of Aksum, from the vibrant markets of Addis Ababa to the breathtaking landscapes of the Danakil Depression, every step of your journey will be carefully crafted to create memories that will last a lifetime.",
+          "Incense curls through Lalibela’s rock-hewn churches, drums thunder over Lake Tana, and crisp mountain air fills the Simien escarpments. Spiced coffee hisses in Addis night markets while salt crystals glitter under Danakil’s noon sun. Welcome to Ethiopia in high definition.",
+          "At Sawla Tours—your seasoned Ethiopia travel expert—we turn curiosity into memory with tailor-made Ethiopia tours and seamless guided Ethiopia holidays crafted for discerning explorers. Our hand-picked guides unlock Ethiopia’s popular destinations, weaving candid encounters with master weavers, chanting monks, and camel caravans into each day. Boutique lodges, private 4×4 convoys, and responsible partnerships ensure comfort, access, and a lighter footprint.",
+          "Below, discover the destinations that make Ethiopia unforgettable",
         ]}
         img1={Images.danakil3}
         img2={Images.lalibela3}
-        button="Our Popular Destinations"
+        button="Explore our tailor-made Ethiopia tours"
         link="#top-destinations"
         lr={true}
       />

@@ -147,6 +147,10 @@ const Images = {
   yemata1: "/assets/yemata_1.jpg",
   yemata2: "/assets/yemata_2.jpg",
   zebra1: "/assets/zebra_1.jpg",
+  photo1: "/assets/photography/photo_1.jpg",
+  photo2: "/assets/photography/photo_2.jpg",
+  photo3: "/assets/photography/photo_3.jpg",
+  photo4: "/assets/photography/photo_4.jpg",
 };
 
 export default Images;

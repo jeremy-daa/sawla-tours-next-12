@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { spawn } from "node:child_process";
 
 interface Props {
   destination?: string;
@@ -34,7 +35,10 @@ const DestinationDescription = ({
             <div className="reason-description">
               <h2>{reason.title}</h2>
               {reason.description.map((paragraph, index) => (
-                <p key={index}>{paragraph}</p>
+                <p
+                  key={index}
+                  dangerouslySetInnerHTML={{ __html: paragraph }}
+                ></p>
               ))}
             </div>
           </div>

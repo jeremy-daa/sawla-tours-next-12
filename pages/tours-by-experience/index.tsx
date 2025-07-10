@@ -21,12 +21,10 @@ const page = () => {
   return (
     <>
       <Head>
-        <title>
-          Customized Ethiopia Itineraries | Experiences with Sawla Tours
-        </title>
+        <title>Ethiopia Tour Itineraries | Sawla Tours</title>
         <meta
           name="description"
-          content="Discover customized Ethiopia itineraries with Sawla Tours. As seasoned experts, we combine passion and local knowledge to create unique and extraordinary Ethiopian travel experiences tailored to you."
+          content="Explore Ethiopia tour itineraries—history, culture, festivals, wildlife, or adventure. Book custom Ethiopia tours and plan your dream trip today. "
         />
         <link
           rel="canonical"
@@ -43,11 +41,11 @@ const page = () => {
           link="/enquire"
         />
         <Intro
-          title="Your pathfinder to extraordinary Ethiopian experiences"
-          subtitle="Itineraries By Experience"
+          title="Ethiopia Tour Itineraries By Experience"
+          subtitle="Where will Ethiopia’s story take you?"
           description={[
-            "As seasoned experts, we pair passion with decades of local knowledge to create tours as unique as you.",
-            "With Sawla, every journey unfolds countless possibilities. Relish the richness of history, the depth of tribal cultures, the pulsating vibe of festivals, the adrenaline of adventures, and the beauty of Ethiopian landscapes – all tailored to your tastes.",
+            "From Lalibela’s rock-hewn churches to the flamingo-pink lakes of the Rift Valley, Ethiopia is a living kaleidoscope of history, culture, and raw beauty. Gelada monkeys graze alpine meadows, incense drifts through medieval monasteries, and desert sunsets ignite the Danakil salt flats. Whatever sparks your wanderlust—ancient legends, tribal encounters, wildlife shoots, or high-altitude treks—Sawla Tours turns Ethiopia’s diversity into an itinerary made for you. ",
+            "Browse our Ethiopia Tour Itineraries by Experience below, then let our specialists stitch destinations, dates, and dreams into one seamless journey.",
           ]}
           lr
           link="#top-tours"
