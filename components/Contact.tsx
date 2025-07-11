@@ -174,7 +174,7 @@ const Contact = () => {
             value={phone}
           />
           <textarea
-            placeholder="Message"
+            placeholder="Message (share every detail that inspires your dream trip)"
             className="field"
             required
             onChange={(e) => setMessage(e.target.value)}

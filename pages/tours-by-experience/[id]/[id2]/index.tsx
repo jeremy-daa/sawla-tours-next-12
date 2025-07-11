@@ -21,17 +21,14 @@ type params = {
 };
 
 const page = ({ id, id2 }: params) => {
-  const itinerary = getItinerary(Number(id2), Number(id));
-
+  const itinerary = getItinerary(id2, id);
   return (
     <>
       <Head>
-        <title>
-          {itinerary ? itinerary.title + " - Sawla Tours" : "Not Found"}
-        </title>
+        <title>{itinerary ? itinerary.metaTitle : "Not Found"}</title>
         <meta
           name="description"
-          content={itinerary ? itinerary.description : "Not Found"}
+          content={itinerary ? itinerary.metaDescription : "Not Found"}
         />
         <link
           rel="canonical"

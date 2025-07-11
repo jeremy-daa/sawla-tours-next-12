@@ -8,8 +8,9 @@ import Head from "next/head";
 
 import React from "react";
 const metadata = {
-  title: "About Sawla Tours | Your Trusted Ethiopian Travel Experts",
-  description: `Discover Sawla Tours, your trusted Ethiopian travel experts. With a passionate team and unparalleled industry knowledge, we provide professional guidance through the vast landscapes of Ethiopia, ensuring unforgettable adventures.`,
+  title:
+    "About Sawla Tours – Your Ethiopia Bespoke Tours & Luxury Adventure Architects",
+  description: `Discover Sawla Tours: Ethiopia bespoke tours, private Ethiopia adventures, and luxury Ethiopia tours crafted by expert local guides. Contact us to plan your journey.`,
 };
 const page = () => {
   return (
@@ -35,8 +36,9 @@ const page = () => {
           title="Meet Sawla Tours"
           subtitle="Your Ethiopian Adventure Architects"
           description={[
-            "We are Sawla Tours - a team of seasoned Ethiopian tourism professionals, united by passion and unparalleled industry knowledge. Our distinct blend of expertise and professionalism makes us your trustworthy compass in navigating the vast landscapes of Ethiopian adventures.",
-            "As you journey with us, prepare to be immersed in Ethiopia's breathtaking beauty, crafting unforgettable experiences along the way. At Sawla, we pride ourselves on our exceptional service quality and accessibility - making us your one-stop solution for all travel inquiries. From arranging top-notch facilities to curating end-to-end services, we've got your travel needs covered.",
+            "We are Sawla Tours – a team of seasoned Ethiopian tourism professionals united by passion and unparalleled industry knowledge. Widely recognized as the Best Ethiopia Travel Company, we’re more than just an Ethiopian tour operator – we’re your partners in crafting bespoke Ethiopia tours that linger in memory long after you return home. Our team blends deep local insight with white-glove service to guide high-end international travelers through Ethiopia’s most breathtaking landscapes and cultural treasures.",
+            "As you travel with us, prepare to be immersed in Ethiopia’s beauty, crafting unforgettable moments along the way. At Sawla, we pride ourselves on exceptional service quality and accessibility, making us your one-stop solution for all travel inquiries. From arranging top-notch lodges to curating luxury Ethiopia tours, we cover every detail to match your interests and comfort level.",
+            "The secret to our success? A perfect blend of passion, expertise, and service that turns your journey into a private Ethiopia adventure. Sit back and relax: reach out to us, share your dream destination, and let our dedicated team turn it into your most cherished memory. With Sawla Tours, your unforgettable Ethiopian adventure is just a call or an email away.",
           ]}
           link="#why"
           button="Why Sawla Tours?"
@@ -50,63 +52,69 @@ const page = () => {
           title="Why Travel with Sawla Tours?"
           description={[
             {
-              title: "1. Unparalleled Personal Service & Expertise",
+              title: "A Leading and Trusted Ethiopia Tour Operator",
               description: [
-                "Our experienced expedition leaders provide firsthand knowledge and expert guidance at every step, ensuring a trip tailored to perfection. Count on our specialist travel consultants for insightful advice and meticulous planning.",
+                "Looking for an Ethiopia tour operator that goes beyond the ordinary? Choose Sawla Tours—recognized by many as the Best Ethiopia Tour Operator—for truly customized Ethiopia tours that reflect your travel vision. Here’s what makes us the trusted choice for travelers from around the world:",
+              ],
+            },
+            {
+              title: "1. Personalized Expertise",
+              description: [
+                "Our seasoned expedition leaders and specialist travel consultants bring deep insight and firsthand knowledge to every trip. Expect thoughtful guidance, flexible planning, and a journey tailored just for you.",
               ],
             },
             {
               title: "2. Genuine Passion",
               description: [
-                "Our team's love for travel and unparalleled service makes each experience unique.",
+                "Travel isn’t just business—it’s our way of life. Our team’s enthusiasm infuses every experience with warmth and authenticity.",
               ],
             },
             {
-              title: "3. Tailor-Made Holidays",
+              title: "3. Customized Ethiopia Tours",
               description: [
-                "Individual approach, unforgettable experiences. We celebrate your uniqueness and go above and beyond to design itineraries that surpass your expectations with unforgettable travel experiences. No two Sawla trips are the same and we take great pride in a bespoke approach, working with you to create your perfect trip.",
+                "No two Sawla journeys are alike. We take pride in designing bespoke itineraries that reflect your interests, pace, and travel dreams. Your story deserves more than a template—it deserves a one-of-a-kind adventure.",
               ],
             },
             {
-              title: "4. Total Flexibility",
+              title: "4. Flexibility & Freedom",
               description: [
-                "As a small, independent, family-owned business, we pride ourselves on accommodating changes to your booking, offering a level of flexibility larger operators simply can't match.",
+                "As a small, family-owned business, we offer levels of flexibility the big names can’t match. Need to tweak your plan? We’re here to make it work.",
               ],
             },
             {
-              title: "5. Lightning-Fast Responses",
+              title: "5. Lightning-Fast Communication",
               description: [
-                "Our Ethiopia travel specialists waste no time in addressing your inquiries and concerns. Expect prompt and efficient communication.",
+                "We know how important timely communication is. Expect prompt, clear responses from our Ethiopia travel experts—every time.",
               ],
             },
             {
-              title: "6. Top-Notch Guides",
+              title: "6. Exceptional Local Guides",
               description: [
-                "Our handpicked guides are passionate about sharing their deep knowledge and love for Ethiopia. Prepare for an unforgettable journey with their expertise.",
+                "Our handpicked guides are storytellers, historians, and passionate locals eager to share Ethiopia’s wonders. Their depth of knowledge transforms good trips into great ones.",
               ],
             },
             {
-              title: "7. Glowing Recommendations",
+              title: "7. Trusted by Travelers",
               description: [
-                "With two-thirds of our bookings coming from repeat clients or referrals, our dedication to crafting unforgettable experiences speaks for itself.",
+                "Over 70% of our travelers come from repeat bookings or personal referrals. Our service speaks for itself—and keeps our clients coming back.",
               ],
             },
             {
               title: "8. Responsible Travel",
               description: [
-                "We are committed to preserving the incredible destinations we visit. By collaborating with NGOs, communities, and local representatives, we promote sustainable and conscious travel.",
+                "We champion ethical tourism by working with local communities, NGOs, and conservation initiatives. Every trip contributes to protecting the places we love.",
               ],
             },
             {
-              title: "9. Vivid Itineraries & Quotations",
+              title: "9. Visually Engaging Itineraries",
               description: [
-                "Your custom-designed trip will be presented in a visually appealing format, complete with country facts, maps, images, and transparent pricing details.",
+                "We don’t just send you a PDF—we deliver stunning, information-rich itineraries with maps, highlights, and transparent pricing so you can feel excited and informed.",
               ],
             },
             {
-              title: "10. Continuous Improvement",
+              title: "10. Always Getting Better",
               description: [
-                "With years of experience, we continuously refine our offerings based on valuable client feedback, ensuring that every trip gets better and better. In-Depth Experience: Our extensive knowledge fulfills your desires, creating an unforgettable holiday.",
+                "Years of experience and client feedback drive us to continuously improve, refine, and elevate every journey we create.",
               ],
             },
           ]}
@@ -114,59 +122,62 @@ const page = () => {
       </div>
       <div id="how">
         <ItineraryDescription
-          title="How we work"
+          title="How We Work: Tailor-Made Travel Planning with Sawla Tours"
+          description={[
+            "Embarking on the journey of a lifetime takes more than logistics—it requires passion, precision, and a deep understanding of what makes travel meaningful. At Sawla Tours, we specialize in tailor-made travel planning across Ethiopia. From your first inquiry to your return flight home, we turn your dreams into curated experiences rich with cultural depth and natural beauty.",
+          ]}
           itineraries={[
             {
-              title: "Our First Conversation",
+              title: "1. Our First Conversation",
               image: Images.hamer2,
               description: [
-                "The first step in planning your adventure begins with an open and genuine conversation. We want to get to know you inside out. Tell us about your past travels, your unique preferences, your specific interests, and even your budget. By understanding who you are, we can determine if we're the perfect match for each other.",
+                "The first step in planning your adventure begins with an open and genuine conversation. We want to get to know you more. Tell us about your past travels, your unique preferences, your specific interests, and even your budget. By understanding who you are, we can determine if we're the perfect match for each other. This personal discussion ensures your customized Ethiopia tours match your unique style.",
               ],
             },
             {
-              title: "Getting Down to Business",
+              title: "2. Getting Down to Business",
               image: Images.benna1,
               description: [
                 "Once we're ready to dive into the nitty-gritty, we'll establish your desired trip and set specific travel dates. We'll guide you through the optimal destinations based on the time of year and narrow down your options to precise regions and dates. Our meticulous approach ensures that every detail is taken into account.",
               ],
             },
             {
-              title: "Creating Your Perfect Journey",
+              title: "3. Creating Your Perfect Journey",
               image: Images.lalibela5,
               description: [
                 "Crafting your perfect journey is our utmost priority. We carefully curate the safari lodges and hotels, determining the number of nights you should spend in each location and the activities that will make your heart soar. We'll also assist with flight arrangements, ensuring you have more time to immerse yourself in the breathtaking landscapes. Within one to two days, we'll provide you with a comprehensive itinerary and the proposed tour cost. Remember, this is just the beginning, and we can always refine the plan.",
               ],
             },
             {
-              title: "Adding in the Little Details",
+              title: "4. Adding in the Little Details",
               image: Images.simien4,
               description: [
                 "But it's the little details that truly make a difference. We'll help you select the best tours, dining options, and additional activities that will create indelible memories. Our personalized ideas and recommendations are tailored to your desires, ensuring an extraordinary journey. Once everything is in place, we'll confirm your accommodations, flights and others and request a deposit of 25% of the total trip cost. The final payment is due 60 days before your departure.",
               ],
             },
             {
-              title: "Fleshing Things Out",
+              title: "5. Fleshing Things Out",
               image: Images.danakil2,
               description: [
                 "If you feel the need to fine-tune your itinerary even further, we're here for you. We won't rest until you're completely satisfied with every aspect of your journey. Your contentment is our top priority.",
               ],
             },
             {
-              title: "Your Trip Preparation",
+              title: "6. Your Trip Preparation",
               image: Images.bale1,
               description: [
                 "As your departure date approaches, we'll send you a Preparation Package containing your itinerary, packing list, and other essential details. Four weeks before your trip, you'll receive the final itinerary, along with contact information for our dedicated personnel who will be there to assist you. We want you to feel secure and fully informed, so we'll provide e-tickets and copies of this information for your loved ones.",
               ],
             },
             {
-              title: "Bon Voyage",
+              title: "7. Bon Voyage",
               image: Images.danakil3,
               description: [
                 "When your adventure begins, rest assured that we'll be in constant communication with our contacts at each location, ensuring everything runs smoothly. We're only a phone call away if you need any assistance or have concerns during your journey. Bon voyage!",
               ],
             },
             {
-              title: "When You Return",
+              title: "8. When You Return",
               image: Images.abay1,
               description: [
                 "Upon your return, we eagerly await your stories and feedback. Your candid input is invaluable to us, as it helps us enhance our service. We're honored that many of our travelers become repeat customers, and we hope you'll catch the travel bug and plan your next journey with us.",

@@ -299,35 +299,35 @@ export const ToursByExperienceArray: Package[] = [
     title: "Historic & Cultural Tours",
     description:
       "Embark on an extraordinary journey through Ethiopia's Historic Tours, where ancient wonders and vibrant cultures intertwine harmoniously. Discover the storied treasures that define Ethiopia's identity, from the rock-hewn churches of Tigray to the awe-inspiring city of Axum. Traverse the famed Historic Route, immersing yourself in architectural marvels and breathtaking landscapes, while uncovering hidden gems that captivate the intrepid explorer. Ethiopia's Historic and Cultural Tours offer an unforgettable odyssey, celebrating a rich history and diverse cultures untouched by colonialism.",
-    link: "/tours-by-experience/1",
+    link: "/tours-by-experience/historic-and-cultural-tours",
     image: Images.axum2,
   },
   {
     title: "Tribal Ethiopia Tours",
     description:
       "Explore the richness of Ethiopia's Cultural Tours, where diverse cultures converge. Experience the vibrant tapestry of cultural diversity unlike anywhere else in Africa. From stunning landscapes to iconic monuments and fascinating wildlife, every part of your journey is infused with a vibrant cultural essence that brings it to life.",
-    link: "/tours-by-experience/2",
+    link: "/tours-by-experience/tribal-cultural-ethiopia-tours",
     image: Images.benna1,
   },
   {
     title: "Ethiopia Festival Tours",
     description:
       "Experience the vibrant world of Ethiopian festivals, where ancient traditions come alive through colorful celebrations and powerful spiritual energy. Immerse yourself in the heart and soul of Ethiopian culture, creating unforgettable moments that will stay with you forever.",
-    link: "/tours-by-experience/3",
+    link: "/tours-by-experience/ethiopia-festival-tours",
     image: Images.gonder2,
   },
   {
     title: "Adventure Tours",
     description:
       "The Adventure Tours in Ethiopia offer a thrilling experience for those seeking an adrenaline-packed vacation. The tours include trekking through stunning landscapes, such as the Simien and Bale Mountains, where you will encounter unique flora and fauna, including the iconic Gelada baboons and the elusive Ethiopian wolf. For rock climbers, experienced guides will help navigate the challenging terrain, ensuring safety at all times. Paragliding tours offer a chance to soar above Ethiopia's stunning landscapes, while white water rafting tours provide a wild ride through thrilling rapids. Hot air ballooning tours offer a tranquil journey through Ethiopia's skies, providing breathtaking views of the country's majestic landscapes. Throughout your journey, experienced guides will ensure your safety and comfort. Come explore the wild side of Ethiopia and discover the adventure of a lifetime!",
-    link: "/tours-by-experience/4",
+    link: "/tours-by-experience/ethiopia-adventure-tours",
     image: Images.paragliding1,
   },
   {
     title: "Photography Tours",
     description:
       "Photography tour in Ethiopia, a paradise for photographers. Capture stunning images of the fine church architecture of Lalibela, the breathtaking landscapes of the Ethiopian Highlands, vibrant festivals, bustling local markets, the unique lifestyles of the Omo Valley tribes, and the colorful birdlife of Ethiopia. The opportunities for capturing stunning photographs in Ethiopia are endless, and we at Sawla Tours are dedicated to providing exceptional tour itineraries that cater specifically to the needs of photographers.",
-    link: "/tours-by-experience/5",
+    link: "/tours-by-experience/ethiopia-photography-tours",
     image: Images.intro2,
   },
 
@@ -335,28 +335,28 @@ export const ToursByExperienceArray: Package[] = [
     title: "Birdwatching Tours",
     description:
       "Ethiopia, a haven for bird enthusiasts, unveils a treasure trove of avian wonders. From the endemic Ethiopian Siskin to the elusive Blue-winged Goose, the country's diverse landscapes and abundant habitats make it a paradise for birding, offering a feast for both the eyes and the soul.",
-    link: "/tours-by-experience/6",
+    link: "/tours-by-experience/ethiopia-birdwatching-tours",
     image: Images.bird2,
   },
   {
     title: "Wildlife",
     description:
       "Ethiopia is a country with diverse landscapes and abundant wildlife. If you are a wildlife enthusiast, you are in for a treat. Ethiopia offers some of the best wildlife tours in Africa, with its stunning national parks, game reserves, and sanctuaries that provide visitors with an opportunity to see a wide range of animals in their natural habitat.",
-    link: "/tours-by-experience/7",
+    link: "/tours-by-experience/ethiopia-wildlife-tours",
     image: Images.simien5,
   },
   {
     title: "Business Trip",
     description:
       "Unveil the wonders of Ethiopia even with limited time, as we curate unforgettable short-duration trips tailored to your schedule",
-    link: "/tours-by-experience/8",
+    link: "/tours-by-experience/addis-ababa-day-tours",
     image: Images.addis1,
   },
   {
     title: "Special Interest",
     description:
       "Special interest tours in Ethiopia offer travelers the opportunity to delve deeper into the country's unique culture, history, and natural wonders based on their interests. Ethiopia is a country of diverse landscapes, cultures, and traditions, and special interest tours can help travelers to explore and experience the country's hidden gems in a more meaningful way.",
-    link: "/tours-by-experience/9",
+    link: "/tours-by-experience/ethiopia-special-interest-tours",
     image: Images.bale1,
   },
 ];
@@ -575,39 +575,39 @@ export const TopDestinationsRoutes: Route[] = [
 export const ToursByExperienceRoutes: Route[] = [
   {
     title: "Historic and Cultural Tours",
-    link: "/tours-by-experience/1",
+    link: "/tours-by-experience/historic-and-cultural-tours",
   },
   {
     title: "Tribal Ethiopia Tours",
-    link: "/tours-by-experience/2",
+    link: "/tours-by-experience/tribal-cultural-ethiopia-tours",
   },
   {
     title: "Ethiopia Festival Tours",
-    link: "/tours-by-experience/3",
+    link: "/tours-by-experience/ethiopia-festival-tours",
   },
   {
     title: "Adventure Tours",
-    link: "/tours-by-experience/4",
+    link: "/tours-by-experience/ethiopia-adventure-tours",
   },
   {
     title: "Photography Tours",
-    link: "/tours-by-experience/5",
+    link: "/tours-by-experience/ethiopia-photography-tours",
   },
   {
     title: "Birdwatching Tours",
-    link: "/tours-by-experience/6",
+    link: "/tours-by-experience/ethiopia-birdwatching-tours",
   },
   {
     title: "Wildlife",
-    link: "/tours-by-experience/7",
+    link: "/tours-by-experience/ethiopia-wildlife-tours",
   },
   {
     title: "Business Trip",
-    link: "/tours-by-experience/8",
+    link: "/tours-by-experience/addis-ababa-day-tours",
   },
   {
     title: "Special Interest",
-    link: "/tours-by-experience/9",
+    link: "/tours-by-experience/ethiopia-special-interest-tours",
   },
 ];
 export const EthiopiaGuideRoutes: Route[] = [

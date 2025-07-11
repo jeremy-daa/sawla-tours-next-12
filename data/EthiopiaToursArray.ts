@@ -5,7 +5,7 @@ export interface Tour {
   slug?: string;
   metaTitle?: string;
   metaDescription?: string;
-  experience?: number;
+  experience?: number | string;
   title: string;
   description: string;
   image: string;
@@ -55,7 +55,7 @@ export interface Tour {
 export const EthiopiaToursArray: Tour[] = [
   {
     id: 1,
-    experience: 1,
+    experience: "historic-and-cultural-tours",
     slug: "ethiopias-historic-tours",
     metaTitle: "Explore Ethiopia’s Historic Tours | Heritage & Culture",
     metaDescription:
@@ -168,7 +168,7 @@ export const EthiopiaToursArray: Tour[] = [
   },
   {
     id: 2,
-    experience: 2,
+    experience: "tribal-cultural-ethiopia-tours",
     title: "Tribal Ethiopia Tours",
     slug: "tribal-cultural-tours-of-ethiopia",
     metaTitle: "Tribal & Cultural Tours of Ethiopia | Sawla Tours",
@@ -203,7 +203,7 @@ export const EthiopiaToursArray: Tour[] = [
         img1: Images.karo1,
         img2: Images.hamer1,
         button: "MORE ON THE ITINERARY",
-        link: "/tours-by-experience/2",
+        link: "/tours-by-experience/tribal-cultural-ethiopia-tours",
         lr: false,
       },
     ],
@@ -291,7 +291,7 @@ export const EthiopiaToursArray: Tour[] = [
   },
   {
     id: 3,
-    experience: 3,
+    experience: "ethiopia-festival-tours",
     slug: "ethiopian-festival-tours",
     metaTitle: "Ethiopian Festival Tours & Cultural Events | Sawla Tours",
     metaDescription:
@@ -389,7 +389,7 @@ export const EthiopiaToursArray: Tour[] = [
   },
   {
     id: 4,
-    experience: 4,
+    experience: "ethiopia-adventure-tours",
     slug: "adventure-tours-ethiopia",
     metaTitle: "Adventure Tours in Ethiopia | Trekking, Climbing & Rafting",
     metaDescription:
@@ -482,7 +482,7 @@ export const EthiopiaToursArray: Tour[] = [
   },
   {
     id: 5,
-    experience: 5,
+    experience: "ethiopia-photography-tours",
     title: "Photography Tours in Ethiopia",
     slug: "photography-tours-ethiopia",
     metaTitle: "Ethiopia Photo Tour | Tribal, wildlife & Festival Photography",
@@ -508,7 +508,7 @@ export const EthiopiaToursArray: Tour[] = [
         img1: Images.photo2,
         img2: Images.photo3,
         button: "Explore Itineraries",
-        link: "/tours-by-experience/5",
+        link: "/tours-by-experience/ethiopia-photography-tours",
       },
       // {
       //   title: "A Nirvana for Photography Buffs",
@@ -551,7 +551,7 @@ export const EthiopiaToursArray: Tour[] = [
   },
   {
     id: 6,
-    experience: 6,
+    experience: "ethiopia-birdwatching-tours",
     title: "Birdwatching Tours in Ethiopia",
     slug: "bird-watching-tours-ethiopia",
     metaTitle: "Bird-Watching Tours in Ethiopia | Ethiopia Birding Safari",
@@ -605,7 +605,7 @@ export const EthiopiaToursArray: Tour[] = [
   },
   {
     id: 7,
-    experience: 7,
+    experience: "ethiopia-wildlife-tours",
     slug: "wildlife-tours-ethiopia",
     metaTitle: "Sawla Tours – Wildlife Tours in Ethiopia & Safari Adventures",
     metaDescription:
@@ -736,7 +736,7 @@ export const EthiopiaToursArray: Tour[] = [
   },
   {
     id: 8,
-    experience: 9,
+    experience: "ethiopia-special-interest-tours",
     slug: "special-interest-tours-ethiopia",
     metaTitle:
       "Sawla Tours – Special Interest Tours in Ethiopia: Coffee & Geology",
@@ -836,7 +836,7 @@ export const EthiopiaToursArray: Tour[] = [
   },
   {
     id: 9,
-    experience: 8,
+    experience: "addis-ababa-day-tours",
     slug: "addis-ababa-day-business-tours",
     metaTitle: "Addis Ababa Day Tours & Ethiopia Business Travel Tours",
     metaDescription:
@@ -919,7 +919,9 @@ export const EthiopiaToursArray: Tour[] = [
 ];
 
 export const getTour = (slug: string) => {
-  const result = EthiopiaToursArray.filter((tour) => tour.slug === slug);
+  const result = EthiopiaToursArray.filter(
+    (tour) => tour.slug === slug || tour.id === Number(slug)
+  );
   if (result.length === 0) {
     return null;
   }

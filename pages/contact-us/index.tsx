@@ -31,9 +31,7 @@ const page = () => {
       <Intro
         title="Get in Touch"
         description={[
-          "We aim to provide you with an exceptional travel experience, and we are always available to assist you with any inquiries you may have. Your journey, your way, is our priority.",
-          "To contact us, kindly complete the contact form below and provide us with as much information as possible. We cherish feedback from our customers and would highly appreciate any reviews or insights you may have.",
-          "We endeavor to respond to your queries within 24 hours during our office hours, which are from 09:00 to 17:30 on Mondays to Fridays, and from 10:00 to 13:00 on Saturdays.",
+          "At Sawla Tours, your journey is our priority. Reach our team instantly through the Ethiopia travel agency contact form or by phone and WhatsApp. Whether you’re ready to book an Ethiopia tour or just starting to plan an Ethiopia trip, our specialists respond within 24 hours (09 : 00 – 17 : 30 Mon–Fri, 10 : 00 – 13 : 00 Sat).",
         ]}
         img1={Images.karo1}
         img2={Images.suri1}

@@ -29,9 +29,10 @@ const page = () => {
       <Intro
         title="Get in Touch"
         description={[
-          "We aim to provide you with an exceptional travel experience, and we are always available to assist you with any inquiries you may have. Your journey, your way, is our priority.",
-          "To contact us, kindly complete the contact form below and provide us with as much information as possible. We cherish feedback from our customers and would highly appreciate any reviews or insights you may have.",
-          "We endeavor to respond to your queries within 48 hours during our office hours, which are from 09:00 to 17:30 on Mondays to Fridays, and from 10:00 to 13:00 on Saturdays.",
+          "Sawla Tours is a boutique, deluxe tour company specializing in custom Ethiopia tours crafted by passionate local experts. Whether you're drawn to majestic highlands, ancient history, or vibrant traditions, we’ll tailor your experience to match your unique interests.",
+          "Over 80% of our travelers return or are referred—a testament to the care, attention, and authenticity we bring to every itinerary. For us, adventure is personal. That’s why we take the time to understand your dreams and co-create an unforgettable journey that reflects you.",
+          "Our bespoke Ethiopia tour offer more than sightseeing. They immerse you in living culture, dramatic landscapes, and once-in-a-lifetime encounters—guided by professionals who know Ethiopia inside out.",
+          "Simply fill out the form below and one of our travel designers will get in touch to start shaping your extraordinary Ethiopian adventure.",
         ]}
         img1={Images.karo1}
         img2={Images.suri1}

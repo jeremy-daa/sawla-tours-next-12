@@ -1,7 +1,10 @@
 import Images from "./Images";
 export interface Itinerary {
   id: number;
-  experience: number;
+  experience: number | string;
+  slug?: string;
+  metaTitle?: string;
+  metaDescription?: string;
   title: string;
   description: string;
   image: string;
@@ -40,7 +43,7 @@ const images = Images;
 export const ExperiencesPackageItineraryArray: Itinerary[] = [
   {
     id: 1,
-    experience: 1,
+    experience: "historic-and-cultural-tours",
     title: "Footsteps of History",
     index: false,
     image: images.axum3,
@@ -215,7 +218,7 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
   },
   {
     id: 2,
-    experience: 1,
+    experience: "historic-and-cultural-tours",
     title: "Ethiopian Odyssey",
     index: false,
     image: images.lalibela5,
@@ -452,7 +455,7 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
   },
   {
     id: 3,
-    experience: 1,
+    experience: "historic-and-cultural-tours",
     title: "Enchanting Ethiopia",
     index: false,
     image: images.yemata2,
@@ -675,7 +678,7 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
   },
   {
     id: 4,
-    experience: 1,
+    experience: "historic-and-cultural-tours",
     title: "Ethiopian Splendors",
     index: false,
     image: images.lalibela4,
@@ -894,7 +897,7 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
   },
   {
     id: 5,
-    experience: 1,
+    experience: "historic-and-cultural-tours",
     title: "Lost in Time",
     index: false,
     image: images.danakil3,
@@ -1147,7 +1150,7 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
   },
   {
     id: 6,
-    experience: 1,
+    experience: "historic-and-cultural-tours",
     title: "Journey Through Time",
     index: false,
     image: images.axum4,
@@ -1361,7 +1364,11 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
   },
   {
     id: 1,
-    experience: 2,
+    slug: "omo-valley-tribal-tour",
+    metaTitle: "Enchanting Omo Valley Tribal Tour | 9-Day Ethiopia",
+    metaDescription:
+      "Join our 9-day Omo Valley tour for intimate tribal encounters, vibrant markets and Rift Valley landscapes—secure your spot with Sawla Tours today.",
+    experience: "tribal-cultural-ethiopia-tours",
     title: "Enchanting Ethiopia",
     index: false,
     image: images.omo3,
@@ -1370,11 +1377,10 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
     linkname: "Start Planning",
     intro: [
       {
-        title: "Introducing Enchanting Ethiopia",
+        title: "Enchanting Ethiopia: 9-Day Omo Valley Tour",
         subtitle: "A Cultural Odyssey through the South Omo Valley",
         description: [
-          "Embark on a remarkable journey through the captivating landscapes and vibrant cultures of Ethiopia's South Omo Valley. This nine-day expedition discovers the hidden gems and cultural wonders of this extraordinary region. From the awe-inspiring Rift Valley Lakes teeming with birdlife and wildlife to the fascinating encounters with diverse tribes boasting unique customs, your adventure promises to be a feast for the senses.",
-          "Immerse yourself in the highly adorned Hamer villages and witness the renowned Mursi tribe, renowned for their striking lip plates. Traverse the scenic terrains, explore national parks, and indulge in the artistic genius of the Karo people's body painting. Delve into the cultural tapestry of Ethiopia, where ancient traditions and modern life intertwine harmoniously. Join us on this artistically curated voyage, where every step reveals the allure of Ethiopia's rich heritage. ",
+          "Embark on an immersive Omo Valley tour where Ethiopia’s southern frontier reveals a mosaic of tribes, wildlife-rich lakes and cinematic savannahs. Over nine days you’ll trace the Rift Valley to Hamer hamlets, meet Mursi women famed for lip plates, and witness the body-painting artistry of the Kara—an unrivalled Omo Valley tribal tour package that celebrates living tradition while showcasing dramatic landscapes.",
         ],
         lr: true,
         img1: images.omo1,
@@ -1389,39 +1395,34 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
         description: "",
         destinations: [
           {
+            title: "Addis Ababa",
+            description:
+              "Begin your journey in Ethiopia's vibrant capital, where you'll explore the Ethnological Museum and the breathtaking Holy Trinity Cathedral, offering insights into the nation's diverse heritage.",
+          },
+          {
             title: "Rift Valley Lakes",
             description:
-              "Delight in the abundance of birdlife and wildlife as you explore the picturesque lakeshores of Ethiopia's Rift Valley.",
+              "Experience the stunning Rift Valley Lakes, known for their rich birdlife and scenic beauty, providing a perfect backdrop for your Omo Valley adventure.",
           },
           {
-            title: "Tribal Encounters",
+            title: "South Omo Valley Tribes",
             description:
-              "Immerse yourself in the rich cultural diversity of the Southern Omo Valley, engaging with tribes renowned for their unique customs and practices.",
-          },
-          {
-            title: "Hamer Villages",
-            description:
-              "Witness the vibrant beauty of the Hamer people, adorned with intricate jewelry, elaborate costumes, and their distinctive hair styling.",
-          },
-          {
-            title: "The Mursi Tribe",
-            description:
-              "Encounter the iconic Mursi tribe, famous for their lip plates, and gain insight into their ancient traditions and way of life.",
+              "Immerse yourself in the rich cultural tapestry of the South Omo Valley, where you'll encounter the Hamer, Mursi, Dassenech, and Kara tribes, each with their unique traditions and way of life.",
           },
           {
             title: "Mago National Park",
             description:
-              "Embark on an excursion to the park, home to stunning wildlife and an opportunity to visit a Mursi village.",
+              "Explore the wildlife-rich Mago National Park, home to diverse flora and fauna, and visit Mursi villages known for their distinctive lip plates.",
           },
           {
             title: "Dassenech Village",
             description:
-              "Cross the Omo River to reach the traditional Dassenech village and learn about their agro-pastoralist lifestyle.",
+              "Cross the Omo River by canoe to visit the Dassenech village, where you'll learn about their agro-pastoral lifestyle and cultural practices.",
           },
           {
-            title: "Kara Tribe",
+            title: "Kara Cliffs of Korcho",
             description:
-              "Discover the Karo tribe and their unique body painting techniques, which create intricate patterns on their faces and bodies.",
+              "Witness the intricate body-painting rituals of the Kara tribe, set against the breathtaking backdrop of the Omo River cliffs.",
           },
         ],
       },
@@ -1434,39 +1435,38 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
             title: "Day 1",
             description: "Arrive in Addis Ababa & city tour",
           },
-
           {
             title: "Day 2",
             description: "Drive to Arba Minch",
           },
           {
             title: "Day 3",
-            description: "Drive to Jinka via Konso",
+            description: "Boat trip on Lake Chamo & drive to Jinka",
           },
           {
             title: "Day 4",
-            description:
-              "Excursion to Mago National Park and visit Mursi tribe then drive to Turmi",
+            description: "Mago National Park & Mursi tribe visit",
           },
           {
             title: "Day 5",
-            description: "Excursion to visit Dassenech",
+            description: "Dassenech village & Hamer hamlets",
           },
           {
             title: "Day 6",
-            description: "Excursion to visit Kara",
+
+            description: "Kara tribe excursion (Korcho)",
           },
           {
             title: "Day 7",
-            description: "Drive to Arba Minch via Elbore",
+            description: "Drive to Arba Minch via Arbore",
           },
           {
             title: "Day 8",
-            description: "Excursion to visit Dorze and fly to Addis Ababa",
+            description: "Visit Dorze village & drive to Addis Ababa",
           },
           {
             title: "Day 9",
-            description: "Departure",
+            description: "International departure",
           },
         ],
       },
@@ -1493,7 +1493,7 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
           image: images.hawassa1,
         },
         {
-          title: "DAY 3: DRIVE TO JINKA VIA KONSO",
+          title: "DAY 3: BOAT TRIP ON LAKE CHAMO",
           description: [
             "This morning, not far from Arba Minch, you will take a relaxing boat trip on Lake Chamo to spot wildlife such as crocodiles, and hippos as well as beautiful aquatic birds.",
             "Leaving Arba Minch behind, you drive to Jinka through dramatic scenery towards the heartland of the tribes of the South Omo Valley. En route, you stop at the village of Konso which is known for its distinctive religious and cultural traditions.",
@@ -1503,7 +1503,7 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
           image: images.konso2,
         },
         {
-          title: "DAY 4: EXCURSION TO MAGO NATIONAL PARK AND VISIT MURSI TRIBE",
+          title: "DAY 4: MAGO NATIONAL PARK & MURSI TRIBE",
           description: [
             "Today your journey begins early in the morning with an excursion to Mago National Park to visit the Mursi village. They are possibly the most famous residents of the South Omo Valley. The men of the Mursi tribe are renowned warriors, and Mursi women are famous for the lip plates they use for adornment. Learn about the incredibly unique culture.",
             "Having lunch in Jinka, continue to Turmi, crossing an area where Ari, Benna, and eventually Hamer people are living.",
@@ -1512,7 +1512,7 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
           image: images.mursi1,
         },
         {
-          title: "DAY 5: EXCURSION TO VISIT DASSENECH",
+          title: "DAY 5: EXCURSION TO VISIT DASSENECH & HAMER HAMLETS",
           description: [
             "After breakfast, your drive will take you through flat-open savannah land and go via Omorate on the eastern banks of the Omo River. Crossing the river by local dugout canoe, you reach the homeland of Dassenech and visit one of their villages. They are agro-pastoralists and herd cattle and practice flood retreat cultivation on both sides of the river.",
             "You return to Turmi and spend the afternoon visiting some small Hamer villages. The Hamer people are particularly beautiful and are most distinguishable by their hair, which they style into thick braids with red mud and lard. They wear thick copper bracelets and necklaces, and elaborate costumes with cowrie shells, beads, and leather.",
@@ -1521,7 +1521,7 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
           image: images.hamer2,
         },
         {
-          title: "DAY 6: EXCURSION TO VISIT KARA",
+          title: "DAY 6: EXCURSION TO KARA TRIBE (KORCHO)",
           description: [
             "This morning you take an excursion to Korcho and visit the Karo tribe who are very famous for their body painting. The Karo people use clays and locally available vegetable pigments to trace fantastic patterns on each other's faces, chests, arms, and legs. Karo men, as with neighboring tribes, are also famous for their unique hairstyle.",
             "Overnight in Turmi",
@@ -1559,7 +1559,11 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
   },
   {
     id: 2,
-    experience: 2,
+    slug: "colors-of-the-omo-valley",
+    metaTitle: "Colors of the Omo Valley | 8-Day Tribal Tour",
+    metaDescription:
+      "Join our 8-day Omo Valley tour for intimate tribal encounters, vibrant markets and Rift Valley scenery—book your Omo Valley tribal adventure today.",
+    experience: "tribal-cultural-ethiopia-tours",
     title: "Colors of the Omo Valley",
     index: false,
     image: images.omo2,
@@ -1568,11 +1572,11 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
     linkname: "Start Planning",
     intro: [
       {
-        title: "Introducing Colors of the Omo Valley",
+        title: "Colors of the Omo Valley | 8-Day Tribal Tour",
         subtitle: "An Exploration into Ethiopia's Tribal Heartland",
         description: [
-          "Embark on a journey of awe-inspiring beauty and cultural immersion as we venture into the heart of Ethiopia's Omo Valley. This extraordinary expedition will take you through a kaleidoscope of experiences, from the breathtaking landscapes of the Rift Valley Lakes to encounters with fascinating tribes whose rich traditions and vibrant way of life have captivated the world.",
-          "Prepare to be enthralled by the diverse avian and wildlife species that inhabit the region, and be enchanted by the extraordinary adornments of the Hamer and Mursi people, who proudly wear their heritage on their sleeves – or rather, their lips. With each passing day, you'll witness the wonders of nature and the tapestry of human culture intertwine, creating an unforgettable odyssey of discovery. Join us on this remarkable journey through Ethiopia's Omo Valley and be transported to a world where time-honored traditions and captivating landscapes converge in a mesmerizing symphony of colors, traditions, and authenticity. ",
+          "Embark on an Omo Valley tour that condenses Ethiopia’s most vivid tribal encounters into eight unforgettable days. Threading Rift-Valley lakes, Hamer hamlets and Mago’s savannahs, this Omo Valley tribal tour unveils lip-plate Mursi warriors, ochre-braided Hamer dancers and the Karo tribe body painting that turns river cliffs into open-air galleries.",
+          "Experience a living kaleidoscope where wild landscapes and enduring customs colour every moment.",
         ],
         lr: true,
         img1: images.omo1,
@@ -1587,40 +1591,40 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
         description: "",
         destinations: [
           {
+            title: "Addis Ababa",
+            description:
+              "Begin your journey in Ethiopia's vibrant capital, where you'll explore the Ethnological Museum and the breathtaking Holy Trinity Cathedral, offering insights into the nation's diverse heritage.",
+          },
+          {
             title: "Rift Valley Lakes",
             description:
-              "Discover the abundant birdlife and wildlife that grace the scenic shores of Ethiopia's Rift Valley.",
+              "Experience the stunning Rift Valley Lakes, known for their rich birdlife and scenic beauty, providing a perfect backdrop for your Omo Valley adventure.",
           },
           {
-            title: "Tribal Encounters",
+            title: "Mursi of Mago National Park",
             description:
-              "Immerse yourself in the cultural diversity of the region, engaging with tribes renowned for their unique customs and practices.",
+              "Encounter the iconic Mursi tribe, famous for their lip plates and warrior heritage, in the wildlife-rich Mago National Park.",
           },
           {
-            title: "Hamer Villages",
+            title: "Dassenech & Hamer Villages",
             description:
-              "Witness the vibrant beauty of the Hamer people, renowned for their elaborate hairstyles, copper jewelry, and colorful costumes.",
+              "Cross the Omo River by canoe to visit the Dassenech tribe, and explore the ochre-braided beauty of Hamer villages, known for their vibrant culture and traditions.",
           },
           {
-            title: "The Mursi Tribe",
+            title: "Karo Tribe Body Painting",
             description:
-              "Explore the world of the Mursi, known for their warrior heritage and the distinctive lip plates worn by women.",
+              "Witness the intricate body painting of the Karo tribe at Korcho bluff, where chalk-and-clay designs transform river cliffs into open-air galleries.",
           },
           {
-            title: "Mago National Park",
+            title: "Konso UNESCO Terraces",
             description:
-              "Journey into this national park for a glimpse into the daily lives and traditions of the Mursi tribe.",
+              "Explore the UNESCO-listed Konso terraces, with their maze-like stone villages and Waqa stelae, showcasing the unique agricultural practices of the Konso people.",
           },
-          {
-            title: "Dassenech Village",
 
-            description:
-              "Cross the Omo River by traditional canoe to reach the Dassenech village and learn about their agro-pastoralist lifestyle.",
-          },
           {
-            title: "Karo Tribe",
+            title: "Lake Chamo & Dorze",
             description:
-              "Encounter the Karo tribe and their incredible body painting techniques, which adorn their faces and bodies with intricate patterns.",
+              "Enjoy a hippo-filled boat cruise on Lake Chamo and visit the master weavers of the Dorze tribe in the highlands, known for their intricate textiles and traditional huts.",
           },
         ],
       },
@@ -1748,7 +1752,11 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
   },
   {
     id: 3,
-    experience: 2,
+    slug: "ethiopia-cultural-expeditions",
+    metaTitle: "Omo Valley Tour | Ethiopia Cultural Expeditions",
+    metaDescription:
+      "Book our 7-day Omo Valley tour—part of the premium Ethiopia Cultural Expeditions—for authentic Omo Valley Tribal Experiences & vibrant markets with Sawla Tours.",
+    experience: "tribal-cultural-ethiopia-tours",
     title: "Ethiopia's Enigmatic Tribes",
     index: false,
     image: images.karo1,
@@ -1757,12 +1765,11 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
     linkname: "Start Planning",
     intro: [
       {
-        title: "Introducing Ethiopia's Enigmatic Tribes",
+        title:
+          "Ethiopia Cultural Expeditions | 7-Day Omo Valley Tribal Experiences",
         subtitle: "A Journey through Cultural Diversity and Natural Splendor",
         description: [
-          "A captivating expedition to Ethiopia's Omo Valley, where a tapestry of ancient tribes and breathtaking landscapes awaits. This itinerary is tailor-made for the intrepid traveler with a passion for exploring indigenous tribes and their rich heritage. This extraordinary journey will immerse you in the cultural diversity and vibrant traditions of the region, as you encounter the renowned Hamer people, adorned in their distinctive attire and mesmerizing hairstyles, and witness the Mursi tribe's captivating lip plates.",
-          "Amidst the scenic beauty of Rift Valley Lakes and the lush greenery surrounding Arba Minch, you'll delve into the traditional lifestyle of the Dorze, famed for their exceptional weaving skills. Journey through picturesque villages, such as Konso and Turmi, where the customs of the Karo and Dassenech tribes will captivate your senses.",
-          "As you explore the wildlife-rich Mago National Park, you'll gain a profound appreciation for the unique culture and natural wonders that make Ethiopia's Omo Valley an unrivaled destination. Join us on this unforgettable voyage of discovery and be forever touched by the enchantment of Ethiopia's enigmatic tribes and awe-inspiring landscapes. ",
+          "Embark on an Omo Valley tour—the flagship of our Ethiopia Cultural Expeditions collection—where Rift-Valley lakes, savannah wildlife and clay-painted warriors converge. Over seven immersive days, this curated programme of Omo Valley Tribal Experiences carries you from Addis Ababa’s coffee houses to Mursi lip-plate villages, Kara body-painting ceremonies and Hamer dance grounds, wrapping each encounter in seamless logistics and expert interpretation.",
         ],
         lr: true,
         img1: images.omo1,
@@ -1777,34 +1784,39 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
         description: "",
         destinations: [
           {
-            title: "Rift Valley Lakes",
+            title: "Addis Ababa",
             description:
-              "Explore the scenic beauty of Ethiopia's Rift Valley and its abundant birdlife and wildlife.",
+              "Begin your journey in Ethiopia's vibrant capital, where you'll explore the Ethnological Museum and the breathtaking Holy Trinity Cathedral, offering insights into the nation's diverse heritage.",
           },
           {
-            title: "Tribal Encounters",
+            title: "Rift Valley Lakes",
             description:
-              "Engage with a region that boasts unparalleled cultural diversity, with the opportunity to interact with various indigenous tribes.",
+              "Experience the stunning Rift Valley Lakes, known for their rich birdlife and scenic beauty, providing a perfect backdrop for your Omo Valley adventure.",
+          },
+          {
+            title: "Konso Terraces",
+            description:
+              "Explore the UNESCO-listed Konso terraces, with their maze-like stone villages and Waqa stelae, showcasing the unique agricultural practices of the Konso people.",
+          },
+          {
+            title: "Kara Tribe Body Painting",
+            description:
+              "Witness the intricate body painting of the Kara tribe at Korcho bluff, where chalk-and-clay designs transform river cliffs into open-air galleries.",
           },
           {
             title: "Hamer Villages",
             description:
-              "Experience the highly adorned Hamer people and their intricate braided hairstyles, copper jewelry, and vibrant costumes.",
+              "Immerse yourself in the ochre-braided beauty of Hamer villages, known for their vibrant culture and traditions, including the famous bull-jumping ceremony.",
           },
           {
-            title: "The Mursi Tribe",
+            title: "Dassenech Canoe Crossing",
             description:
-              "Encounter the renowned Mursi tribe, famous for their iconic lip plates and distinct cultural traditions.",
+              "Cross the Omo River by canoe to visit the Dassenech tribe, where you'll learn about their agro-pastoral lifestyle and cultural practices.",
           },
           {
-            title: "Boat Trip on Lake Chamo",
+            title: "Mursi of Mago National Park",
             description:
-              "Enjoy a relaxing boat trip to spot wildlife, including crocodiles, hippos, and aquatic birds.",
-          },
-          {
-            title: "Karo Tribe",
-            description:
-              "Visit the Karo tribe and witness their exceptional body painting techniques, showcasing incredible patterns on their faces and bodies.",
+              "Encounter the iconic Mursi tribe, famous for their lip plates and warrior heritage, in the wildlife-rich and acacia-dotted Mago National Park.",
           },
         ],
       },
@@ -1908,7 +1920,12 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
   },
   {
     id: 4,
-    experience: 2,
+    slug: "ethiopia-cultural-journeys",
+    metaTitle: "Omo Valley Tour: 13-Day Ethiopia Cultural Journeys",
+    metaDescription:
+      "Secure your spot on our 13-day Omo Valley tour, part of elite Ethiopia Cultural Expeditions, and enjoy authentic Omo Valley Tribal Experiences.",
+
+    experience: "tribal-cultural-ethiopia-tours",
     title: "Discovering the Hidden Realms",
     index: false,
     image: images.surma1,
@@ -2142,7 +2159,11 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
   },
   {
     id: 5,
-    experience: 2,
+    experience: "tribal-cultural-ethiopia-tours",
+    slug: "custom-omo-valley-tour",
+    metaTitle: "Ethiopia Tribal Culture | Custom Omo Valley Tour",
+    metaDescription:
+      "Discover Ethiopia tribal culture on our custom Omo Valley tour—Hamer tribe ceremony, Mursi lip plates & Rift-Valley lakes. Book your adventure now!",
     title: "Unveiling Ethiopia's Tribal Tapestry",
     index: false,
     image: images.hamer2,
@@ -2151,12 +2172,10 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
     linkname: "Start Planning",
     intro: [
       {
-        title: "Introducing Unveiling Ethiopia's Tribal Tapestry",
-        subtitle: "Cultural Encounters and Scenic Splendors",
+        title: "Ethiopia Tribal Culture | Custom Omo Valley Tour",
+        subtitle: "Omo Valley Tour: 13-Day Ethiopia Cultural Journeys",
         description: [
-          "An enchanting journey through the diverse landscapes and vibrant cultures of Ethiopia's enigmatic South. This extraordinary expedition will immerse you in the awe-inspiring beauty of Rift Valley Lakes, where a plethora of birdlife and wildlife thrive. Prepare to be captivated by the cultural tapestry of the region as you encounter the highly adorned Hamer villages and the famous Mursi tribe with their mesmerizing lip plates.",
-          "Traverse the dramatic scenery of the South Omo Valley, visiting the Karo and Dassenech tribes known for their unique body painting and agro-pastoralist lifestyles. From the archaeological wonders of Konso to the serene shores of Lake Chamo, every moment of this journey will leave you spellbound.",
-          "Experience the warm hospitality of Arba Minch and Hawassa, and indulge in the vibrant flavors of Ethiopia's renowned coffee plantations. Join us on this extraordinary adventure as we unveil the tribal treasures and lakeside wonders of Ethiopia's enigmatic south. ",
+          "Immerse yourself in Ethiopia tribal culture on this 11-day odyssey across the country’s enigmatic south. Designed as a custom Omo Valley tour, the route leads from Addis Ababa’s museums to Rift-Valley lakes, then deep into Hamer, Karo, Dassenech and Mursi territory, where a new generation of travellers comes seeking the famed Hamer tribe ceremony and other living traditions.",
         ],
         lr: true,
         img1: images.hamer2,
@@ -2171,29 +2190,44 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
         description: "",
         destinations: [
           {
-            title: "Rift Valley Lakes",
+            title: "Addis Ababa",
             description:
-              "Discover the remarkable birdlife and diverse wildlife found in the stunning Rift Valley Lakes region.",
+              "Begin your journey in Ethiopia's vibrant capital, where you'll explore the Ethnological Museum and the breathtaking Holy Trinity Cathedral, offering insights into the nation's diverse heritage.",
           },
           {
-            title: "Tribal Encounters",
+            title: "Rift Valley Lakes",
             description:
-              "Immerse yourself in the unique cultural diversity of Ethiopia's indigenous tribes and engage with their customs, rituals, and vibrant traditions.",
+              "Experience the stunning Rift Valley Lakes, known for their rich birdlife and scenic beauty, providing a perfect backdrop for your Omo Valley adventure.",
           },
           {
             title: "Hamer Villages",
             description:
-              "Visit the highly adorned Hamer villages, where locals showcase their elaborate hairstyles, copper jewelry, and vibrant costumes.",
+              "Immerse yourself in the ochre-braided beauty of Hamer villages, known for their vibrant culture and traditions, including the famous bull-jumping ceremony.",
           },
           {
             title: "Mursi Tribe",
             description:
-              "Encounter the renowned Mursi tribe and gain insight into their ancient warrior traditions and the intriguing practice of lip plate adornment.",
+              "Encounter the iconic Mursi tribe, famous for their lip plates and warrior heritage, in the wildlife-rich and acacia-dotted Mago National Park.",
           },
           {
-            title: "Scenic Splendors",
+            title: "Karo Tribe",
             description:
-              "Journey through picturesque landscapes, from the majestic shores of Lake Chamo to the dramatic vistas of Mago National Park.",
+              "Witness the intricate body painting of the Karo tribe at Korcho bluff, where chalk-and-clay designs transform river cliffs into open-air galleries.",
+          },
+          {
+            title: "Dassenech Canoe Crossing",
+            description:
+              "Cross the Omo River by canoe to visit the Dassenech tribe, where you'll learn about their agro-pastoral lifestyle and cultural practices.",
+          },
+          {
+            title: "Konso Terraces",
+            description:
+              "Explore the UNESCO-listed Konso terraces, with their maze-like stone villages and Waqa stelae, showcasing the unique agricultural practices of the Konso people.",
+          },
+          {
+            title: "Coffee Highlands of Yirgalem & Hawassa",
+            description:
+              "Experience the eco-lodges amid Arabica plantations in the lush coffee highlands of Yirgalem and Hawassa, where you can relax and enjoy the serene landscapes.",
           },
         ],
       },
@@ -2361,7 +2395,12 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
   },
   {
     id: 1,
-    experience: 3,
+    experience: "ethiopia-festival-tours",
+    slug: "ethiopia-meskel-festival-tour",
+    metaTitle: "Meskel Festival Tour | Ethiopia’s Cultural Marvels",
+    metaDescription:
+      "Book Sawla Tours' 9-day Meskel festival tour to witness the Meskel bonfire ceremony, explore castles and rock churches—secure your seat today!",
+
     title: "Meskel Marvels",
     index: false,
     image: images.addis6,
@@ -2370,11 +2409,10 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
     linkname: "Start Planning",
     intro: [
       {
-        title: "Introducing Meskel Marvels",
+        title: "Meskel Festival Tour | Ethiopia’s Religious Marvels",
         subtitle: "Celebrating Ethiopia's Religious and Cultural Treasures",
         description: [
-          "Venture on a remarkable journey through Ethiopia to witness the vibrant celebration of Meskel, an ancient festival marking the finding of the True Cross. This carefully curated itinerary combines the grandeur of Meskel festivities with the exploration of Ethiopia's historical and natural wonders. From the bustling capital of Addis Ababa to the rock-hewn churches of Lalibela and the castles of Gonder, experience the rich cultural heritage and architectural marvels of this captivating land.",
-          'Marvel at the breathtaking landscapes of the Simien Mountains, home to endemic wildlife, and immerse yourself in the ancient history of Axum. This journey promises a unique blend of festive traditions, awe-inspiring monuments, and unforgettable experiences. Let "Ethiopian Treasures" be your guide to an unforgettable voyage, where the past intertwines with the present, and the beauty of Ethiopia unfolds at every turn.',
+          "Embark on our Meskel festival tour, the flagship of our Ethiopia religious festival tour series, timed so you stand beside the blazing Meskel bonfire ceremony in Addis Ababa before sweeping north to castles, rock-hewn chapels and cloud-clad highlands. ",
         ],
         lr: true,
         img1: images.addis5,
@@ -2389,39 +2427,34 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
         description: "",
         destinations: [
           {
-            title: "Meskel Celebration",
+            title: "Addis Ababa & Meskel Square",
             description:
-              "Experience the vibrant festivities of Meskel, witnessing the Demera being lit and participating in colorful processions and religious rituals.",
+              "Epicenter of the Meskel bonfire ceremony, where the vibrant celebration unfolds.",
           },
           {
-            title: "Addis Ababa",
+            title: "Lake Tana Monasteries",
             description:
-              "Explore the dynamic capital city, with its intriguing museums, lively markets, and iconic landmarks, such as the Holy Trinity Cathedral.",
+              "Tranquil prologue to your Ethiopia religious festival tour, showcasing ancient traditions.",
           },
           {
-            title: "Lake Tana",
+            title: "Gonder Castles & Debre Berhan Church",
             description:
-              "Visit isolated churches on the serene shores of Lake Tana, accessible by a scenic boat ride, and immerse yourself in the rich spiritual traditions of Ethiopia.",
+              "Candle-lit murals and imperial stonework, reflecting Ethiopia's medieval grandeur.",
           },
           {
-            title: "Gonder",
+            title: "Simien Mountains National Park",
             description:
-              "Discover the medieval castles of Gonder, including the magnificent Fasilades Castles and the Debre Berhan Church with its stunning murals.",
+              "Jaw-dropping escarpments and endemic wildlife, offering breathtaking alpine landscapes.",
           },
           {
-            title: "Simien Mountains",
+            title: "Lalibela Rock-Hewn Churches",
             description:
-              "Traverse the dramatic landscapes of the Simien Mountains National Park, walking amidst stunning scenery and encountering endemic wildlife, such as the Walia ibex and Ethiopian wolf.",
+              "UNESCO icons carved from volcanic tuff, showcasing Ethiopia's architectural brilliance.",
           },
           {
-            title: "Lalibela",
+            title: "Axum Stelae & St Mary of Zion",
             description:
-              "Marvel at the rock-hewn churches of Lalibela, a UNESCO World Heritage Site, and explore the intricate architecture and religious significance of these ancient wonders.",
-          },
-          {
-            title: "Axum",
-            description:
-              "Step into the ancient kingdom of Axum, home to stelae, the Queen of Sheba's Bath, and the legendary Church of Saint Mary of Zion.",
+              "Ancient kingdom lore and Ark tradition, unraveling the mysteries of Ethiopia's past.",
           },
         ],
       },
@@ -2569,7 +2602,12 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
   },
   {
     id: 2,
-    experience: 3,
+    experience: "ethiopia-festival-tours",
+    slug: "ethiopia-genna-festival-tour",
+    metaTitle: "Genna Festival Tour | Ethiopia’s Religious Expedition",
+    metaDescription:
+      "Sawla Tours’ 9-day Genna festival Ethiopia trip—Lalibela Christmas pilgrimage, castles, Simien peaks & ancient Axum. Book your seat today with Sawla Tours!",
+
     title: "Genna Celebration",
     index: false,
     image: images.lalibela2,
@@ -2578,11 +2616,11 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
     linkname: "Start Planning",
     intro: [
       {
-        title: "Introducing Genna Celebration",
+        title: "Genna Festival Ethiopia Tour | Christmas Expedition",
         subtitle: "Celebrating Ethiopian Christmas amidst Ancient Marvels",
         description: [
-          "Set forth on an extraordinary journey to Ethiopia, immersing yourself in the joyous festivities of Genna, the Ethiopian Christmas. This meticulously crafted itinerary takes you on a captivating exploration of Ethiopia's remarkable destinations, where ancient traditions and cultural heritage intertwine with the celebration of Genna.",
-          "From the bustling streets of Addis Ababa to the awe-inspiring landscapes of the Simien Mountains, the mystical rock-hewn churches of Lalibela, and the historical treasures of Gonder and Axum, experience the enchantment of Ethiopian Christmas like never before. Witness vibrant processions, attend special church services, and immerse yourself in the spiritual atmosphere of this sacred occasion. This journey promises an unforgettable blend of cultural discovery, breathtaking scenery, and a once-in-a-lifetime celebration of Genna.",
+          "Celebrate Genna festival Ethiopia—Orthodox Christmas—on a nine-day loop that blends dawn liturgies with castles, escarpments and subterranean chapels.",
+          "This flagship Ethiopia Christmas tour package ends in Lalibela for a soul-stirring Lalibela Christmas pilgrimage, but note: Genna is observed nationwide; this sample route places you at the country’s most iconic celebration in the rock-hewn holy city.",
         ],
         lr: true,
         img1: images.lalibela1,
@@ -2599,32 +2637,32 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
           {
             title: "Addis Ababa",
             description:
-              "Explore the vibrant capital city, with its museums, markets, and historic landmarks, while witnessing the fervent preparations for Genna.",
+              "Begin your journey in Ethiopia's vibrant capital, where you'll explore the Ethnological Museum and the breathtaking Holy Trinity Cathedral, offering insights into the nation's diverse heritage.",
           },
           {
-            title: "Lake Tana",
+            title: "Lake Tana Monasteries",
             description:
-              "Embark on a boat excursion to visit isolated churches on the tranquil shores of Lake Tana, where traditional Genna celebrations take place.",
+              "Tranquil prologue to your Ethiopia religious festival tour, showcasing ancient traditions.",
           },
           {
-            title: "Gonder",
+            title: "Gonder Castles & Debre Berhan Church",
             description:
-              'Discover the medieval castles and churches of Gonder, known as the "Camelot of Africa," and experience the blending of Genna festivities with rich historical heritage.',
+              "Candle-lit murals and imperial stonework, reflecting Ethiopia's medieval grandeur.",
           },
           {
-            title: "Simien Mountains",
+            title: "Simien Mountains National Park",
             description:
-              "Immerse yourself in the stunning landscapes of the Simien Mountains National Park, with opportunities for scenic walks and encounters with endemic wildlife.",
+              "Jaw-dropping escarpments and endemic wildlife, offering breathtaking alpine landscapes.",
           },
           {
-            title: "Lalibela",
+            title: "Lalibela Rock-Hewn Churches",
             description:
-              "Attend the mesmerizing Genna Eve celebrations in Lalibela, surrounded by the rock-hewn churches, and partake in the jubilant processions and rituals.",
+              "UNESCO icons carved from volcanic tuff, showcasing Ethiopia's architectural brilliance.",
           },
           {
-            title: "Axum",
+            title: "Axum Stelae & St Mary of Zion",
             description:
-              "Explore the ancient city of Axum, a UNESCO World Heritage Site, and witness the profound Genna traditions amid historical wonders.",
+              "Ancient kingdom lore and Ark tradition, unraveling the mysteries of Ethiopia's past.",
           },
         ],
       },
@@ -2769,7 +2807,12 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
   },
   {
     id: 3,
-    experience: 3,
+    experience: "ethiopia-festival-tours",
+    slug: "ethiopia-pilgrimage-tour",
+    metaTitle: "Ethiopia Pilgrimage Tour | Orthodox Easter & Axum Procession",
+    metaDescription:
+      "Sawla Tours’ 7-day Ethiopian Orthodox Easter adventure—Palm Sunday Ethiopia rites, castles, rock churches. Book your Ethiopia pilgrimage tour with Sawla Tours!",
+
     title: "Sacred Journeys",
     index: false,
     image: images.axum10,
@@ -2779,12 +2822,11 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
     linkname: "Start Planning",
     intro: [
       {
-        title: "Introducing Sacred Journeys",
+        title: "Ethiopian Orthodox Easter | Axum Pilgrimage Tour",
         subtitle:
           "Exploring Ancient Marvels and Celebrating Palm Sunday in Ethiopia",
         description: [
-          "Embark on a sacred pilgrimage to Ethiopia, immersing yourself in the vibrant celebrations of Palm Sunday in the ancient city of Axum. This carefully curated itinerary takes you on a remarkable adventure, unveiling the rich cultural heritage and historical wonders of Ethiopia. From the bustling streets of Addis Ababa to the majestic rock-hewn churches of Lalibela, and finally, the spiritual ambiance of Axum, experience the profound significance of Palm Sunday amidst ancient marvels.",
-          "Witness the vibrant processions, attend special church services, and explore the awe-inspiring landmarks that have shaped Ethiopia's religious identity. This journey promises a unique blend of spiritual enrichment, cultural discovery, and the unforgettable celebration of Palm Sunday in Axum.",
+          "Celebrate Ethiopian Orthodox Easter on a seven-day pilgrimage that fuses Palm-Sunday pageantry with Axum’s stelae, Lalibela’s rock chapels and Gonder’s castles. Crafted as an Axum pilgrimage tour for culture-seekers, the route also tips its hat to an emerging favourite—Palm Sunday Ethiopia—placing you at the nation’s most hallowed celebration while noting that the feast is honoured in churches across the country.",
         ],
         lr: true,
         img1: images.axum10,
@@ -2836,37 +2878,40 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
         destinations: [
           {
             title: "Day 1",
-            description: "Arrive in Addis Ababa and embark on a city tour.",
+            description:
+              "Arrive in Addis Ababa and embark on a city tour, exploring its museums, cathedrals, and vibrant markets.",
           },
           {
             title: "Day 2",
             description:
-              "Fly to Gonder and visit the royal enclosure and Church of Debre Birhan.",
+              "Fly to Gonder and drive to the Simien Mountains National Park, where you'll be captivated by the breathtaking alpine landscapes.",
           },
+
           {
             title: "Day 3",
             description:
-              "Fly to Lalibela and explore the magnificent rock-hewn churches.",
+              "Explore the stunning Simien Mountains National Park, encountering endemic wildlife and soaking in the serenity of the surroundings.",
           },
           {
             title: "Day 4",
             description:
-              "Discover more of Lalibela's hidden treasures, including the cave church of Yemrhan Kristos.",
+              "Return to Gonder and delve into its medieval history, exploring the castles and churches.",
           },
           {
             title: "Day 5",
-
             description:
-              "Fly to Axum, the cradle of Ethiopian Christianity, and explore the historical landmarks of Axum, including the stelae and the Church of St. Mary of Zion. Later join us to witness the Eve of Palm Sunday celebrations in this ancient city.",
+              "Fly to Lalibela and delve into the mystical world of the rock-hewn churches, witnessing their architectural brilliance.",
           },
           {
             title: "Day 6",
+
             description:
-              "In the morning join Palm Sunday processions and celebrations in Axum, a spiritual experience like no other.",
+              "Fly to Axum and embark on a full-day tour, uncovering the ancient treasures.",
           },
           {
             title: "Day 7",
-            description: "Fly back to Addis Ababa and depart.",
+            description:
+              "Attend the vibrant Palm Sunday processions and church services in Axum, experiencing the spiritual essence of Ethiopian Christianity.",
           },
         ],
       },
@@ -2941,7 +2986,11 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
   },
   {
     id: 4,
-    experience: 3,
+    experience: "ethiopia-festival-tours",
+    slug: "hidar-tsion-axum",
+    metaTitle: "Hidar Tsion in Axum | Ethiopia Festival Tour",
+    metaDescription:
+      "Join Sawla Tours’ 7-day Ethiopia festival tour and celebrate Hidar Tsion in Axum—pilgrimage processions, rock-hewn churches and castle cities. Book now!",
     title: "Hidar Tsion in Axum",
     index: false,
     image: images.axum11,
@@ -2955,9 +3004,7 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
         subtitle:
           "Unveiling Ethiopia's Ancient Treasures and Sacred Celebrations",
         description: [
-          'Quest on a journey that transcends time and immerses you in the captivating heritage of Ethiopia. Our meticulously crafted itinerary, "Hidar Tsion in Axum," unveils a tapestry of wonders, where ancient history and spiritual traditions intertwine.',
-          'From the bustling streets of Addis Ababa, adorned with jacaranda trees, to the majestic castles of Gondar, known as "The Camelot of Africa," and the mystical rock-hewn churches of Lalibela, a UNESCO World Heritage Site, this expedition will transport you to a realm of awe-inspiring beauty.',
-          "As the journey unfolds, your path leads to Axum, where the air is charged with anticipation for the eve and grand celebration of St. Mary Zion, known as Hidar Tsion. Witness the vibrant processions, immerse yourself in the rich cultural tapestry, and explore the fascinating historical treasures of Axum, including the enigmatic Stelae and the Queen of Sheba's Bath. Let Sawla Tours guide you through this extraordinary odyssey, where ancient wonders come alive amidst breathtaking landscapes and where the spirit of Ethiopia reveals itself in all its glory. ",
+          "Step inside Ethiopia festival tour season on this seven-day Axum pilgrimage package timed for the luminous Hidar Tsion festival (St Mary of Zion). While celebrations echo in churches nationwide, this sample route plants you in Axum—home of the Ark legend—for the biggest vigil, then sweeps you through castles, Simien peaks and Lalibela’s rock chapels.",
         ],
         lr: true,
         img1: images.axum6,
@@ -3114,7 +3161,11 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
   },
   {
     id: 5,
-    experience: 3,
+    experience: "ethiopia-festival-tours",
+    slug: "timket-festival-ethiopia",
+    metaTitle: "Timket Festival Ethiopia Tour | 8-Day Celebration",
+    metaDescription:
+      "Join Sawla Tours' 8-day Timket festival Ethiopia adventure—witness Timket Eve processions, Addis Ababa highlights, castles and rock churches. Book now!",
     title: "Timket Reverie",
     index: false,
     image: images.lalibela11,
@@ -3126,9 +3177,8 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
         title: "Introducing Timket Reverie",
         subtitle: "Celebrating Timket in Colorful Addis Ababa",
         description: [
-          "Embark on an extraordinary journey to Ethiopia, where ancient traditions and vibrant celebrations come alive during the enchanting festival of Timket (Commemoration of the Baptism of Christ) in Addis Ababa. This meticulously crafted itinerary invites you to immerse yourself in the rich cultural tapestry and spiritual heritage of Ethiopia.",
-          "From exploring the historical wonders of Gonder and the awe-inspiring rock-hewn churches of Lalibela to experiencing the sacred city of Axum, this journey builds up to the climactic celebration of Timket in Addis Ababa. Join the exuberant processions, witness the colorful rituals, and feel the profound spiritual energy as you partake in this transformative experience.",
-          "This trip promises a fusion of cultural immersion, spiritual enlightenment, and the unforgettable celebration of Timket in the vibrant capital city of Addis Ababa.",
+          "Experience the splendour of Timket festival Ethiopia on an 8-day Addis Ababa Timket tour that threads castles, escarpments and rock-hewn chapels into the colourful Timket Eve celebration. (Timket is celebrated country-wide; this sample places you in the capital, where the festival is staged on its grandest scale.)",
+          "Timket festival Ethiopia is one of the largest dates on the Orthodox calendar. While the Epiphany rites unfold nationwide, the most spectacular crowds gather in Addis Ababa, Gonder, Lalibela, Axum and Bahir Dar. For travellers craving a more intimate celebration—complete with regional dance, music and vibrant cultural flair—smaller centres such as Hawzen, Minjar Shenkora and many other localities also stage memorable Timket vigils. Sawla Tours can custom-craft or tailor-make a Timket travel plan to match your preferred location, pace and style.",
         ],
         lr: true,
         img1: images.gonder2,
@@ -3186,42 +3236,37 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
           {
             title: "Day 2",
             description:
-              "Fly to Gonder, drive to the Simien Mountains National Park, and acclimatize to the breathtaking alpine landscapes.",
+              "Fly to Gonder and visit the royal enclosure and Church of Debre Berhan Selassie, known for its stunning murals.",
           },
           {
             title: "Day 3",
             description:
-              "Explore the Simien Mountains, encounter endemic wildlife, and enjoy nature walks amidst stunning scenery.",
+              "Take an excursion to the Simien Mountains National Park, where you can enjoy breathtaking views and spot endemic wildlife.",
           },
           {
             title: "Day 4",
             description:
-              "Return to Gonder and immerse yourself in the medieval history, visiting castles and the Debre Berhan Church.",
+              "Fly to Lalibela and explore the first cluster of rock-hewn churches, including Bet Medhane Alem and Bet Mariam.",
           },
           {
             title: "Day 5",
             description:
-              "Fly to Lalibela and delve into the mystical world of the rock-hewn churches, witnessing their architectural brilliance.",
+              "Explore more of Lalibela, including the cave church of Yemrhan Kristos and the iconic Bet Giorgis.",
           },
           {
             title: "Day 6",
             description:
-              "Further explore the rock churches of Lalibela, uncovering their religious significance and intricate carvings.",
+              "Fly to Axum and visit the stelae, the archaeological museum, and the Church of Saint Mary of Zion, believed to house the Ark of the Covenant.",
           },
           {
             title: "Day 7",
             description:
-              "Fly to Axum, unravel the ancient mysteries of this historical city, and visit its stelae, museums, and religious sites.",
+              "Fly back to Addis Ababa and immerse yourself in the vibrant Timket Eve celebration, witnessing the colorful processions and rituals.",
           },
           {
             title: "Day 8",
             description:
-              "Return to Addis Ababa and attend the vibrant Timket Eve celebration, witnessing the city come alive with colorful processions and rituals.",
-          },
-          {
-            title: "Day 9",
-            description:
-              "Experience the grand celebration of Timket, participating in the unique ceremonies and joyful festivities before bidding farewell to Ethiopia.",
+              "Experience the grand Timket festival Ethiopia day, attending church services and processions, before departing.",
           },
         ],
       },
@@ -3318,7 +3363,11 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
   },
   {
     id: 1,
-    experience: 4,
+    experience: "ethiopia-adventure-tours",
+    slug: "simien-mountains-trekking",
+    metaTitle: "Simien Mountains Trekking | 10-Day Ethiopia Adventure",
+    metaDescription:
+      "Book Sawla Tours’ 10-day Simien Mountains trekking escape—an Ethiopia trekking tour with a Simien Mountains wildlife trek, castles and churches. Reserve today!",
     title: "Simien Splendor",
     index: false,
     image: images.simien4,
@@ -3327,12 +3376,10 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
     linkname: "Start Planning",
     intro: [
       {
-        title: "Introducing Simien Splendor",
+        title: "Simien Mountains Trekking | 10-Day Ethiopia Adventure",
         subtitle: "Trekking Ethiopia's North and Celebrating Culture",
         description: [
-          "Set forth on a quest on an unforgettable journey through the breathtaking landscapes and rich cultural heritage of Ethiopia. This meticulously crafted itinerary combines the thrill of trekking in the Simien Mountains with the exploration of historical gems such as Axum, Lalibela, and Gonder.",
-          "From the ancient stelae of Axum to the magnificent rock-cut churches of Lalibela, immerse yourself in Ethiopia's fascinating history and spirituality. The highlight of this journey is the exhilarating trek through the Simien Mountains, where you'll witness awe-inspiring vistas, encounter endemic wildlife, and camp under starlit skies.",
-          "This adventure culminates in the vibrant city of Addis Ababa, where you'll witness the fusion of tradition and celebration during the final days of your trip. Prepare for a journey of natural splendor, cultural immersion, and unforgettable experiences.",
+          "Set out on a Simien Mountains trekking odyssey that stitches Ethiopia’s grandest peaks to her holiest monuments. This curated Ethiopia trekking tour loops from Axum’s stelae to Lalibela’s lava-hewn chapels then drops you on escarpment trails alive with Simien Mountains wildlife trek drama—geladas, Walia ibex and lammergeyers. Then back to Addis for a final jolt of culture and coffee.",
         ],
         lr: true,
         img1: images.simien1,
@@ -3349,27 +3396,27 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
           {
             title: "Addis Ababa",
             description:
-              "Begin your journey in Ethiopia's capital, exploring its bustling markets, museums, and vibrant cityscape.",
+              "Begin your journey in the vibrant capital, exploring its museums, markets, and cultural landmarks as you prepare for the adventure ahead.",
           },
           {
             title: "Axum",
             description:
-              "Uncover the ancient city of Axum, home to granite stelae, the subterranean Tomb of Ramhai, and the legendary Queen of Sheba's Bath.",
+              "Discover the ancient city of Axum, home to the legendary stelae and the Church of Saint Mary of Zion, believed to house the Ark of the Covenant.",
           },
           {
             title: "Lalibela",
             description:
-              "Marvel at the remarkable rock-hewn churches of Lalibela, a UNESCO World Heritage Site, and delve into the mysteries of Ethiopian Christianity.",
+              "Marvel at the rock-hewn churches of Lalibela, a UNESCO World Heritage Site, and delve into the spiritual heart of Ethiopia.",
           },
           {
-            title: "Gonder",
+            title: "Gonder Camelot",
             description:
-              "Explore the medieval castles of Gonder, including the Royal Enclosure and the breathtaking Debre Berhan Selassie Church.",
+              "Explore the medieval castles of Gonder, including the Royal Enclosure and the Church of Debre Berhan Selassie, known for its stunning murals.",
           },
           {
             title: "Simien Mountains",
             description:
-              "Trek through the majestic Simien Mountains National Park, encountering stunning landscapes, endemic wildlife like the gelada baboon and walia ibex, and awe-inspiring viewpoints.",
+              "Embark on a thrilling trek through the Simien Mountains National Park, where you can witness breathtaking landscapes and encounter unique wildlife such as gelada baboons and Walia ibex.",
           },
         ],
       },
@@ -3526,7 +3573,12 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
   },
   {
     id: 2,
-    experience: 4,
+    experience: "ethiopia-adventure-tours",
+    slug: "tigray-community-trekking",
+    metaTitle: "Tigray Community Trekking | 13-Day Ethiopia Adventure",
+    metaDescription:
+      "Sawla Tours’ 13-day Ethiopia trekking odyssey links Lalibela, Axum & Gonder with Ethiopia community-based trekking in Tigray. Book now with Sawla Tours!",
+
     title: "Tigray community trekking",
     index: false,
     image: images.tigray4,
@@ -3535,12 +3587,11 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
     linkname: "Start Planning",
     intro: [
       {
-        title: "Introducing Tigray community trekking",
+        title: "Ethiopia Trekking | 13-Day Tigray Community Adventure",
         subtitle:
           "Unveiling Ethiopia's Ancient Marvels and Majestic Landscapes",
         description: [
-          "Start a voyage on an extraordinary journey through Ethiopia, immersing yourself in its rich cultural heritage and breathtaking landscapes. This carefully curated itinerary combines the exploration of historical treasures such as Addis Ababa, Gonder, Axum, and Lalibela with the exhilaration of trekking in the Tigray region.",
-          "From the bustling markets of Addis Ababa to the rock-hewn churches of Lalibela and the stunning vistas of the Simien Mountains, every step of this trip is a feast for the senses. Discover ancient civilizations, encounter endemic wildlife, witness vibrant traditions, and experience the warm hospitality of the Ethiopian people. Get ready for an unforgettable adventure that blends history, spirituality, and natural splendor.",
+          "Embark on an Ethiopia trekking odyssey that links Axum’s stelae, Lalibela’s rock-hewn chapels and Gonder’s castles with a Tigray trekking tour run by local community. High-plateau trails and homestay huts turn the highlands into your base-camp for a rising niche of Ethiopia community-based trekking—blending history, wildlife and village welcomes.",
         ],
         lr: true,
         img1: images.tigray4,
@@ -3582,7 +3633,7 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
           {
             title: "Axum",
             description:
-              "Explore the ancient city of Axum, visiting stelae, the subterranean Tomb of Ramhai, and the renowned Church of Saint Mary of Zion.",
+              "Explore the ancient city of Axum, visiting stelae, the subterranean Tomb of Ramhai, and the renowned Church of Saint Mary of Zion, believed to house the Ark of the Covenant.",
           },
           {
             title: "Tigray Region",
@@ -3790,7 +3841,11 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
   },
   {
     id: 3,
-    experience: 4,
+    experience: "ethiopia-adventure-tours",
+    slug: "wello-community-trek",
+    metaTitle: "Ethiopia Cultural Trekking | 12-Day Wello Community Tour",
+    metaDescription:
+      "Sawla Tours’ 12-day Ethiopia cultural trekking route links Lalibela, Axum & Simien vistas with Wello community homestays. Book your adventure now with Sawla Tours!",
     title: "Historic & Wello Community Trekking",
     index: false,
     image: images.wollo1,
@@ -3800,12 +3855,11 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
     linkname: "Start Planning",
     intro: [
       {
-        title: "Introducing Historic & Wello Community Trekking",
+        title: "Ethiopia Cultural Trekking | 12-Day Wello Community Journey",
         subtitle:
           "A Journey through Ethiopia's Ancient Legacy and Cultural Riches",
         description: [
-          "Embark on a journey through the captivating wonders of Ethiopia, where ancient traditions and breathtaking landscapes blend harmoniously. This meticulously crafted itinerary takes you on cultural exploration, from the bustling capital of Addis Ababa to the UNESCO World Heritage Sites of Lalibela's rock-hewn churches and the historical treasures of Axum.",
-          "Immerse yourself in the spiritual allure of Lake Tana's monasteries and trek through the stunning scenery of the Tigray region. Witness the country's vibrant culture, encounter endemic wildlife, and marvel at architectural marvels carved from solid rock. This extraordinary adventure promises to unveil the rich tapestry of Ethiopia's heritage and its awe-inspiring natural beauty.",
+          "Embark on an Ethiopia cultural trekking odyssey that ties Addis Ababa’s museums, Lake Tana’s island monasteries and Lalibela’s lava-hewn chapels to a rugged Wello community trekking tour across high-plateau farms. Nights are spent in village guest-houses, showcasing a rising style of Ethiopia homestay trek travel that blends history, wildlife and heartfelt rural hospitality.",
         ],
         lr: true,
         img1: images.tigray4,
@@ -3822,37 +3876,33 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
           {
             title: "Addis Ababa",
             description:
-              "Discover the vibrant capital city, with its bustling markets, historical landmarks, and renowned museums.",
+              "A lively start to every Ethiopia cultural trekking holiday.",
           },
           {
             title: "Lake Tana",
-            description:
-              "Cruise the tranquil waters and visit isolated monasteries, adorned with ancient murals and steeped in spirituality.",
+            description: "Monastery murals reached by reed-boat.",
           },
           {
             title: "Gonder",
-            description:
-              "Explore the medieval castles and churches, including the impressive Fasilades Castles and Debre Berhan Church.",
+            description: "Camelot castles & an angel-ceiling church.",
           },
           {
             title: "Simien Mountains",
-            description:
-              "Embark on a chance to walk in stunning scenery, encountering endemic wildlife and enjoying panoramic views of the rugged landscapes.",
+            description: "Skyline walks and Walia ibex sightings.",
           },
           {
             title: "Lalibela",
             description:
-              "Experience the architectural wonder of Lalibela's rock-hewn churches, a testament to Ethiopia's ancient Christian heritage.",
+              "Subterranean chapels before the Wello community trekking tour.",
           },
           {
             title: "Axum",
-            description:
-              "Uncover the historical treasures of Axum, including stelae, the Queen of Sheba's Bath, and the Church of Saint Mary of Zion.",
+            description: "Ark legend & towering stelae.",
           },
           {
-            title: "Tigray Region",
+            title: "Tigray & Wello Highlands",
             description:
-              "Trek through the awe-inspiring landscapes of the Tigray region, exploring remote rock-hewn churches and immersing yourself in the local culture.",
+              "Sandstone escarpments on an Ethiopia homestay trek to remote rock churches.",
           },
         ],
       },
@@ -4051,7 +4101,12 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
   },
   {
     id: 4,
-    experience: 4,
+    experience: "ethiopia-adventure-tours",
+
+    slug: "bale-mountain-trekking",
+    metaTitle: "Bale Mountains Trekking | 11-Day Ethiopia Alpine Adventure",
+    metaDescription:
+      "Join Sawla Tours for epic Bale Mountains trekking—an Ethiopia wildlife adventure over Afro-alpine trails, wolf encounters & rainforest descents. Book today!",
     title: "Bale Mountain Trekking",
     index: false,
     image: images.bale1,
@@ -4060,12 +4115,10 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
     linkname: "Start Planning",
     intro: [
       {
-        title: "Introducing Bale Mountain Trekking",
+        title: "Bale Mountains Trekking | 11-Day Ethiopia Alpine Adventure",
         subtitle: "A Majestic Journey through Ethiopia's Alpine Wonderland",
         description: [
-          "Dive headfirst into an exploration on a mesmerizing expedition into the heart of Ethiopia's natural wonders with our exclusive itinerary, \"Bale Mountain Trekking: A Majestic Journey through Ethiopia's Alpine Wonderland.\" From the vibrant city of Addis Ababa to the serene shores of Lake Langano, and from the untamed beauty of Bale Mountains National Park to the captivating Harenna Forest, every step of this journey reveals the awe-inspiring landscapes and remarkable biodiversity of Ethiopia.",
-          "Immerse yourself in the rich flora and fauna of the Bale Mountains as you trek through lush forests, encounter endemic wildlife like the Ethiopian Wolf and Mountain Nyala, and marvel at the dramatic volcanic formations that shape this extraordinary region.",
-          "Let Sawla Tours be your guide to this unforgettable adventure, where nature's grandeur and Ethiopia's natural heritage converge in a symphony of breathtaking sights and unforgettable experiences.",
+          "Plunge into Bale Mountains trekking-paradise on this expedition from Addis Ababa’s café culture to Lake Langano’s bird-rich shores, then up to giant-heather moorlands alive with Ethiopian wolf sightings. Our route blends rugged trails, cosy camps and authentic lodge nights to deliver the ultimate Ethiopia wildlife adventure across Afro-alpine plateaux and into the misty Harenna Forest—an emerging favourite for fans of Ethiopian alpine trails.",
         ],
         lr: true,
         img1: images.bale3,
@@ -4082,52 +4135,32 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
           {
             title: "Addis Ababa",
             description:
-              "Begin your adventure in Ethiopia's capital, a bustling city with vibrant markets, museums, and a unique multiethnic culture.",
+              "The vibrant launch pad for your Bale Mountains trekking adventure.",
           },
           {
             title: "Lake Langano",
             description:
-              "Relax on the shores of this serene lake, surrounded by pristine nature and abundant wildlife.",
+              "Unwind at a stunning lakeside eco-lodge, with hippos as your soundtrack.",
           },
           {
-            title: "Dinsho",
+            title: "Dinsho HQ",
             description:
-              "Explore the headquarters of the Bale Mountains National Park and encounter endemic wildlife such as Menelik bushbucks and mountain nyala.",
+              "Enter a wildlife haven, where the rare and majestic mountain nyala roam free.",
           },
           {
-            title: "Web Valley and Fincha Habera",
+            title: "Web Valley & Fincha Habera",
             description:
-              "Trek through stunning landscapes, witness the meeting of rivers, and catch glimpses of the elusive Ethiopian wolf.",
-          },
-          {
-            title: "Rafu and Sodota",
-            description:
-              "Discover the dramatic volcanic rock formations and enjoy panoramic views of the Bale Mountains.",
-          },
-          {
-            title: "Gerba Guracha",
-            description:
-              "Take a leisurely walk around the enchanting Gerba Guracha, the largest lake in the Bale Mountains, teeming with water birds.",
+              "Follow rivers to cascading waterfalls, catching your first glimpse of the Ethiopian wolf.",
           },
           {
             title: "Sanetti Plateau",
             description:
-              "Trek across the high-altitude plateau, spot the Ethiopian wolf, and climb Mount Tullu Deemtu for breathtaking vistas.",
+              "Trek across the roof of Ethiopia, a breathtaking Afro-alpine landscape.",
           },
           {
             title: "Harenna Forest",
             description:
-              "Descend the majestic Harenna Escarpment and immerse yourself in the lush greenery of the largest rainforest in Ethiopia.",
-          },
-          {
-            title: "Goba",
-            description:
-              "Visit the gateway town to the Bale Mountains, and experience the local culture and hospitality.",
-          },
-          {
-            title: "Bale Mountains National Park",
-            description:
-              "Encounter diverse wildlife, including Ethiopian wolves, mountain nyala, colobus monkeys, and a plethora of bird species.",
+              "Descend into a lush cloud forest, filled with Bale monkeys and the aroma of wild coffee.",
           },
         ],
       },
@@ -4138,57 +4171,57 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
           {
             title: "Day 1",
             description:
-              "Arrive in Addis Ababa and experience the city's vibrant culture and history.",
+              "Arrive in Addis Ababa, Ethiopia's vibrant capital, and dive into the city's rich history with a guided tour.",
           },
           {
             title: "Day 2",
             description:
-              "Journey to Lake Langano, where you can unwind and enjoy various outdoor activities.",
+              "Journey through the Great Rift Valley to a beautiful eco-lodge on the shores of Lake Langano.",
           },
           {
             title: "Day 3",
             description:
-              "Explore Dinsho and encounter endemic wildlife in the Bale Mountains National Park.",
+              "Continue to Dinsho, the gateway of Bale Mountains National Park, for an incredible introductory wildlife walk.",
           },
           {
             title: "Day 4",
             description:
-              "Trek from Dinsho to Sodota, witnessing the beauty of the Web Valley and Fincha Habera waterfall.",
+              "Begin your trek through the stunning Web Valley, following the river from Dinsho to the Sodota campsite.",
           },
           {
             title: "Day 5",
             description:
-              "Trek to Keyrensa and enjoy panoramic views of the volcanic rock pillars.",
+              "Trek onward from Sodota, ascending through Afro-alpine meadows to the scenic camp at Keyrensa.",
           },
           {
             title: "Day 6",
             description:
-              "Continue the trek from Keyrensa to Rafu, encountering diverse wildlife and stunning landscapes.",
+              "Hike from Keyrensa to the dramatic cliffs of Rafu, taking in spectacular views and unique rock formations.",
           },
           {
             title: "Day 7",
             description:
-              'Trek from Rafu to Gerba Guracha and immerse yourself in the tranquility of the "Black Lake."',
+              "Journey from Rafu to the mystical Gerba Guracha, the serene 'Black Lake' nestled high in the mountains.",
           },
           {
             title: "Day 8",
             description:
-              "Traverse the high-altitude Sanetti Plateau, spot the Ethiopian wolf, and climb Mount Tullu Deemtu.",
+              "Explore the vast Sanetti Plateau, a high-altitude wonderland, and summit Mount Tullu Deemtu.",
           },
           {
             title: "Day 9",
             description:
-              "Descend to the Harenna Forest and explore its unique flora and fauna.",
+              "Descend by vehicle into the lush Harenna Forest for exploration before resting in the town of Robe.",
           },
           {
             title: "Day 10",
             description:
-              "Visit Goba and gain insight into the local culture before departing for Addis Ababa.",
+              "Catch a flight from Robe back to Addis Ababa, enjoying a final free afternoon for shopping or relaxation.",
           },
           {
             title: "Day 11",
             description:
-              "Fly back to Addis Ababa and reflect on the remarkable adventure through the Bale Mountains.",
+              "Enjoy a final Ethiopian breakfast before your international departure, full of adventure memories.",
           },
         ],
       },
@@ -4276,7 +4309,11 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
   },
   {
     id: 5,
-    experience: 4,
+    experience: "ethiopia-adventure-tours",
+    slug: "community-based-trekking-ethiopia",
+    metaTitle: "Ethiopian Highland Trekking | 15-Day Tigray Historic Route",
+    metaDescription:
+      "Book Sawla Tours’ Ethiopian highland trekking adventure—castle cities, Simien peaks & Tigray rock-churches in one ethical, community-based itinerary.",
     title: "Ancient Wonders of Ethiopia",
     index: false,
     image: images.lalibela8,
@@ -4285,12 +4322,11 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
     linkname: "Start Planning",
     intro: [
       {
-        title: "Introducing Ancient Wonders of Ethiopia",
+        title: "Ethiopian Highland Trekking | 15-Day Tigray Historic Route",
         subtitle: "A Journey through History and Nature",
         description: [
-          "Commence a journey on a captivating journey through the ancient wonders of Ethiopia, where history, culture, and natural beauty intertwine. From the vibrant capital city of Addis Ababa to the UNESCO World Heritage Sites of Lalibela, Axum, and Gondar, this carefully crafted itinerary takes you on a remarkable exploration of the country's rich heritage.",
-          "Marvel at the rock-hewn churches of Lalibela, witness the towering monoliths of Axum and explore the medieval castles of Gondar. Immerse yourself in the stunning landscapes of the Simien Mountains National Park and the Tigray region, where dramatic escarpments and hidden churches await.",
-          "Discover the unique traditions, vibrant markets, and warm hospitality of the Ethiopian people as you delve deep into the country's cultural tapestry.",
+          "Plunge into Ethiopian highland trekking on this 15-day odyssey that links legendary royal cities with remote plateau villages. From Addis Ababa’s coffee aroma to Lake Tana’s island monasteries, you’ll follow a community-based trekking Ethiopia model that channels income directly to host lodges.",
+          "Northward, climb Simien escarpments alive with gelada baboons, then push east for a dramatic Tigray rock-churches trek amid crimson cliffs and 1 000-year-old sanctuaries. Ancient history, living culture and epic scenery—all in one seamless journey.",
         ],
         lr: true,
         img1: images.axum3,
@@ -4307,47 +4343,42 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
           {
             title: "Addis Ababa",
             description:
-              "Experience the bustling capital city, with its vibrant markets, museums, and rich cultural heritage.",
+              "The vibrant gateway to your trek, alive with bustling markets, rich museums, and soulful jazz clubs.",
           },
           {
             title: "Lake Tana",
             description:
-              "Visit isolated churches by boat and explore the serene monasteries dotting the shores of this ancient lake.",
+              "Cruise serene waters to discover ancient, mural-rich monasteries and a paradise of exotic birdlife.",
           },
           {
             title: "Gondar",
             description:
-              "Discover the majestic castles of Fasilades and the intricate carvings of Debre Berhan Church.",
+              "Explore fabled castles and stunning frescoes in the 'Camelot of Africa' before beginning your community trek.",
           },
           {
-            title: "Simien Mountains National Park",
+            title: "Simien Mountains NP",
             description:
-              "Trek through breathtaking alpine landscapes, encounter endemic wildlife, and marvel at the rugged beauty of this UNESCO World Heritage Site.",
+              "Hike jagged ridges and acclimatize to the altitude while searching for the rare Walia ibex.",
           },
           {
             title: "Lalibela",
             description:
-              "Explore the awe-inspiring rock-hewn churches, a testament to the architectural genius of ancient Ethiopia.",
+              "Witness the architectural miracle of eleven cathedrals, masterfully chiselled from volcanic rock.",
           },
           {
             title: "Axum",
             description:
-              "Uncover the mysteries of this ancient city, home to towering stelae, the Church of Saint Mary of Zion, and the legends of the Queen of Sheba.",
+              "Step into legend as you explore the towering stelae fields and delve into the lore of the Ark of the Covenant.",
           },
           {
             title: "Tigray Region",
             description:
-              "Trek to remote rock-hewn churches in the Gheralta cluster, witness breathtaking landscapes, and immerse yourself in the local communities.",
+              "Embark on a memorable trek to remote rock-hewn churches, scaling the stunning sandstone escarpments.",
           },
           {
-            title: "Adigrat and Anaf",
+            title: "Gheralta & Mekelle",
             description:
-              "Trek through terraced fields, interact with friendly villagers, and experience the hospitality of the Tigrayan people.",
-          },
-          {
-            title: "Mekelle",
-            description:
-              "Visit the impressive Abreha Atsbeha church and Wukro Cherkos, adorned with beautiful carvings and ancient artwork.",
+              "Marvel at breathtaking sandstone spires and ancient frescoes before your concluding flight south from Mekelle.",
           },
         ],
       },
@@ -4585,7 +4616,11 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
   },
   {
     id: 1,
-    experience: 5,
+    experience: "ethiopia-photography-tours",
+    slug: "omo-valley-photo-expedition",
+    metaTitle: "Omo Valley Photo Expedition – Ethiopia Photography Tour",
+    metaDescription:
+      "Join our Ethiopia Photography Tour and capture vivid tribal portraits on an Omo Valley photo expedition—reserve now with Sawla Tours.",
     title: "Shutter Symphony",
     index: false,
     image: images.omo1,
@@ -4594,12 +4629,10 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
     linkname: "Start Planning",
     intro: [
       {
-        title: "Introducing Shutter Symphony",
+        title: "Ethiopia Photography Tour: Omo Valley Photo Expedition",
         subtitle: "Capturing the Colors of Ethiopia's Enigmatic Omo Valley",
         description: [
-          "Embark upon a grand odyssey on an unforgettable photographic expedition through the Omo Valley, a land of cultural diversity and untouched natural beauty. This immersive journey will take you deep into the heart of Ethiopia, where you'll encounter tribes known for their vibrant traditions and unique adornments.",
-          "From the Hamer villages to the Mursi with their famous lip plates, this trip offers a rare opportunity to capture the essence of these indigenous communities. As you venture through the picturesque landscapes of the Omo Valley, you'll witness the breathtaking Rift Valley lakes, encounter incredible birdlife and wildlife, and explore the region's remote corners.",
-          "Join us on this photographic adventure and capture the captivating faces and landscapes that make the Omo Valley a truly exceptional destination.",
+          "Dive into an Ethiopia Photography Tour designed for storytellers who crave authentic, frame-worthy moments. Over 12 days you’ll roam the Rift, join an immersive Omo Valley photo expedition, and finish with an intimate Omo Valley photo workshop that sharpens technique while celebrating culture—all against backdrops of tribal ceremony, wildlife-rich wetlands and raw, ochre-tinted earth.",
         ],
         lr: true,
         img1: images.hamer1,
@@ -4616,37 +4649,32 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
           {
             title: "Addis Ababa",
             description:
-              "Explore the vibrant capital city of Addis Ababa, visiting the National Museum, Ethnographic Museum, and the bustling Mercato.",
+              "Warm up your lens capturing vibrant street life before the main Omo Valley photo expedition begins.",
           },
           {
-            title: "Lalibela",
+            title: "Rift Valley Lakes",
             description:
-              "Marvel at the rock-hewn churches of Lalibela, a UNESCO World Heritage Site and one of the most important pilgrimage sites in Ethiopia.",
+              "Practice long-lens photography on flamingo-lined shores and golden reed beds, honing your skills.",
           },
           {
-            title: "Axum",
+            title: "Hamer Villages",
             description:
-              "Discover the ancient city of Axum, a UNESCO World Heritage Site and the former capital of the Axumite Empire.",
+              "Frame dynamic dance shots, portraits of copper-necklaced women, and striking sunset silhouettes.",
           },
           {
-            title: "Gondar",
+            title: "Mursi Territory",
             description:
-              "Explore the medieval castles of Gondar, a UNESCO World Heritage Site and the former capital of Ethiopia.",
+              "Join a respectful photo workshop to capture powerful and dramatic portraits of the lip-plated Mursi people.",
           },
           {
-            title: "Simien Mountains",
+            title: "Kara & Dassanach Tribes",
             description:
-              "Journey to the Simien Mountains National Park, a UNESCO World Heritage Site and home to the endemic Gelada baboon.",
+              "Photograph the intricate body-chalk artistry of the Kara and timeless herding scenes along the Omo River.",
           },
           {
-            title: "Tigray Region",
+            title: "Nyangatom & Arbore",
             description:
-              "Explore the Tigray region, home to a number of rock-hewn churches, including Abuna Yemata Guh, one of the most inaccessible churches in the world.",
-          },
-          {
-            title: "Omo Valley",
-            description:
-              "Discover the cultural diversity of the Omo Valley, meeting and photographing the tribes known for their unique traditions and adornments.",
+              "Capture candid, colorful market scenes and stay for stunning dusk star-trail photography opportunities.",
           },
         ],
       },
@@ -4858,7 +4886,11 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
   },
   {
     id: 2,
-    experience: 5,
+    experience: "ethiopia-photography-tours",
+    slug: "danakil-photo-expedition",
+    metaTitle: "Ethiopia Photography Tour | Sawla Tours Photo Expedition",
+    metaDescription:
+      "Join our Ethiopia Photography Tour with Sawla Tours and capture castles, tribes and Danakil vistas—reserve your seat now for a once-in-a-lifetime adventure.",
     title: "Ethiopia through the Lens",
     index: false,
     image: images.lalibela4,
@@ -4867,12 +4899,11 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
     linkname: "Start Planning",
     intro: [
       {
-        title: "Introducing Ethiopia through the Lens",
+        title:
+          "Ethiopia Photography Tour – Ancient Wonders, Tribal Faces & Danakil Light",
         subtitle: "Capturing the Riches of History and Nature",
         description: [
-          "Start a thrilling escapade on a mesmerizing photographic journey through Ethiopia, immersing yourself in the country's rich cultural heritage and breathtaking landscapes. From the ancient rock-hewn churches of Lalibela to the otherworldly beauty of the Danakil Depression, this trip offers a unique opportunity to capture Ethiopia's timeless wonders.",
-          "Begin in Addis Ababa, where you'll explore vibrant markets and visit historical landmarks. Journey to Gonder and the Simien Mountains, where stunning scenery and endemic wildlife await. Discover the rock-hewn churches of Lalibela, a UNESCO World Heritage Site. Continue to Axum and the Tigray region, home to impressive monolithic churches. Conclude your adventure in the otherworldly landscapes of the Danakil Depression.",
-          "Join us on this photographic odyssey and capture the essence of Ethiopia's timeless allure.",
+          "Launch an Ethiopia Photography Tour that sweeps from Addis Ababa’s buzzing streets to the flaming colours of the Danakil Depression. This lens-focused journey frames rock-hewn churches, royal castles, high-alp peaks and the remote tribes of Tigray, giving you nonstop chances to capture Ethiopia’s history, culture and surreal geology in perfect light.",
         ],
         lr: true,
         img1: images.yemata1,
@@ -4889,47 +4920,37 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
           {
             title: "Addis Ababa",
             description:
-              "Explore the vibrant capital city, visit local markets, and discover historical landmarks.",
-          },
-          {
-            title: "Lake Tana",
-            description:
-              "Take a boat ride to visit an isolated church on the tranquil shores of Lake Tana.",
-          },
-          {
-            title: "Gonder",
-            description:
-              "Marvel at the Fasilades Castles and the Debre Berhan Church, reflecting Ethiopia's regal past.",
+              "Master street photography in the bustling Mercato, capture vast panoramas from Entoto Hill, and shoot portraits inside historic cathedrals.",
           },
           {
             title: "Simien Mountains",
             description:
-              "Embark on scenic walks in stunning mountain landscapes, capturing the unique flora and fauna of this UNESCO World Heritage Site.",
+              "Capture dramatic cliff panoramas and frame unique endemic wildlife on an unforgettable photo expedition into the 'Roof of Africa'.",
+          },
+          {
+            title: "Gonder Castles",
+            description:
+              "Shoot moody medieval architecture, capturing the magic of Gonder's royal castles at sunrise and during the enchanting blue hour.",
           },
           {
             title: "Lalibela",
             description:
-              "Witness the awe-inspiring rock-hewn churches, a testament to the incredible architectural achievements of ancient Ethiopia.",
+              "Perfect your low-light tripod skills, capturing the sacred atmosphere and timeless details inside monolithic rock-hewn churches.",
           },
           {
-            title: "Axum",
+            title: "Axum & Tigray",
             description:
-              "Visit the stelae, archaeological sites, and the Church of Saint Mary of Zion, where the Ark of the Covenant is believed to be kept.",
-          },
-          {
-            title: "Tigray Rock Churches",
-            description:
-              "Explore the hidden gems of the Tigray region, encountering remote monolithic churches carved into cliff faces.",
+              "Create dramatic stelae silhouettes in Axum and capture stunning sunbursts against the rock-faces of Tigray's hidden cliff-churches.",
           },
           {
             title: "Danakil Depression",
             description:
-              "Experience the surreal landscapes of the Danakil Depression, including the mesmerizing Dallol area and salt flats.",
+              "Document the alien beauty of acid pools, the epic scale of salt caravans, and practice astrophotography over glowing lava fields.",
           },
           {
             title: "Cultural Encounters",
             description:
-              "Interact with local communities, capturing their traditions, daily life, and vibrant expressions of Ethiopian culture.",
+              "Create intimate village portraits, capture the vibrant energy of craft markets, and document the rich traditions of a sacred coffee ceremony.",
           },
         ],
       },
@@ -4940,58 +4961,62 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
           {
             title: "Day 1",
             description:
-              "Arrive in Addis Ababa, explore the city's markets and landmarks.",
+              "Arrive in Addis Ababa and kick off the expedition by capturing the glittering night-time skyline and welcome portraits.",
           },
           {
             title: "Day 2",
             description:
-              "Fly to Gonder, transfer to the Simien Mountains National Park.",
+              "Shoot in Addis, from the golden hour light over Mount Entoto to the breathtaking interiors of ancient cathedrals.",
           },
           {
             title: "Day 3",
-            description: "Capture the scenic beauty of the Simien Mountains.",
+            description:
+              "Fly to Gonder and ascend into the Simien Mountains, capturing misty escarpments and intimate close-ups of gelada monkeys.",
           },
           {
             title: "Day 4",
             description:
-              "Return to Gonder, visit historical sites and castles.",
+              "Explore Simien National Park, focusing on action shots of the rare Walia ibex and the immense, soaring lammergeyer vultures.",
           },
           {
             title: "Day 5",
             description:
-              "Fly to Lalibela, photograph the iconic rock-hewn churches.",
+              "Return to Gonder to photograph the legendary Fasil Castle, capturing its magical reflections in the water at dusk.",
           },
           {
             title: "Day 6",
-            description: "Explore more rock churches in and around Lalibela.",
+            description:
+              "Fly to the holy city of Lalibela to document the intricate architectural details of the first cluster of rock-hewn churches.",
           },
           {
             title: "Day 7",
-            description: "Fly to Axum, drive to the Gheralta area.",
+            description:
+              "Venture to the Yemrehanna Kristos cave church to photograph the ethereal light rays filtering into its stunning interior.",
           },
           {
             title: "Day 8",
             description:
-              "Discover the Tigray rock churches and surrounding landscapes.",
+              "Fly to Axum to capture its ancient stelae in dramatic side-light, then drive to Gheralta for a stunning sunset over the cliffs.",
           },
           {
             title: "Day 9",
             description:
-              "Journey to the Danakil Depression, witness the sunset over Lake Asale.",
+              "Hike to the magnificent Tigray rock-hewn churches, aiming to capture a breathtaking sunrise from the summit of Mariam Korkor.",
           },
           {
             title: "Day 10",
-            description: "Explore the mesmerizing Dallol area and salt flats.",
+            description:
+              "Drive into the otherworldly Danakil Depression, playing with perspective to capture surreal mirage shots on the salt flats of Lake Asale.",
           },
           {
             title: "Day 11",
             description:
-              "Further exploration of the Danakil area, drive to Mekelle.",
+              "Photograph the vibrant, alien landscapes of the Dallol acid pools and the timeless spectacle of the salt-laden camel caravans.",
           },
           {
             title: "Day 12",
             description:
-              "Fly back to Addis Ababa, depart with unforgettable memories of Ethiopia's timeless wonders.",
+              "Fly back to Addis for a final gallery editing session and a farewell dinner to celebrate an incredible photographic journey.",
           },
         ],
       },
@@ -5117,7 +5142,11 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
   },
   {
     id: 3,
-    experience: 5,
+    experience: "ethiopia-photography-tours",
+    slug: "omo-valley-photography-tour",
+    metaTitle: "Omo Valley Photo Expedition",
+    metaDescription:
+      "Join Sawla Tours’ Omo Valley Photo Expedition—an expert-led Omo Valley photography tour: Capture portraits of Suri, Hamer, Mursi, Kara & Dassanech tribes.",
     title: "Through The Lens",
     index: false,
     image: images.omo3,
@@ -5127,10 +5156,11 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
     linkname: "Start Planning",
     intro: [
       {
-        title: "Through The Lens",
+        title:
+          "Through the Lens: Omo Valley Photo Expedition & Tribal Photography Tour",
         subtitle: "A Photographic Journey To The Lost Tribes Of The Omo Valley",
         description: [
-          "Dive into the unknowns on an extraordinary expedition to the mystical land of Ethiopia, where ancient traditions and untouched landscapes converge in a harmonious blend. This immersive photographic tour will lead you through the enchanting Omo Valley, a realm steeped in captivating history and home to the lost tribes that have preserved their unique cultures for centuries.",
+          "Embark on the ultimate Omo Valley photo expedition—an adventure-style Omo Valley photography tour that carries you from Addis Ababa’s buzzing markets to the remotest tribal hamlets on the Kenyan border. This immersive journey lets you frame the bold body-art of the Karo, the symbolic lip plates of the Mursi and the head-turning bull-jump ritual of the Hamar, all while threading through Rift-Valley lakes, coffee highlands and volcanic gorges that few travellers ever reach",
           "From the vibrant streets of Addis Ababa to the remote corners of the region, every step of this journey unveils awe-inspiring scenes waiting to be captured by your lens. Immerse yourself in the mesmerizing lives of the Gurage, Surma, Karo, Hamer, Mursi, and other extraordinary tribes that call this land their home. As you traverse through sprawling coffee plantations, traverse deep gorges, and wander among picturesque villages, prepare to witness the timeless beauty and profound human connections that define Ethiopia's Omo Valley.",
           "Witness captivating ceremonies, traditional rituals, and breathtaking landscapes as you delve deep into the lives of these remarkable tribes. Each day brings new encounters and photographic opportunities, providing a truly immersive experience.",
           "Join us on this unforgettable journey and capture the untamed beauty of Ethiopia's tribal communities. Join us on this artistic odyssey and unlock the secrets of Ethiopia's lost tribes through the power of your camera.",
@@ -5148,44 +5178,34 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
         description: "",
         destinations: [
           {
-            title: "Addis Ababa",
+            title: "Addis Ababa Street Session",
             description:
-              "Explore the vibrant capital city, capturing its bustling markets and historical landmarks.",
+              "Sharpen your skills with a warm-up street photography session in Addis Ababa before the main Omo Valley expedition.",
           },
           {
-            title: "Jimma and Mizan",
+            title: "Gurage & Oromo Villages",
             description:
-              "Travel through picturesque landscapes, capturing the unique lifestyles of the Gurage, Oromo, and Kefecho people.",
+              "Capture candid portraits and authentic daily life in traditional Gurage and Oromo villages en-route to Jimma.",
           },
           {
-            title: "Kibish and the Surma",
+            title: "Kibish & Surma",
             description:
-              "Immerse yourself in the captivating world of the Surma tribe, photographing their distinct body painting, scarification, and cultural practices.",
+              "Embark on a remote photo tour to respectfully document the intricate scarification and bold body paint of the Surma people.",
           },
           {
-            title: "Turmi and the Hamar",
+            title: "Karo on the Omo River",
             description:
-              "Witness the famous cattle-leaping ceremony, document the Hamar's unique attire, and capture their daily rituals.",
+              "Compose stunning wide-angle environmental portraits with the Karo tribe on the banks of the Omo River as dusk descends.",
           },
           {
-            title: "Kangate and Karo",
+            title: "Turmi & Hamar",
             description:
-              "Visit the Karo tribe known for their elaborate body painting, capturing their stunning adornments and scenic surroundings.",
+              "Witness and photograph the iconic Hamar bull-jumping ceremony—a vibrant, core experience of any Omo Valley photo tour.",
           },
           {
-            title: "Jinka and the Mursi",
+            title: "Dassanech & Nyangatom",
             description:
-              "Venture into Mago National Park to meet the Mursi tribe and photograph their iconic lip plates.",
-          },
-          {
-            title: "Scenic Landscapes",
-            description:
-              "Capture the breathtaking landscapes of Ethiopia's southwestern region, from the Omo River to the Great Rift Valley.",
-          },
-          {
-            title: "Cultural Encounters",
-            description:
-              "Interact with tribal communities, gaining insight into their traditions, beliefs, and ways of life.",
+              "Venture across the river for unique portraits of the Dassanech & Nyangatom tribes, a low-competition area ideal for pro shots.",
           },
         ],
       },
@@ -5370,7 +5390,11 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
   },
   {
     id: 4,
-    experience: 5,
+    experience: "ethiopia-photography-tours",
+    slug: "omo-valley-photo-expedition",
+    metaTitle: "Lalibela-Danakil-Omo: Ethiopia Photography Tour",
+    metaDescription:
+      "Join Sawla Tours’ Ethiopia Photography Tour—Lalibela legends, Danakil Depression photography tour & Omo Valley photo expedition. Book now!",
     title: "Ethiopia Unveiled",
     index: false,
     image: images.mursi1,
@@ -5380,13 +5404,12 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
     linkname: "Start Planning",
     intro: [
       {
-        title: "Introducing Ethiopia Unveiled",
+        title:
+          "Ethiopia Photography Tour: Lalibela Legends, Danakil Wonders & Omo Valley Tribes",
         subtitle:
           "A Photographic Journey Through Ancient Lands And Vibrant Tribes",
         description: [
-          'Commence a journey on a mesmerizing photographic journey through Ethiopia\'s ancient lands and vibrant tribal communities. "Ethiopia Unveiled" offers a unique opportunity to capture the raw beauty, rich cultural heritage, and untamed landscapes of this captivating country. From the bustling streets of Addis Ababa to the remote villages of the Mursi, Hamer, and Karo tribes, every moment is a visual feast waiting to be captured.',
-          "Explore rock-hewn churches, witness traditional rituals, and immerse yourself in the daily lives of the tribespeople. This extraordinary expedition will take you through the Danakil Depression, Lalibela's mystical rock churches, the awe-inspiring Omo Valley, and more.",
-          "Join us on this captivating journey and uncover the hidden treasures of Ethiopia through the lens of your camera.",
+          "Ethiopia Photography Tour is your passport to rock-hewn mystery, molten salt plateaus and soulful portraits. Kick off with a dawn-to-dusk Omo Valley photo expedition, dive into a sulphur-stained Danakil Depression photography tour, then frame candle-lit pilgrimages amid Lalibela’s monolithic churches. Three iconic regions, one curated adventure—ready your shutter.",
         ],
         lr: true,
         img1: images.tigray4,
@@ -5669,7 +5692,12 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
   },
   {
     id: 5,
-    experience: 5,
+    experience: "ethiopia-photography-tours",
+    slug: "ethiopian-wildlife-photo-tour",
+    metaTitle:
+      "Ethiopia Photography Tour – Highland Safari & Wildlife | Sawla Tours",
+    metaDescription:
+      "Book your bespoke Ethiopia photography tour now! Capture wolves, geladas & tribal portraits on Ethiopian Wildlife photo tour with Sawla Tours.",
     title: "Ethiopian Highlands Revealed",
     index: false,
     image: images.simien1,
@@ -5678,12 +5706,11 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
     linkname: "Start Planning",
     intro: [
       {
-        title: "Introducing Ethiopian Highlands Revealed",
+        title:
+          "Ethiopia Photography Tour: Highland Photo Safari & Wildlife Tribes",
         subtitle: "A Photographic Odyssey Through Mountains And Wildlife",
         description: [
-          'Embark on an unforgettable photographic journey through the stunning landscapes and rich wildlife of Ethiopia\'s highlands. "Ethiopian Highlands Revealed" invites you to capture the raw beauty, endemic species, and cultural heritage of this breathtaking region.',
-          "From the bustling city of Addis Ababa to the dramatic Simien and Bale Mountains National Parks, every moment is a visual feast waiting to be immortalized through your lens.",
-          "Explore the Rift Valley Lakes, marvel at Gondar's imperial palaces, and witness the unique gelada baboons and Ethiopian wolves in their natural habitats. This extraordinary expedition will take you on a captivating visual odyssey through the heart of Ethiopia.",
+          "Join our Ethiopia photography tour for an unrivalled visual feast across the country’s loftiest peaks and most remote valleys. From gelada-strewn cliffs on the Ethiopian Highlands photo safari to intimate sessions with the lip-plated Mursi and the endangered Ethiopian wolves, every stop is purpose-built for striking, story-driven frames. This 12-day Ethiopian wildlife photography tour layers imperial castles, Rift-Valley lakes and volcanic other-worlds into one seamless odyssey—guided by shooters who know exactly where the light (and the action) will land next.",
         ],
         lr: true,
         img1: images.simien1,
@@ -5700,27 +5727,37 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
           {
             title: "Addis Ababa",
             description:
-              "Begin your journey in Ethiopia's capital, capturing the vibrant cityscapes, markets, and cultural diversity.",
+              "Frame compelling city-life portraits within the capital's buzzing markets and grand Orthodox cathedrals.",
           },
           {
             title: "Rift Valley Lakes",
             description:
-              "Photograph the serene beauty of Lake Langano and Lake Ziway, home to a rich variety of waterbirds.",
+              "Capture vibrant water-birds at Lakes Langano and Ziway on a stunning Ethiopian Highlands photo safari.",
           },
           {
-            title: "Bale Mountains National Park",
+            title: "Bale Mountains NP",
             description:
-              "Explore the Afro-alpine moorlands, photograph the endangered Ethiopian wolves, and encounter the endemic Giant Mole Rat.",
+              "Shoot wide-angle landscapes of unique Afro-alpine moorlands, featuring giant lobelias and the rare Ethiopian wolf.",
+          },
+          {
+            title: "Hawassa Wetlands",
+            description:
+              "Get incredible eye-level shots of the majestic Wattled and Black-crowned Cranes in the rich Hawassa Wetlands.",
           },
           {
             title: "Gondar",
             description:
-              "Capture the imperial palaces, ancient castles, and the beautiful Debre Berhan Selassie church.",
+              "Photograph the turreted castles of 'Africa's Camelot' and the famous frescoed ceilings of Debre Berhan Selassie church.",
           },
           {
-            title: "Simien Mountains National Park",
+            title: "Simien Mountains NP",
             description:
-              "Witness the dramatic landscapes, photograph the endemic Gelada baboons, and search for the endangered Walia Ibex.",
+              "Capture jaw-dropping escarpments, troops of gelada baboons, and the elusive Walia Ibex in the dramatic Simien Mountains.",
+          },
+          {
+            title: "Tribal South",
+            description:
+              "Conclude your tour with powerful cultural shoots of the Hamer, Karo, and Mursi people in Ethiopia's fascinating south.",
           },
         ],
       },
@@ -5880,7 +5917,10 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
   },
   {
     id: 6,
-    experience: 5,
+    experience: "ethiopia-photography-tours",
+slug: "awash-national-park-photo-safari",
+  metaTitle: "Ethiopia Wildlife Photo Tour – Awash & Harar | Sawla",
+  metaDescription: "Join an Ethiopia wildlife photography tour to Awash NP and Harar’s Hyena Men—book now with Sawla Tours; reserve your seat today!",
     title: "Ethiopia's Wildlife And Cultural Encounters",
     index: false,
     image: images.awash1,
@@ -5889,12 +5929,11 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
     linkname: "Start Planning",
     intro: [
       {
-        title: "Introducing Ethiopia's Wildlife And Cultural Encounters",
+        title:
+          "Ethiopia Wildlife Photography Tour: Awash Safari & Hyena-Men of Harar",
         subtitle: "Awash & Hyena Men Of Harar",
         description: [
-          "Start a voyage on a captivating journey through Ethiopia's diverse landscapes, where wildlife encounters and cultural experiences await photographers seeking extraordinary moments. This 5-day extension takes you to the spectacular Awash National Park, home to diverse mammals and a plethora of bird species. Capture the magnificence of Nile Crocodiles and photograph avian wonders like Lappet-faced Vultures, Tawny Eagles, and Abyssinian Rollers.",
-          "Immerse yourself in the ancient city of Harar, known for its rich history and unique traditions. Witness the awe-inspiring Hyaena Men, as they interact with spotted hyenas in a mesmerizing display of trust and connection. Explore Harar's ancient medina, capturing the vibrant streets, bustling markets, and ornate mosques. Photograph the mesmerizing Yellow-billed Kites as they swoop down to feed.",
-          "This extension offers a blend of wildlife photography, cultural immersion, and unforgettable encounters, adding an extra dimension to your Ethiopian adventure.",
+          "Set off on an Ethiopia wildlife photography tour that blends raw nature with living legend. From Nile Crocodiles basking below Awash Falls to the nightly ballet of Harar’s Hyena-Men, this five-day add-on packs big-game action and once-in-a-lifetime cultural portraits into a tight, shoot-all-day schedule. Track oryx on the acacia plains, frame tawny eagles over Rift-Valley cliffs and weave through Harar’s 1 000-year-old alleyways before sunset kites fill the sky.",
         ],
         lr: true,
         img1: images.awash1,
@@ -5909,25 +5948,25 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
         description: "",
         destinations: [
           {
-            title: "Awash National Park",
-            description:
-              "Capture diverse wildlife, including Olive Baboons, Salt's Dikdiks, and Beisa Oryx, while photographing a wide variety of bird species in the park's stunning landscapes.",
-          },
-          {
-            title: "Harar",
-            description:
-              "Immerse yourself in the ancient city's captivating history, explore the winding alleyways of the medina, and witness the vibrant culture and architecture that make Harar a photographer's paradise.",
-          },
-          {
-            title: "Hyaena Men of Harar",
-            description:
-              "Witness a truly unique spectacle as the Hyaena Men interact with spotted hyenas up close, offering unparalleled photography opportunities and an unforgettable wildlife encounter.",
-          },
-          {
-            title: "Cultural Immersion",
-            description:
-              "Engage with the local Afar people in the Bilen area, gaining insight into their traditional lifestyle and capturing authentic portraits and cultural moments.",
-          },
+    title: "Awash National Park",
+    description: "Lead a classic photo safari, capturing herds of Beisa oryx, the tiny Salt’s dik-dik, and dramatic raptor fly-bys."
+  },
+  {
+    title: "Awash Falls Lodge",
+    description: "Conduct slow-shutter experiments on the thundering cascades and get stunningly sharp close-ups of basking Nile Crocodiles."
+  },
+  {
+    title: "Bilen Grasslands",
+    description: "Track the elusive African Golden Wolf and frame the rare Arabian Bustard against the vast, ochre-colored plains."
+  },
+  {
+    title: "Harar Medina",
+    description: "Get lost in a labyrinth of pastel doorways and bustling markets, perfect for compelling street photography shoots."
+  },
+  {
+    title: "Hyena-Men Arena",
+    description: "Capture surreal blue-hour portraits as you photograph the legendary Hyena-Men hand-feeding wild spotted hyenas."
+  }
         ],
       },
       {
@@ -6027,7 +6066,10 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
   },
   {
     id: 7,
-    experience: 5,
+    experience: "ethiopia-photography-tours",
+    slug: "tribal-photo-safari-ethiopia",
+  metaTitle: "Omo Valley Photography Tour | Suri Tribe Photography Tour",
+  metaDescription: "Book your Omo Valley photography tour now—shoot Suri, Hamar, Mursi, Kara & Dassanech tribes with Sawla Tours. Limited seats; reserve your photo safari today!",
     title: "Enchanting Encounters",
     index: false,
     image: images.hamer1,
@@ -6037,11 +6079,11 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
     linkname: "Start Planning",
     intro: [
       {
-        title: "Introducing Enchanting Encounters",
+        title: "Omo Valley Photography Tour: Tribes & Timeless Landscapes",
         subtitle:
-          "Photographic Journey Through The Tribal Landscapes Of Ethiopia",
+          "Omo Valley Photography Tour: Tribes & Timeless Landscapes",
         description: [
-          "Dive into an experience on an extraordinary photographic adventure that will immerse you in the captivating beauty and cultural richness of Ethiopia. This carefully curated tour takes you on a mesmerizing journey through the Omo Valley, where remote tribes preserve their ancient traditions amidst breathtaking landscapes.",
+          "Plunge into an Omo Valley photography tour that fuses arresting scenery with once-in-a-lifetime cultural access. From Addis Ababa’s buzzing markets to the Suri’s remote highland hamlets and the clay-plate Mursi of Mago, every stop invites bold portraits and sweeping environmental shots. Guided by tribal fixers and pro shooters, you’ll hone technique, trade stories and come home with a portfolio that breathes Ethiopia’s living history.",
           "From the bustling streets of Addis Ababa to the remote villages of the Suri, Hamar, Karo, and Mursi tribes, each day is filled with opportunities to capture unforgettable moments.",
           "Led by experienced guides and photographers, this tour offers a unique blend of discovery, cultural exchange, and artistic exploration. Get ready to unleash your creativity as you witness the vibrancy of Ethiopia's tribal heritage through your lens.",
         ],
@@ -6057,37 +6099,27 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
         title: "Highlighted Destinations",
         description: "",
         destinations: [
-          {
-            title: "Suri Tribe",
-            description:
-              "Explore the lesser-known Suri tribe, capturing their unique way of life in stunning portraits.",
-          },
-          {
-            title: "Karo Tribe",
-            description:
-              "Witness the elaborate body and facial paintings of the Karo tribe, offering a glimpse into their ancient customs.",
-          },
-          {
-            title: "Hamar Tribe",
-            description:
-              "Immerse yourself in the vibrant traditions of the Hamar tribe, known for their bull-jumping ceremonies.",
-          },
-          {
-            title: "Mursi Tribe",
-            description:
-              "Encounter the renowned Mursi tribe, famous for the clay lip plates worn by their women.",
-          },
-          {
-            title: "Mago National Park",
-            description:
-              "Marvel at the diverse landscapes of Ethiopia, from lush forests and cultivated lands to the untamed beauty of Mago National Park.",
-          },
-          {
-            title: "Expert Guides",
-            description:
-              "Benefit from the expertise of experienced guides and photographers who will provide insights, tips, and guidance throughout the journey.",
-          },
-        ],
+  {
+    title: "Addis Ababa",
+    description: "Begin your photo safari in Addis Ababa, capturing vibrant street life and rich museum artifacts before heading to the Omo Valley."
+  },
+  {
+    title: "Suri Tribe & Kibish Highlands",
+    description: "Venture into the remote Kibish Highlands, capturing the unique scarification art and daily life of the Suri people in stunning dusk portraits."
+  },
+  {
+    title: "Hamar Tribe",
+    description: "Immerse yourself in vibrant traditions near Turmi, photographing the famous bull-jumping ceremony and golden-hour dance circles."
+  },
+  {
+    title: "Karo Tribe",
+    description: "Witness the incredible body-paint pageantry of the Karo people, composing portraits against the dramatic backdrop of the Omo River's bluffs."
+  },
+  {
+    title: "Mursi Tribe & Mago National Park",
+    description: "Journey into Mago National Park to photograph the renowned Mursi people, capturing morning light portraits of their lip-plate matriarchs."
+  }
+],
       },
       {
         title: "Itinerary at a Glance",
@@ -6220,7 +6252,11 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
   },
   {
     id: 1,
-    experience: 6,
+    experience: "ethiopia-birdwatching-tours",
+    slug: "ethiopia-birding-safari",
+  metaTitle: "Ethiopia Birding Tour | Sawla Tours Wildlife Safari",
+  metaDescription: "Join an Ethiopia birding tour with Sawla Tours and capture endemic species, Rift Valley lakes and Bale Mountains—reserve your wildlife photography spot today."
+,
     title: "Ethiopia's Avian Wonders",
     index: false,
     image: images.bird1,
@@ -6229,11 +6265,10 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
     linkname: "Start Planning",
     intro: [
       {
-        title: "Introducing Ethiopia's Avian Wonders",
+        title: "Ethiopia Birding Tour: Avian Wonders & Endemic Treasures",
         subtitle: "A Journey through Endemic Treasures",
         description: [
-          "Embark on a mesmerizing expedition through the ancient and diverse land of Ethiopia, where nature's artistic palette comes to life in a symphony of vibrant colors and extraordinary wildlife encounters. This small group tour immerses you in the awe-inspiring world of Ethiopia's endemic birds, showcasing its bountiful avian treasures amidst a backdrop of breathtaking landscapes, rich cultures, and captivating history.",
-          "From the tame and confiding endemics to the fascinating Ethiopian Wolf and the remarkable Gelada troops, every moment of this 17-day adventure is filled with wonder. Delve into the kaleidoscope of cultures, traverse diverse habitats, and witness the astonishing biodiversity that makes Ethiopia an essential destination for birders and nature enthusiasts alike. Join us on this bird-filled odyssey, where Ethiopia's hidden gems await your discovery.",
+          "Join our Ethiopia birding tour and explore a land where vibrant colours burst from ancient landscapes. Over 17 days, you will seek Ethiopia’s endemic birds, photograph Gelada monkeys, and watch for the rare Ethiopian wolf. Each day balances culture, scenery, and wildlife. Travel through high-land forests, Rift Valley lakes, and open savannas with expert guides. Discover why Ethiopia is a dream destination for birders and nature lovers.",
         ],
         lr: true,
         img1: images.bird1,
@@ -6248,55 +6283,41 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
         description: "",
         destinations: [
           {
-            title: "Discover Ethiopia's Endemic Birds",
-            description:
-              "Discover Ethiopia's incredible array of endemic bird species, including the elusive Stresemann's Bushcrow and the glistening White-tailed Swallow.",
-          },
-          {
-            title: "Flamingos at Lake Abijatta",
-            description:
-              "Witness the vibrant spectacle of Greater and Lesser Flamingos at Lake Abijatta, alongside an abundance of other waterbirds.",
-          },
-          {
-            title: "Bale Mountain National Park",
-            description:
-              "Explore the breathtaking landscapes of Bale Mountain National Park, home to the endangered Ethiopian Wolf and an array of highland biome species.",
-          },
-          {
-            title: "Cultural Encounters",
-            description:
-              "Experience the cultural richness of Ethiopia as you encounter local tribes, such as the Afar and Guji, known for their traditional lifestyles and unique adornments.",
-          },
-          {
-            title: "Gelada Troops in the Harenna Forest",
-            description:
-              "Marvel at the remarkable Gelada troops, known as 'Bleeding Heart Baboons,' and observe their social behaviors in the Harenna Forest.",
-          },
-          {
-            title: "Rift Valley Lakes",
-            description:
-              "Traverse the majestic Rift Valley, visiting iconic lakes like Ziway, Langano, and Hawassa, each offering a diverse range of bird species.",
-          },
-          {
-            title: "Negele Borena",
-            description:
-              "Venture into the remote Negele Borena region, where you'll have the opportunity to spot the endangered Ruspoli's Turaco.",
-          },
-          {
-            title: "Awash National Park",
-            description:
-              "Enjoy birding excursions in Awash National Park, renowned for its diverse habitats and impressive bird list, including bustards, raptors, and nightjars.",
-          },
-          {
-            title: "Photography",
-            description:
-              "Capture the unique beauty of Ethiopia's avian wonders through photography, as you encounter rare and striking species in their natural habitats.",
-          },
-          {
-            title: "Addis Ababa",
-            description:
-              "Immerse yourself in the rich history and culture of Ethiopia's vibrant capital city, Addis Ababa, while reflecting on the incredible memories from your avian adventure.",
-          },
+    title: "Addis Ababa",
+    description: "Begin your avian adventure by spotting your first lifers in the capital's city parks before your journey south."
+  },
+  {
+    title: "Rift Valley Lakes",
+    description: "Explore the iconic Lakes Ziway and Langano, capturing images of vibrant flamingos, waterfowl, and majestic fish-eagles."
+  },
+  {
+    title: "Bale Mountains National Park",
+    description: "Discover Afro-alpine moorlands, home to the Ethiopian Wolf and birding specials like the Spot-breasted Lapwing."
+  },
+  {
+    title: "Negele Borena",
+    description: "Venture into remote southern Ethiopia on a quest for the stunning and elusive Ruspoli’s Turaco and other dry-country birds."
+  },
+  {
+    title: "Yabello Wildlife Sanctuary",
+    description: "Seek out Ethiopia's most iconic endemic birds, including the Stresemann’s Bush-crow and the glistening White-tailed Swallow."
+  },
+  {
+    title: "Awash & Aledeghi Plains",
+    description: "Search the grasslands for up to six species of bustard and other wildlife like the Beisa Oryx on a classic photo safari."
+  },
+  {
+    title: "Jemma Valley & Ankober",
+    description: "Scan the dramatic cliffs of the Ankober escarpment for chats, Harwood’s Francolin, and troops of Gelada baboons."
+  },
+  {
+    title: "Cultural Encounters",
+    description: "Experience the rich cultural tapestry of Ethiopia, meeting local peoples like the Afar and Guji in their traditional villages."
+  },
+  {
+    title: "Wildlife & Bird Photography",
+    description: "Capture the unique beauty of Ethiopia's avian wonders and rare mammals through your lens in their stunning natural habitats."
+  }
         ],
       },
       {
@@ -6534,7 +6555,11 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
   },
   {
     id: 2,
-    experience: 6,
+    experience: "ethiopia-birdwatching-tours",
+    slug: "simien-mountains-birdwatching",
+  metaTitle: "Ethiopia Birding Tour | Simiens & Gondar Endemics – Sawla Tours",
+  metaDescription: "Join our Ethiopia birding tour with Sawla Tours to photograph endemic species in the Simien Mountains and historic Gondar—reserve your spot today!"
+,
     title: "Enchanting Ethiopia",
     index: false,
     image: images.bird2,
@@ -6543,11 +6568,10 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
     linkname: "Start Planning",
     intro: [
       {
-        title: "Introducing Enchanting Ethiopia",
+        title: "Ethiopia Birding Tour: Endemic Encounters in the Simiens & Gondar",
         subtitle: "Capturing Endemics In Simiens & Gondar",
         description: [
-          "Embark on a mesmerizing photographic adventure through Ethiopia, where every corner reveals captivating landscapes, rich history, and a wealth of extraordinary birdlife. Join us on the Endemics a 6-day journey that will take you to the enchanting Simien Mountains National Park and the historic city of Gondar.",
-          "As a photographer, you'll be immersed in a world of rare endemic bird species, stunning vistas, and encounters with fascinating wildlife. From the elusive Ethiopian Wolf to troops of Gelada Baboons, the wonders of Ethiopia's natural heritage await your lens. Discover the kaleidoscope of cultures, the ancient castles, and the breathtaking scenery that make Ethiopia a treasure trove for photographers and adventurers alike. Get ready to capture moments that will forever be etched in your memory.",
+          "Embark on Ethiopia birding tour perfection during this 6-day odyssey from Addis Ababa to the craggy Simien Mountains and story-book Gondar. Your lens will frame rare endemics, dramatic escarpments and charismatic mammals such as Gelada Baboons while expert guides help you track down headline species like Ankober Serin and Rouget’s Rail. Culture, castles and cloud-piercing vistas combine for a compact adventure that delivers big photographic rewards.",
         ],
         lr: true,
         img1: images.bird1,
@@ -6560,53 +6584,26 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
       {
         title: "Highlights of the Itinerary",
         description: "",
-        destinations: [
-          {
-            title: "Simien Mountains National Park",
-            description:
-              "Witness the rare and magnificent Walia Ibex in their rugged habitat and marvel at the iconic jagged skyline of this World Heritage Site.",
-          },
-          {
-            title: "Gelada Baboons",
-            description:
-              "Spend time observing and photographing troops of Geladas, with their unique appearance and captivating behaviors.",
-          },
-          {
-            title: "Ethiopian Wolf",
-            description:
-              "If luck is on your side, catch a glimpse of the world's rarest canid as it roams the remote areas of the park.",
-          },
-          {
-            title: "Endemic Birdlife",
-            description:
-              "Explore the diversity of bird species, including Rouget's Rail, Erckel's Francolin, Abyssinian Longclaw, and the striking Ankober Serin.",
-          },
-          {
-            title: "Gondar",
-            description:
-              "Delve into the history of the 'Camelot of Ethiopia' with its medieval castles, ornate churches, and breathtaking views over Lake Tana.",
-          },
-          {
-            title: "Scenic Landscapes",
-            description:
-              "Capture the awe-inspiring beauty of the Simien Mountains, with their volcanic rock formations and dramatic vistas.",
-          },
-          {
-            title: "Ethiopian Culture",
-            description:
-              "Immerse yourself in the vibrant traditions and rich heritage of Ethiopia's diverse cultures, providing endless opportunities for cultural photography.",
-          },
-          {
-            title: "Wildlife Encounters",
-            description:
-              "Keep an eye out for Serval, Klipspringer, Guereza, Abyssinian Rock Hyrax, and other fascinating mammalian species.",
-          },
-          {
-            title: "Addis Ababa Exploration",
-            description:
-              "Take time to explore the historical sites, museums, and bustling markets of Ethiopia's vibrant capital.",
-          },
-        ],
+        destinations: [{
+    title: "Addis Ababa",
+    description: "Begin your tour in Addis Ababa's city parks, a warm-up session alive with the endemic Wattled Ibis and shimmering Tacazze Sunbirds."
+  },
+  {
+    title: "Simien Mountains National Park",
+    description: "Explore the core of the Simien birdwatching scene, where the rare Walia Ibex and giant Bearded Vultures provide a stunning backdrop."
+  },
+  {
+    title: "Chenek Escarpment",
+    description: "Visit this hotspot at dawn to find the Ankober Serin and spot the Ethiopian Wolf, all bathed in golden morning light."
+  },
+  {
+    title: "Gondar (“Camelot of Ethiopia”)",
+    description: "Discover Gondar's medieval castles, a unique setting for spotting the beautiful Banded Barbet and Black-winged Lovebird."
+  },
+  {
+    title: "Lake Tana View-points",
+    description: "Scan the vast expanse of Ethiopia’s largest lake from scenic viewpoints for a chance to photograph the magnificent African Fish Eagle."
+  }],
       },
       {
         title: "Itinerary at a Glance",
@@ -6689,7 +6686,11 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
   },
   {
     id: 3,
-    experience: 6,
+    experience: "ethiopia-birdwatching-tours",
+    slug: "ethiopia-birdwatching-holiday",
+  metaTitle: "Ethiopia Birding Tour | 22-Day Mega Safari",
+  metaDescription: "Join an unforgettable Ethiopia birding tour with Sawla Tours—22 days, 460+ species, endemic highlights. Book your spot today!"
+,
     title: "Wings Of Ethiopia",
     index: false,
     image: images.bird3,
@@ -6698,11 +6699,10 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
     linkname: "Start Planning",
     intro: [
       {
-        title: "Introducing Wings Of Ethiopia",
+        title: "Wings of Ethiopia – Ultimate 22-Day Ethiopia Birding Tour",
         subtitle: "A Mega Birding Adventure",
         description: [
-          "Commence an adventure on an extraordinary journey through the diverse landscapes of Ethiopia, where nature unveils its majestic wonders and avian treasures. \"Wings of Ethiopia: A Mega Birding Adventure\" invites you to explore this captivating country's rich biodiversity and unique birdlife. Over the course of 22 days, you'll traverse breathtaking landscapes, from the Great Rift Valley to the Harenna Forest, the Bale Mountain National Park to the vast savannas of the Yabello area.",
-          "Along the way, encounter over 460 bird species, including numerous endemics and rarities. From the elusive Stresemann's Bushcrow to the vibrant White-tailed Swallow, every day will be filled with awe-inspiring sightings and unforgettable moments. Immerse yourself in the magic of Ethiopia's natural heritage and let your spirit take flight in this extraordinary birding paradise.",
+          "Join our Ethiopia birding tour, Wings of Ethiopia: A Mega Birding Adventure, and spend 22 days chasing birds across this spectacular land. You’ll start at the Rift Valley’s glittering lakes before heading into the misty Harenna Forest. Next, summit the moorlands of Bale Mountains National Park and roam the open savannas around Yabello. With expert guides by your side, you’ll spot over 460 species—from iconic endemics like Stresemann’s Bushcrow to rarities such as the White-tailed Swallow. Each day blends thrilling birdwatching with comfortable lodges and local culture, making this the ultimate Ethiopia birding tour.",
         ],
         lr: true,
         img1: images.bird3,
@@ -6715,58 +6715,34 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
       {
         title: "Highlights of the Itinerary",
         description: "",
-        destinations: [
-          {
-            title: "Rift Valley Lakes",
-            description:
-              "Massive Rift Valley lakes teeming with a mesmerizing array of birdlife.",
-          },
-          {
-            title: "Montane Forests",
-            description:
-              "Moss-draped montane forests boast an impressive selection of endemic species.",
-          },
-          {
-            title: "Ethiopian Wolf",
-            description:
-              "The critically endangered Ethiopian Wolf residing in the high Bale Mountains.",
-          },
-          {
-            title: "Jemma Valley and Awash National Park",
-            description:
-              "The remarkable Jemma Valley and Awash National Park, home to six species of bustard.",
-          },
-          {
-            title: "Seek out elusive treasures",
-            description:
-              "Seek out elusive treasures such as the Spot-breasted Lapwing, Blue-winged Goose, and Rouget's Rail.",
-          },
-          {
-            title: "Ankober Serin",
-            description:
-              "Discover the enchanting Ankober Serin, Salvadori's Seedeater, and the striking Red-billed Pytilia.",
-          },
-          {
-            title: "Yellow-fronted Parrot",
-            description:
-              "Encounter the vibrant Yellow-fronted Parrot, the charming White-backed Black Tit, and the elusive Abyssinian Woodpecker.",
-          },
-          {
-            title: "Ruspoli's Turaco and Stresemann's Bushcrow",
-            description:
-              "Venture into remote corners of Ethiopia to find sought-after endemics like Ruspoli's Turaco and Stresemann's Bushcrow.",
-          },
-          {
-            title: "White-tailed Swallow and Archer's Lark.",
-            description:
-              "Explore the drier habitats of southern Ethiopia, home to unique species like the White-tailed Swallow and Archer's Lark.",
-          },
-          {
-            title: "Kafka-Shiraro National Park",
-            description:
-              "Visit off-the-beaten-track sites, including Mega and Kafka-Shiraro National Park, where the Masked Lark and Sudan Golden Sparrow await.",
-          },
-        ],
+        destinations: [{
+    title: "Lake Langano & Abijatta-Shalla NP",
+    description: "Explore a key African birding hotspot, photographing vast flamingo lagoons, rare Maccoa Ducks, and enormous fish-eagle roosts."
+  },
+  {
+    title: "Bale Mountains & Harenna Forest",
+    description: "Venture into the Bale Mountains to find unique Afro-alpine endemics and photograph the majestic, endangered Ethiopian Wolf."
+  },
+  {
+    title: "Liben Plains & Negele",
+    description: "Journey to the Liben Plains on a quest for rare Somali short-grass specialists like Archer's Lark and the stunning Ruspoli's Turaco."
+  },
+  {
+    title: "Yabello & Mega Savannas",
+    description: "Target Ethiopia's most iconic endemics in the Yabello savannas—the Stresemann's Bushcrow and White-tailed Swallow."
+  },
+  {
+    title: "Awash NP & Aledeghi Reserve",
+    description: "Scan the open steppes for an incredible diversity of arid-land birds, including up to six bustard species and the Somali Ostrich."
+  },
+  {
+    title: "Kafta-Shiraro NP",
+    description: "Witness the spectacular Demoiselle Crane migration and seek Sahel specialities like the Egyptian Plover along the Tekeze River."
+  },
+  {
+    title: "Jemma Valley & Ankober Escarpment",
+    description: "Explore the dramatic Jemma Valley, home to cliff-dwelling endemics like the Ankober Serin and Harwood's Francolin."
+  }],
       },
       {
         title: "Itinerary at a Glance",
@@ -7080,7 +7056,11 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
   },
   {
     id: 4,
-    experience: 6,
+    experience: "ethiopia-birdwatching-tours",
+ slug: "ethiopia-endemic-birdwatching-tour",
+  metaTitle: "Ethiopia Birding Tour | Ethiopia Endemic Birdwatching Tour",
+  metaDescription: "Book your Ethiopia birdwatching tour with Sawla Tours: 12 days, endemic specials & Ethiopia birding safari thrills."
+,
     title: "Exploring Ethiopia's Avian Splendor",
     index: false,
     image: images.bird4,
@@ -7089,11 +7069,10 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
     linkname: "Start Planning",
     intro: [
       {
-        title: "Introducing Exploring Ethiopia's Avian Splendor",
+        title: "Ethiopia Birding Safari: Endemic Birdwatching Tours",
         subtitle: "A Birdwatching Odyssey",
         description: [
-          "Embark on an extraordinary birdwatching odyssey through the diverse landscapes of Ethiopia, a country renowned for its rich birdlife and captivating endemic species. Over the course of 12 days, this immersive tour will take you on a thrilling adventure from bustling cities to remote wilderness areas, allowing you to witness the remarkable avian diversity that Ethiopia has to offer.",
-          "From the bustling capital of Addis Ababa to the majestic Bale Mountains and the hidden gems of Negele and Yabello, each destination holds unique highlights and opportunities to encounter rare and endemic bird species. Get ready to be enthralled by the stunning landscapes, vibrant birdlife, and the warm hospitality of Ethiopia.",
+          "Set out on an extraordinary Ethiopia birdwatching tour and experience 12 days of unforgettable avian adventures. Begin in Addis Ababa’s leafy parks, where newcomers like the Abyssinian Thrush await your binoculars, then journey into the misty heights of the Bale Mountains to seek out moorland endemics. Venture south to the dry woodlands around Negele, famed for White-winged Collared-Dove, before sweeping across Yabello’s open plains in search of the striking Black-breasted Barbet. Each day, expert local guides will share field-tested spotting techniques and lead you to hand-picked lodges that blend comfort with authentic Ethiopian hospitality. Discover dramatic landscapes, rare species, and warm cultural encounters on this immersive tour.",
         ],
         lr: true,
         img1: images.bird2,
@@ -7357,7 +7336,10 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
   },
   {
     id: 5,
-    experience: 6,
+    experience: "ethiopia-birdwatching-tours",
+    slug: "ethiopia-birding-safari-16-days",
+  metaTitle: "Ethiopia Birdwatching Tour | 16-Day Endemic Safari",
+  metaDescription: "Join a 16-day Ethiopia birding safari to discover high-altitude endemics in the Bale Mountains, rare species in Yabello, and unique cultural highlights.",
     title: "Ethiopian Birding Expedition",
     index: false,
     image: images.bird5,
@@ -7366,12 +7348,10 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
     linkname: "Start Planning",
     intro: [
       {
-        title: "Introducing Ethiopian Birding Expedition",
+        title: "Ethiopia Birding Safari: Endemic Birdwatching Tours",
         subtitle: "From Rift Valley To Highlands",
         description: [
-          "Start a quest on an exhilarating journey through the diverse landscapes of Ethiopia, a haven for bird enthusiasts and photographers alike. This 16-day expedition takes you from the bustling capital city of Addis Ababa to stunning national parks, pristine lakes, and remote regions brimming with avian treasures.",
-          "Immerse yourself in the breathtaking beauty of Ethiopia's landscapes while capturing images of rare and endemic bird species. From the Geferssa Reservoir near Addis Ababa to the awe-inspiring Bale Mountains National Park and the arid plains of Yabello, this trip promises incredible encounters with unique birdlife.",
-          "Explore the cultural and historical sites along the way, adding depth to your photographic journey. Join us on this extraordinary birding expedition, where every moment presents a new opportunity to capture the wonders of Ethiopia's avifauna.",
+          "Experience Ethiopia birdwatching tours on an exhilarating 16-day Ethiopia birding safari adventure. Begin in Addis Ababa’s leafy parks and wetlands at Gefersa Reservoir, then ascend into Bale Mountains National Park for high-altitude endemics. Next, explore Yabello’s sun-baked plains in search of raptors and ground-dwelling species. Each day, expert local guides share proven spotting techniques, and you’ll stay in handpicked lodges combining comfort with authentic Ethiopian hospitality.","Along the way, brief cultural stops at historic churches and tribal markets add depth to every shot. Capture Ethiopia’s unique avifauna in a seamless blend of wildlife photography, adventure, and culture. Combining remote wilderness birding with cultural highlights, our Ethiopia birding tour packages ensure you capture the nation’s endemic treasures and create memories to last a lifetime.",
         ],
         lr: true,
         img1: images.bird2,
@@ -7613,7 +7593,7 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
   },
   {
     id: 1,
-    experience: 7,
+    experience: "ethiopia-wildlife-tours",
     title: "Wildlife Expedition",
     index: false,
     image: images.simien2,
@@ -7802,7 +7782,7 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
   },
   {
     id: 2,
-    experience: 7,
+    experience: "ethiopia-wildlife-tours",
     title: "Ethiopian Wildlife Odyssey",
     index: false,
     image: images.simien7,
@@ -8026,7 +8006,7 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
   },
   {
     id: 3,
-    experience: 7,
+    experience: "ethiopia-wildlife-tours",
     title: "Wilderness Exploration",
     index: false,
     image: images.gambella1,
@@ -8161,7 +8141,7 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
   },
   {
     id: 4,
-    experience: 7,
+    experience: "ethiopia-wildlife-tours",
     title: "Ethiopian Wildlife Odyssey",
     index: false,
     image: images.alehdege1,
@@ -8350,7 +8330,7 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
   },
   {
     id: 5,
-    experience: 7,
+    experience: "ethiopia-wildlife-tours",
     title: "Ethiopian Wildlife Expedition",
     index: false,
     image: images.bale1,
@@ -8508,7 +8488,7 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
   },
   {
     id: 1,
-    experience: 8,
+    experience: "addis-ababa-day-tours",
     title: "Discovering Addis Ababa",
     index: false,
     image: images.addis1,
@@ -8579,7 +8559,7 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
   },
   {
     id: 2,
-    experience: 8,
+    experience: "addis-ababa-day-tours",
     title: "Discovering Addis Ababa",
     index: false,
     image: images.addis2,
@@ -8688,7 +8668,7 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
   },
   {
     id: 3,
-    experience: 8,
+    experience: "addis-ababa-day-tours",
     title: "Sacred Serenity",
     index: false,
     image: images.addis2,
@@ -8788,7 +8768,7 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
   },
   {
     id: 4,
-    experience: 8,
+    experience: "addis-ababa-day-tours",
     title: "Heritage And Serenity",
     index: false,
     image: images.gonder5,
@@ -8882,7 +8862,7 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
   },
   {
     id: 5,
-    experience: 8,
+    experience: "addis-ababa-day-tours",
     title: "Ethiopian Essence",
     index: false,
     image: images.awash2,
@@ -8962,7 +8942,7 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
   },
   {
     id: 6,
-    experience: 8,
+    experience: "addis-ababa-day-tours",
     title: "Wilderness Escapade",
     index: false,
     image: images.awash1,
@@ -9071,7 +9051,7 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
   },
   {
     id: 7,
-    experience: 8,
+    experience: "addis-ababa-day-tours",
     title: "Serenity And Wilderness",
     index: false,
     image: images.chebera1,
@@ -9183,7 +9163,7 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
   },
   {
     id: 8,
-    experience: 8,
+    experience: "addis-ababa-day-tours",
     title: "Lake Tana's Monastic Tranquility",
     index: false,
     image: images.bahirdar4,
@@ -9281,7 +9261,7 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
   },
   {
     id: 9,
-    experience: 8,
+    experience: "addis-ababa-day-tours",
     title: "Lalibela's Ancient Marvels",
     index: false,
     image: images.bahirdar4,
@@ -9379,7 +9359,7 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
   },
   {
     id: 10,
-    experience: 8,
+    experience: "addis-ababa-day-tours",
     title: "Danakil Adventure",
     index: false,
     image: images.danakil1,
@@ -9472,7 +9452,7 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
   },
   {
     id: 11,
-    experience: 8,
+    experience: "addis-ababa-day-tours",
     title: "Harar",
     index: false,
     image: images.harar1,
@@ -9578,7 +9558,7 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
   },
   {
     id: 12,
-    experience: 8,
+    experience: "addis-ababa-day-tours",
     title: "Unveiling Addis Ababa's Contemporary Art Scene",
     index: false,
     image: images.addis3,
@@ -9725,7 +9705,7 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
   },
   {
     id: 13,
-    experience: 8,
+    experience: "addis-ababa-day-tours",
     title: "Exploring Artistic Treasures And Unique Finds",
     index: false,
     image: images.addis2,
@@ -9804,7 +9784,7 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
   },
   {
     id: 1,
-    experience: 9,
+    experience: "ethiopia-special-interest-tours",
     title: "Ethiopian Coffee Odyssey",
     index: false,
     image: images.kaffa2,
@@ -10010,7 +9990,7 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
   },
   {
     id: 2,
-    experience: 9,
+    experience: "ethiopia-special-interest-tours",
     title: "Geological Wonders Of Ethiopia",
     index: false,
     image: images.danakil8,
@@ -10298,9 +10278,15 @@ export const ExperiencesPackageItineraryArray: Itinerary[] = [
   },
 ];
 
-export const getItinerary = (id: number, experience: number) => {
+export const getItinerary = (
+  slug: number | string,
+  experience: number | string
+) => {
   const result = ExperiencesPackageItineraryArray.filter(
-    (item) => item.id === id && item.experience === experience
+    (item) =>
+      item.slug === slug ||
+      (item.id === Number(slug) && item.experience === experience) ||
+      item.experience === Number(experience)
   );
   if (result.length === 0) {
     return null;

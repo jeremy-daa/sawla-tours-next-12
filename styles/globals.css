@@ -2863,6 +2863,7 @@ input[type="checkbox"] {
 
 .itinerary-wrapper .itinerary-heading {
   font-size: 2.2rem;
+  text-align: center;
   width: 80%;
   margin: auto;
   font-weight: 700;
@@ -2880,6 +2881,7 @@ input[type="checkbox"] {
 
 .itinerary-wrapper .itinerary-heading svg {
   font-size: 3rem;
+  display: none;
 }
 
 .itinerary-description {
@@ -2893,7 +2895,7 @@ input[type="checkbox"] {
 }
 
 .itinerary-description p {
-  width: 80%;
+  width: 100%;
   margin: auto;
   font-family: "Lato", cursive;
   font-weight: 700;
@@ -3026,6 +3028,7 @@ input[type="checkbox"] {
   }
 
   .itinerary-wrapper .itinerary-heading svg {
+    display: none;
     font-size: 2rem;
   }
 
