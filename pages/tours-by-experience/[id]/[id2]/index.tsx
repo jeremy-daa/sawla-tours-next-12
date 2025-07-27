@@ -5,7 +5,10 @@ import Hero from "@/components/Hero";
 import Intro from "@/components/Intro";
 import ItineraryDescription from "@/components/ItineraryDescription";
 import PlannerPolaroid from "@/components/PlannerPolaroid";
-import { getItinerary } from "@/data/ExperiencesPackagesItineraryArray";
+import {
+  getItinerary,
+  Itinerary,
+} from "@/data/ExperiencesPackagesItineraryArray";
 
 import React from "react";
 import Head from "next/head";
@@ -18,10 +21,10 @@ type Params = {
 type params = {
   id: string;
   id2: string;
+  itinerary: Itinerary;
 };
 
-const page = ({ id, id2 }: params) => {
-  const itinerary = getItinerary(id2, id);
+const page = ({ id, id2, itinerary }: params) => {
   return (
     <>
       <Head>
@@ -107,11 +110,18 @@ export async function getServerSideProps(context: any) {
   const { params } = context;
   const id = params.id;
   const id2 = params.id2;
+  const itinerary = getItinerary(id2, id);
+  if (!itinerary) {
+    return {
+      notFound: true,
+    };
+  }
 
   return {
     props: {
       id,
       id2,
+      itinerary,
     },
   };
 }

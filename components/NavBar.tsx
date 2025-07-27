@@ -126,7 +126,7 @@ const NavBar = () => {
               </ul>
             </li>
             <li>
-              <NavLink href="/ethiopia-guide" onClick={closeNavbar}>
+              <NavLink href="/ethiopia-travel-guide" onClick={closeNavbar}>
                 Ethiopia Guide
                 <BsFillCaretDownFill className="down-icon" />
               </NavLink>
@@ -148,27 +148,32 @@ const NavBar = () => {
               </NavLink>
               <ul className="submenu">
                 <li>
-                  <Link href="about-us/#about">About Sawla Tours</Link>
+                  <Link href="/about-us/why-travel-with-sawla-tours">
+                    Why travel with Sawla Tours
+                  </Link>
                 </li>
                 <li>
-                  <Link href="about-us/#why">Why travel wit Sawla Tours</Link>
+                  <Link href="/about-us/how-we-work">How we work</Link>
                 </li>
                 <li>
-                  <Link href="about-us/#how">How we work</Link>
-                </li>
-                <li>
-                  <Link href="about-us/#travel-specialists">
+                  <Link href="/about-us/meet-ethiopia-travel-specialists">
                     Sawla&apos;s Travel Specialist
                   </Link>
                 </li>
                 <li>
-                  <Link href="about-us/#guides">Sawla&apos;s Guides</Link>
+                  <Link href="/about-us/meet-ethiopia-tour-guides">
+                    Sawla&apos;s Guides
+                  </Link>
                 </li>
                 <li>
-                  <Link href="about-us/#drivers">Sawla&apos;s Drivers</Link>
+                  <Link href="/about-us/meet-our-drivers">
+                    Sawla&apos;s Drivers
+                  </Link>
                 </li>
                 <li>
-                  <Link href="about-us/#camping-crew">Our camping crew</Link>
+                  <Link href="/about-us/ethiopia-mobile-safari">
+                    Our camping crew
+                  </Link>
                 </li>
               </ul>
             </li>

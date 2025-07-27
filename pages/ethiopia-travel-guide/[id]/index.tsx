@@ -5,33 +5,33 @@ import GenericGrid from "@/components/GenericGrid";
 import Hero from "@/components/Hero";
 import Intro from "@/components/Intro";
 import PlannerPolaroid from "@/components/PlannerPolaroid";
-import { getGuide } from "@/data/EthiopiaGuideArray";
+import { getGuide, Guide } from "@/data/EthiopiaGuideArray";
 import { restructureDescription } from "@/functions/restruct";
 import Head from "next/head";
+import Map from "@/components/Map";
 
-type Params = {
-  params: {
-    id: string;
-  };
-};
 type params = {
   id: string;
+  guide: Guide;
+  index: boolean;
 };
 
-const page = ({ id }: params) => {
-  const guide = getGuide(Number(id));
-
+const page = ({ id, guide, index }: params) => {
   return (
     <div>
       <Head>
-        <title>{guide ? guide.title + " - Sawla Tours" : "Not Found"}</title>
+        <title>
+          {guide ? guide.metaTitle : `Ethiopia Travel Guide - Sawla Tours`}
+        </title>
         <meta
           name="description"
-          content={guide ? guide.description : "Not Found"}
+          content={guide ? guide.metaDescription : "Not Found"}
         />
         <link
           rel="canonical"
-          href={`https://www.sawlatours.com/ethiopia-guide/${id}`}
+          href={`https://www.sawlatours.com/ethiopia-travel-guide/${
+            guide ? guide.slug : "not-found"
+          }`}
           key="canonical"
         />
       </Head>
@@ -41,7 +41,7 @@ const page = ({ id }: params) => {
             <Hero
               title={guide.title}
               background={guide.image}
-              index={guide.index}
+              index={index}
               description={guide.description}
               link={guide.link}
               linkname={guide.linkname}
@@ -61,6 +61,15 @@ const page = ({ id }: params) => {
               />
             </div>
           )}
+
+          {guide?.map && (
+            <Map
+              title={guide?.map.title}
+              description={guide?.map.description}
+              image={guide?.map.image}
+            />
+          )}
+
           {guide.content && (
             <>
               {guide.content.map((content, index) => (
@@ -117,10 +126,18 @@ const page = ({ id }: params) => {
 export async function getServerSideProps(context: any) {
   const { params } = context;
   const id = params.id;
+  const guide = getGuide(id);
+  if (!guide) {
+    return {
+      notFound: true,
+    };
+  }
 
   return {
     props: {
       id,
+      guide,
+      index: guide.index ? guide.index : false,
     },
   };
 }

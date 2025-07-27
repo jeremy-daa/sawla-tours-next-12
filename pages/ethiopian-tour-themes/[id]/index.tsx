@@ -6,7 +6,7 @@ import PlannerPolaroid from "@/components/PlannerPolaroid";
 import TrekkingDescription from "@/components/TrekkingDescription";
 import Map from "@/components/Map";
 import React from "react";
-import { getTour } from "@/data/EthiopiaToursArray";
+import { getTour, Tour } from "@/data/EthiopiaToursArray";
 import Head from "next/head";
 import Images from "@/data/Images";
 
@@ -16,11 +16,17 @@ type Params = {
   };
 };
 
-export default function page({ id }: any) {
-  const tour = getTour(id);
-  const isFourth = tour?.id === 4 || tour?.id === 8 ? true : false;
-  const isEighth = tour?.id === 8 ? true : false;
-
+export default function page({
+  id,
+  tour,
+  isFourth,
+  isEighth,
+}: {
+  id: string;
+  tour: Tour;
+  isFourth: boolean;
+  isEighth: boolean;
+}) {
   return (
     <div>
       <Head>
@@ -193,10 +199,21 @@ export default function page({ id }: any) {
 export async function getServerSideProps(context: any) {
   const { params } = context;
   const id = params.id;
+  const tour = getTour(id);
+  const isFourth = tour?.id === 4 || tour?.id === 8 ? true : false;
+  const isEighth = tour?.id === 8 ? true : false;
+  if (!tour) {
+    return {
+      notFound: true,
+    };
+  }
 
   return {
     props: {
       id,
+      tour,
+      isFourth,
+      isEighth,
     },
   };
 }

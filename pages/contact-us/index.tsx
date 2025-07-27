@@ -37,6 +37,21 @@ const page = () => {
         img2={Images.suri1}
       />
       <Contact />
+      <Intro
+        title="Plan Your Custom Ethiopia Tour"
+        subtitle="Your Adventure, Your Way"
+        description={[
+          "Tell us more so we can craft your perfect Ethiopia tour. The more details you share, the better we can tailor the experience to your vision:",
+          "<strong class='leftTab'>• &nbsp; Your Group:</strong> Possible Travel Dates, Duration & Number of People",
+          "<strong class='leftTab'>• &nbsp; Your Style:</strong> Destination Preferences, Transport & Accommodation Wishes",
+          "<strong class='leftTab'>• &nbsp; Your Interests:</strong> Desired Activities, Experiences & Budget Range",
+          "<strong class='leftTab'>• &nbsp; Your Needs:</strong> Any Special Requests or Mobility Needs",
+          "<strong class='leftTab'>• &nbsp; How You Found Us:</strong> Internet, Social Media, Referral, etc.",
+        ]}
+        lr={true}
+        img1={Images.addis12}
+        img2={Images.addis11}
+      />
       <ContactMap />
     </div>
   );

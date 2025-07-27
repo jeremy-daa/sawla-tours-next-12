@@ -10,6 +10,7 @@ import Images from "@/data/Images";
 import React from "react";
 import Accordion from "@/components/Accordion";
 import Head from "next/head";
+import SimpleDescription from "@/components/SimpleDescription";
 const metadata = {
   title: "Ethiopia Travel Guide | Sawla Tours Expert Tips & Insights",
   description: `Explore our Ethiopia Travel Guide for expert tips and insights. Sawla Tours offers bespoke expeditions across Ethiopia, showcasing a glimpse of our unique travel experiences. Let us craft an unforgettable adventure tailored just for you.`,
@@ -22,7 +23,7 @@ const page = () => {
         <meta name="description" content={metadata.description} />
         <link
           rel="canonical"
-          href={`https://www.sawlatours.com/ethiopia-guide`}
+          href={`https://www.sawlatours.com/ethiopia-travel-guide`}
           key="canonical"
         />
       </Head>
@@ -35,9 +36,9 @@ const page = () => {
         index={false}
       />
       <Intro
-        title={"Why Ethiopia is a Special travel place for travelers "}
+        title={"Why Ethiopia Captivates Travelers?"}
         description={[
-          "Ethiopia isn't just a travel destination; it's a journey of discovery, a realm of extraordinary experiences waiting to unfold. Dive in and discover why Ethiopia is an adventurer's paradise, a historian's dream, and a culture enthusiast's delight.",
+          "Where incense-filled churches echo with ancient chants and lunar salt flats glow at sunset, Ethiopia travel rewrites every idea you had about adventure. Read on to sample a few highlights—UNESCO treasures, coffee rituals, rare wildlife, and more—that reveal why Ethiopia truly captivates travelers.",
         ]}
         img1={Images.yemata1}
         img2={Images.lalibela5}
@@ -108,7 +109,7 @@ const page = () => {
           </ul>
         </div>
       </div> */}
-      <Accordion
+      {/* <Accordion
         title="Why should you visit Ethiopia?"
         destinations={[
           {
@@ -165,6 +166,78 @@ const page = () => {
             title: "Festivals",
             description:
               "Ethiopia is home to a variety of festivals throughout the year, including the Timkat festival and the Meskel festival.",
+          },
+        ]}
+      /> */}
+
+      <SimpleDescription
+        title="Top Reasons to Visit Ethiopia"
+        description={[
+          {
+            title: "1. Rich Cultural Heritage",
+            description: [
+              "More than 80 ethnic communities share vibrant music, dance, and hand-woven styles—each journey feels like meeting a new nation.",
+            ],
+          },
+          {
+            title: "2. Historic Sites",
+            description: [
+              "Stand before Aksum’s towering stelae or descend into Lalibela’s rock-hewn sanctuaries to trace faith and empire back two millennia.",
+            ],
+          },
+          {
+            title: "3. Stunning Landscapes",
+            description: [
+              "Hike from the cloud-brushed Simien escarpments to the neon sulphur pools of the Danakil Depression, witnessing Earth at its extremes.",
+            ],
+          },
+          {
+            title: "4. Unique Wildlife",
+            description: [
+              "Spot shaggy-maned gelada baboons and the endangered Ethiopian wolf, both found nowhere else on the planet.",
+            ],
+          },
+          {
+            title: "5. Coffee Culture",
+            description: [
+              "Join a traditional buna ceremony where green beans roast, crackle, and brew into the world’s original cup of coffee.",
+            ],
+          },
+          {
+            title: "6. Religious Pilgrimage Sites",
+            description: [
+              "From Axum Tsion to Sof Omar’s underground mosque-cave, sacred journeys thread the highlands.",
+            ],
+          },
+          {
+            title: "7. Culinary Delights",
+            description: [
+              "Tear into sour-sweet injera topped with spiced stews, fiery berbere, and for the brave, velvety raw kitfo.",
+            ],
+          },
+          {
+            title: "8. Warm Hospitality",
+            description: [
+              "“Enkwan dehna metah”—expect smiles, spontaneous invitations, and a heartfelt reverence for guests.",
+            ],
+          },
+          {
+            title: "9. Trekking Opportunities",
+            description: [
+              "Community routes in Tigray, Wollo, the Simiens, and Bale put your permit fees straight into village projects.",
+            ],
+          },
+          {
+            title: "10. Colorful Markets",
+            description: [
+              "Lose track of time among teff sacks, frankincense smoke, and rainbow-striped shawls in weekly merkatos.",
+            ],
+          },
+          {
+            title: "11. Festivals",
+            description: [
+              "Celebrate Timkat’s water processions or Meskel’s bonfire blaze and feel history come alive around you.",
+            ],
           },
         ]}
       />

@@ -2,7 +2,10 @@ import Images from "./Images";
 
 export interface Guide {
   id: number;
+  slug?: string;
   title: string;
+  metaTitle?: string;
+  metaDescription?: string;
   description: string;
   image: string;
   link: string;
@@ -18,6 +21,11 @@ export interface Guide {
     button: string;
     link: string;
   }[];
+  map?: {
+    title: string;
+    description?: string;
+    image: string;
+  };
   content: {
     destinationdescription?: {
       destination: string;
@@ -42,6 +50,11 @@ export const EthiopiaGuideArray: Guide[] = [
   {
     id: 1,
     title: "Ethiopia Travel Circuits",
+    slug: "ethiopia-travel-circuits",
+    metaDescription:
+      "Explore Ethiopia’s four epic travel circuits—historic north, wildlife-rich south, mystical east, and untamed west—with Sawla Tours as your guide.",
+    metaTitle:
+      "Sawla Tours – Ethiopia Travel Circuits: Four Epic Regional Loops",
     description: "",
     image: images.lalibela4,
     link: "#description",
@@ -59,10 +72,16 @@ export const EthiopiaGuideArray: Guide[] = [
         lr: true,
         img1: images.lalibela5,
         img2: images.bale2,
-        button: "Explore Packages",
+        button: "Explore our Ethiopia tour itineraries",
         link: "/tours-by-experience",
       },
     ],
+    map: {
+      title: "Ethiopia Travel Circuits",
+      description:
+        "Explore Ethiopia’s four epic travel circuits—historic north, wildlife-rich south, mystical east, and untamed west—with Sawla Tours as your guide.",
+      image: "/assets/maps/FestivalTours.jpg",
+    },
     content: [
       {
         destinationdescription: {
@@ -342,6 +361,10 @@ export const EthiopiaGuideArray: Guide[] = [
   {
     id: 2,
     title: "When to Visit Ethiopia?",
+    slug: "when-to-visit-ethiopia",
+    metaDescription:
+      "Discover the best time to visit Ethiopia by season and region. Explore peak seasons, off-season gems, and festival highlights with Sawla Tours' expert tips.",
+    metaTitle: "When to Visit Ethiopia | Best Time & Seasonal Tips",
     description: "",
     image: images.gonder3,
     link: "#description",
@@ -506,6 +529,10 @@ export const EthiopiaGuideArray: Guide[] = [
     id: 3,
     title: "How to get to Ethiopia",
     description: "",
+    slug: "how-to-get-to-ethiopia",
+    metaDescription:
+      "Plan hassle-free flights to Ethiopia. See nonstop and one-stop routes, airlines, and travel times so you reach Addis Ababa smoothly and start exploring sooner.",
+    metaTitle: "Travel to Ethiopia – Ethiopia Flights & Global Routes Guide",
     image: images.simien4,
     link: "#description",
     linkname: "Read More",
@@ -547,6 +574,11 @@ export const EthiopiaGuideArray: Guide[] = [
   {
     id: 4,
     title: "Hotels and Lodges in Ethiopia",
+    slug: "hotels-lodges-ethiopia",
+    metaDescription:
+      "Discover hotels and lodges in Ethiopia with Sawla Tours. From luxury lodges in the Simien Mountains to eco camps in the Omo Valley—find your perfect stay.",
+    metaTitle:
+      "Hotels, Lodges & Eco Retreats in Ethiopia | Where to Stay with Sawla Tours",
     description: "",
     image: images.chebera2,
     link: "#description",
@@ -562,8 +594,8 @@ export const EthiopiaGuideArray: Guide[] = [
         lr: true,
         img1: images.axum3,
         img2: images.axum5,
-        button: "Explore Packages",
-        link: "/tours-by-experience",
+        button: "Planning Your Trip",
+        link: "/enquire",
       },
       {
         title: "Defining Luxury Accommodation in Ethiopia",
@@ -835,6 +867,11 @@ export const EthiopiaGuideArray: Guide[] = [
     id: 5,
     title: "Ethiopia Safaris",
     description: "",
+    slug: "ethiopia-safaris",
+    metaDescription:
+      "Embark on Ethiopia safaris with Sawla Tours. Experience a mobile tented safari, wildlife tours, and hidden-gem parks like Bale, Gambella, and Kafta Shiraro.",
+    metaTitle:
+      "Sawla Tours – Ethiopia Safaris: Mobile Tented Safari & Wildlife Tours",
     image: images.simien5,
     link: "#description",
     linkname: "Read More",
@@ -927,6 +964,11 @@ export const EthiopiaGuideArray: Guide[] = [
   {
     id: 6,
     title: "Popular Wildlife in Ethiopia",
+    slug: "ethiopia-wildlife-tours",
+    metaDescription:
+      "Explore Ethiopia wildlife tours with Sawla Tours. Encounter Ethiopian Wolves, Gelada Monkeys, Walia Ibex, hippos, crocodiles, and rare birds—endemic animals of Ethiopia.",
+    metaTitle:
+      "Sawla Tours – Ethiopia Wildlife Tours & Endemic Animals of Ethiopia",
     description:
       "Embark on a wildlife adventure with Sawla Tours and delve into the wonders of Ethiopia's natural treasures. Our expertly crafted itineraries and knowledgeable guides will immerse you in the captivating world of Ethiopian wildlife, creating memories that will last a lifetime.",
     image: images.simien1,
@@ -1014,6 +1056,10 @@ export const EthiopiaGuideArray: Guide[] = [
   {
     id: 7,
     title: "Safety in Ethiopia",
+    slug: "ethiopia-travel-safety",
+    metaDescription:
+      "Discover the truth about Ethiopia travel safety. With Sawla Tours’ expert planning, local guides, and real-time support, explore Ethiopia with peace of mind.",
+    metaTitle: "Sawla Tour – Safety in Ethiopia: Travel Safety Tips & Advice",
     description: "",
     image: images.addis1,
     link: "#description",
@@ -1091,6 +1137,10 @@ export const EthiopiaGuideArray: Guide[] = [
     id: 8,
     title: "How to Plan a Trip",
     description: "",
+    slug: "how-to-plan-ethiopia-trip",
+    metaDescription:
+      "Planning a trip to Ethiopia? Discover this expert Ethiopia travel guide featuring trekking, history, culture, and safari tips to start your journey right.",
+    metaTitle: "Sawla Tours – How to Plan an Ethiopia Trip: Itinerary Tips",
     image: images.bahirdar1,
     link: "#description",
     linkname: "Read More",
@@ -1451,6 +1501,10 @@ export const EthiopiaGuideArray: Guide[] = [
     id: 9,
     title: "General Travel Tips ",
     description: "",
+    slug: "ethiopia-travel-tips",
+    metaDescription:
+      "Plan your trip with our Ethiopia travel tips. Get visa requirements, climate info, money advice, health precautions, and cultural dos & don’ts.",
+    metaTitle: "Ethiopia Travel Tips: Visas, Climate, Safety & Health Guide",
     image: images.bird1,
     link: "#description",
     linkname: "Read More",
@@ -1517,10 +1571,10 @@ export const EthiopiaGuideArray: Guide[] = [
               ],
             },
             {
-              title: "Money Matters",
+              title: "Banking",
               description: [
-                "The currency of Ethiopia is the birr, divided into 100 cents. Banknotes are available in denominations of 5, 10, 50, 100 and 200 birr, while coins come in 1, 5, 10, 25, 50 cents, and 1 birr. Traveler's checks are not easily cashed outside major cities, but credit cards are accepted in selected hotels, lodges, and larger shops. ATMs in major cities allow cash withdrawals using VISA, Mastercard, and Union Pay debit cards, although reliance on them outside Addis Ababa is not recommended. US dollars are accepted at major establishments such as hotels and ticket offices, but local currency is required for shopping and travel outside Addis Ababa. USD can be exchanged for local currency at banks. Tipping in USD is acceptable.",
-                "Please note that replacing lost or stolen cash is difficult, so it's advisable to bring US dollars in smaller denominations (10s and 5s) for tipping purposes. Changing birr back to a hard currency is a complicated process, so it's best to avoid it if possible, as US dollars are widely accepted. Keep bank receipts when exchanging birr back to dollars upon departure.",
+                "Banks are easily accessible throughout Ethiopia, with operating hours typically from 8:00 am to at least 4:30 pm, Monday to Saturday. Ethiopian society relies heavily on cash transactions, but international bank/debit cards are accepted at most ATMs. However, it's unlikely that local currency can be advanced to credit cards. ",
+                "ATMs are readily available in cities but rare in rural areas, so it's recommended to withdraw sufficient cash before heading to remote regions. Keep your receipts when exchanging foreign currency to birr, as they are required to change unspent cash back into hard currency. The exchange rate may fluctuate moderately.",
               ],
             },
             {
@@ -1590,8 +1644,10 @@ export const EthiopiaGuideArray: Guide[] = [
     ],
   },
 ];
-export const getGuide = (id: number) => {
-  const result = EthiopiaGuideArray.filter((guide) => guide.id === id);
+export const getGuide = (id: number | string) => {
+  const result = EthiopiaGuideArray.filter(
+    (guide) => guide.slug === id || guide.id === Number(id)
+  );
   if (result.length === 0) {
     return null;
   }

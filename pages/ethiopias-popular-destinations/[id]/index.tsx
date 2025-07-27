@@ -4,7 +4,7 @@ import GenericGrid from "@/components/GenericGrid";
 import Hero from "@/components/Hero";
 import Intro from "@/components/Intro";
 import PlannerPolaroid from "@/components/PlannerPolaroid";
-import { getDestination } from "@/data/PopularDestinationsArray";
+import { Destination, getDestination } from "@/data/PopularDestinationsArray";
 
 import React from "react";
 import { useRouter } from "next/router";
@@ -12,6 +12,7 @@ import Head from "next/head";
 type Params = {
   params: {
     id: string;
+    destination: Destination;
   };
 };
 
@@ -20,9 +21,7 @@ const page = ({ id }: any) => {
   return (
     <div>
       <Head>
-        <title>
-          {destination ? destination.metaTitle : "Not Found"}
-        </title>
+        <title>{destination ? destination.metaTitle : "Not Found"}</title>
         <meta
           name="description"
           content={destination ? destination.metaDescription : "Not Found"}
@@ -91,10 +90,16 @@ const page = ({ id }: any) => {
 export async function getServerSideProps(context: any) {
   const { params } = context;
   const id = params.id;
-
+  const destination = getDestination(id);
+  if (!destination) {
+    return {
+      notFound: true,
+    };
+  }
   return {
     props: {
       id,
+      destination,
     },
   };
 }

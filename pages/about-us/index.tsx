@@ -8,9 +8,8 @@ import Head from "next/head";
 
 import React from "react";
 const metadata = {
-  title:
-    "About Sawla Tours – Your Ethiopia Bespoke Tours & Luxury Adventure Architects",
-  description: `Discover Sawla Tours: Ethiopia bespoke tours, private Ethiopia adventures, and luxury Ethiopia tours crafted by expert local guides. Contact us to plan your journey.`,
+  title: "Best Ethiopia Travel Company | Sawla Tours",
+  description: `Discover why Sawla Tours is the Best Ethiopia Travel Company for bespoke adventures, cultural journeys, and luxury tours across Ethiopia.`,
 };
 const page = () => {
   return (
@@ -27,7 +26,7 @@ const page = () => {
       <Hero
         background={Images.lalibela8}
         index={false}
-        title="About Us"
+        title="About Sawla Tours"
         link="#about"
         linkname="Explore"
       />
@@ -36,18 +35,28 @@ const page = () => {
           title="Meet Sawla Tours"
           subtitle="Your Ethiopian Adventure Architects"
           description={[
-            "We are Sawla Tours – a team of seasoned Ethiopian tourism professionals united by passion and unparalleled industry knowledge. Widely recognized as the Best Ethiopia Travel Company, we’re more than just an Ethiopian tour operator – we’re your partners in crafting bespoke Ethiopia tours that linger in memory long after you return home. Our team blends deep local insight with white-glove service to guide high-end international travelers through Ethiopia’s most breathtaking landscapes and cultural treasures.",
-            "As you travel with us, prepare to be immersed in Ethiopia’s beauty, crafting unforgettable moments along the way. At Sawla, we pride ourselves on exceptional service quality and accessibility, making us your one-stop solution for all travel inquiries. From arranging top-notch lodges to curating luxury Ethiopia tours, we cover every detail to match your interests and comfort level.",
-            "The secret to our success? A perfect blend of passion, expertise, and service that turns your journey into a private Ethiopia adventure. Sit back and relax: reach out to us, share your dream destination, and let our dedicated team turn it into your most cherished memory. With Sawla Tours, your unforgettable Ethiopian adventure is just a call or an email away.",
+            "We are Sawla Tours – a team of seasoned Ethiopian tourism professionals united by passion and unparalleled industry knowledge. Widely recognized as the Best Ethiopia Travel Company, we’re more than just an Ethiopian tour operator – we’re your partners in crafting bespoke Ethiopia tours that linger in memory long after you return home.",
           ]}
           link="#why"
           button="Why Sawla Tours?"
-          img1={Images.intro1}
-          img2={Images.intro2}
+          img1={Images.gonder1}
+          img2={Images.lalibela1}
           lr={true}
         />
+
+        <Intro
+          title="Our Philosophy & Promise"
+          subtitle="Service, Passion, and Expertise"
+          description={[
+            "As you travel with us, prepare to be immersed in Ethiopia’s beauty, crafting unforgettable moments along the way. At Sawla, we pride ourselves on exceptional service quality and accessibility, making us your one-stop solution for all travel inquiries. From arranging top-notch lodges to curating luxury Ethiopia tours, we cover every detail to match your interests and comfort level.",
+            "The secret to our success? A perfect blend of passion, expertise, and service that turns your journey into a private Ethiopia adventure. Sit back and relax: reach out to us, share your dream destination, and let our dedicated team turn it into your most cherished memory. With Sawla Tours, your unforgettable Ethiopian adventure is just a call or an email away.",
+          ]}
+          img1={Images.simien4}
+          img2={Images.bale1}
+          lr={false}
+        />
       </div>
-      <div id="why">
+      {/* <div id="why">
         <SimpleDescription
           title="Why Travel with Sawla Tours?"
           description={[
@@ -124,7 +133,7 @@ const page = () => {
         <ItineraryDescription
           title="How We Work: Tailor-Made Travel Planning with Sawla Tours"
           description={[
-            "Embarking on the journey of a lifetime takes more than logistics—it requires passion, precision, and a deep understanding of what makes travel meaningful. At Sawla Tours, we specialize in tailor-made travel planning across Ethiopia. From your first inquiry to your return flight home, we turn your dreams into curated experiences rich with cultural depth and natural beauty.",
+            "Embarking on the journey of a lifetime takes more than logistics—it requires passion, precision, and a deep understanding of what makes travel meaningful. At Sawla Tours, we specialize in tailor-made travel planning across Ethiopia. From your first enquiry to your return flight home, we turn your dreams into curated experiences rich with cultural depth and natural beauty.",
           ]}
           itineraries={[
             {
@@ -278,7 +287,7 @@ const page = () => {
             },
           ]}
         />
-      </div>
+      </div> */}
     </div>
   );
 };

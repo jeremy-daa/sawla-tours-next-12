@@ -86,7 +86,7 @@ const Footer = () => {
               </NavLink>
             </li>
             <li>
-              <NavLink href="/ethiopia-guide">
+              <NavLink href="/ethiopia-travel-guide">
                 <BsCaretRight />
                 Ethiopia Guide
               </NavLink>

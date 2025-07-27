@@ -4,16 +4,18 @@ import Hero from "@/components/Hero";
 import Intro from "@/components/Intro";
 import PackagesList from "@/components/PackagesList";
 import PlannerPolaroid from "@/components/PlannerPolaroid";
-import { getExperience } from "@/data/ExperiencesPackagesArray";
+import {
+  ExperiencePackage,
+  getExperience,
+} from "@/data/ExperiencesPackagesArray";
 import Head from "next/head";
 
 type params = {
   id: string;
+  experience: ExperiencePackage;
 };
 
-const page = ({ id }: params) => {
-  const experience = getExperience(id);
-
+const page = ({ id, experience }: params) => {
   return (
     <>
       <Head>
@@ -84,10 +86,17 @@ const page = ({ id }: params) => {
 export async function getServerSideProps(context: any) {
   const { params } = context;
   const id = params.id;
+  const experience = getExperience(id);
+  if (!experience) {
+    return {
+      notFound: true,
+    };
+  }
 
   return {
     props: {
       id,
+      experience,
     },
   };
 }

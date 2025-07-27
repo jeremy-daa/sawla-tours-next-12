@@ -429,12 +429,12 @@ nav ul li:hover>.submenu {
 }
 
 .leftTab {
-  padding-left: 1em;
+  padding-left: 0.85em;
 }
 
 @media screen and (max-width: 768px) {
   .leftTab {
-    padding-left: 0.5em;
+    padding-left: 0.4em;
   }
 
 }

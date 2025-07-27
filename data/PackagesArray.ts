@@ -365,28 +365,28 @@ export const EthiopiaGuideArray: Package[] = [
     title: "Ethiopia Travel Circuits",
     description:
       "In this diverse and awe-inspiring nation, you'll uncover the secrets of four distinct travel circuits, each with its own highlight destinations and unique experiences. From the timeless tapestry of the Northern Circuit, where ancient wonders and natural marvels await, to the Southern Circuit's canvas of breathtaking landscapes and vibrant cultures, Ethiopia has something for every traveler. Venture into the Eastern Circuit, where hidden gems and remarkable diversity abound, or unleash your adventurous spirit in the Western Circuit, where untamed beauty and rare encounters await. So, browse through the information on each circuit's highlight destinations and embark on a journey that will create memories to last a lifetime. Your Ethiopian journey begins in Addis Ababa, the gateway to this mesmerizing land.",
-    link: "/ethiopia-guide/1",
+    link: "/ethiopia-travel-guide/ethiopia-travel-circuits",
     image: Images.lalibela4,
   },
   {
     title: "When to Visit Ethiopia",
     description:
       "Ethiopia, a land of diverse landscapes and vibrant cultures, welcomes visitors year-round. However, to make the most of your journey, it's essential to consider the distinct seasonal characteristics of each region. Let's explore the best time to visit Ethiopia and uncover the captivating experiences that await you.",
-    link: "/ethiopia-guide/2",
+    link: "/ethiopia-travel-guide/when-to-visit-ethiopia",
     image: Images.gonder3,
   },
   {
     title: "How to get to Ethiopia",
     description:
       "If you're looking to travel to Ethiopia, you're in luck - this African nation has a variety of transport links to many major destinations around the world. Whether you're flying from the UK or Ireland, America or Canada, Europe, Asia or South America, there are plenty of routes to get you where you need to go.",
-    link: "/ethiopia-guide/3",
+    link: "/ethiopia-travel-guide/how-to-get-to-ethiopia",
     image: Images.simien4,
   },
   {
     title: "Hotels and Lodges in Ethiopia",
     description:
       "Experience a diverse range of accommodation options in Ethiopia, from vibrant cities to off-the-beaten-path locations. Whether you seek budget-friendly hotels or luxurious retreats, Sawla Tours offers a selection of intimate and environmentally conscious lodges to enhance your stay.",
-    link: "/ethiopia-guide/4",
+    link: "/ethiopia-travel-guide/hotels-lodges-ethiopia",
     image: Images.addis2,
   },
 
@@ -394,35 +394,35 @@ export const EthiopiaGuideArray: Package[] = [
     title: "Ethiopia Safaris",
     description:
       "Embark on an extraordinary safari adventure in Ethiopia, where rarity, endemism, and biodiversity take center stage. From the awe-inspiring Simien Mountains to the captivating Bale Mountains and the untouched wilderness of Gambella National Park, Ethiopia offers a safari experience like no other.",
-    link: "/ethiopia-guide/5",
+    link: "/ethiopia-travel-guide/ethiopia-safaris",
     image: Images.simien5,
   },
   {
     title: "Popular Wildlife in Ethiopia",
     description:
       "Discover the captivating wildlife of Ethiopia, a country brimming with biodiversity and boasting numerous endemic species. At Sawla Tours, we are dedicated to providing immersive experiences that allow you to witness these magnificent animals in their natural habitats while ensuring their well-being. With 14 major wildlife reserves, Ethiopia is a haven for over 300 mammal species, including 39 that are found exclusively within its borders.",
-    link: "/ethiopia-guide/6",
+    link: "/ethiopia-travel-guide/ethiopia-wildlife-tours",
     image: Images.simien1,
   },
   {
     title: "Safety in Ethiopia",
     description:
       "At Sawla Tours, our priority is to provide you with a safe and enjoyable journey. With our trusted guides, reliable vehicles, and well-crafted itineraries, we ensure your Ethiopian adventure is not only memorable but secure. As one of Africa's safest destinations for tourists, we're here to make your trip even better.",
-    link: "/ethiopia-guide/7",
+    link: "/ethiopia-travel-guide/ethiopia-travel-safety",
     image: Images.addis1,
   },
   {
     title: "How to Plan a Trip",
     description:
       "There's a lot on offer in Ethiopia. Planning the perfect trip is tremendously exciting, but it can be hard to know where to start. Read this quick guide to planning your Ethiopia adventure, then give our specialists a call or inbox us.",
-    link: "/ethiopia-guide/8",
+    link: "/ethiopia-travel-guide/how-to-plan-ethiopia-trip",
     image: Images.bahirdar1,
   },
   {
     title: "General Travel Tips",
     description:
       "Ethiopia is a truly remarkable destination that stands apart from any other place on Earth. Unlike most African countries, it has never been colonized by Europeans, which has helped preserve its rich cultural identity. From its incredible people to its breathtaking landscapes and diverse wildlife, Ethiopia offers an extraordinary travel experience that is truly one-of-a-kind.",
-    link: "/ethiopia-guide/9",
+    link: "/ethiopia-travel-guide/ethiopia-travel-tips",
     image: Images.bird1,
   },
 ];
@@ -613,40 +613,40 @@ export const ToursByExperienceRoutes: Route[] = [
 export const EthiopiaGuideRoutes: Route[] = [
   {
     title: "Ethiopia Travel Circuits",
-    link: "/ethiopia-guide/1",
+    link: "/ethiopia-travel-guide/ethiopia-travel-circuits",
   },
   {
     title: "When to Visit Ethiopia",
-    link: "/ethiopia-guide/2",
+    link: "/ethiopia-travel-guide/when-to-visit-ethiopia",
   },
   {
     title: "How to Get to Ethiopia",
-    link: "/ethiopia-guide/3",
+    link: "/ethiopia-travel-guide/how-to-get-to-ethiopia",
   },
   {
     title: "Hotels and Lodges",
-    link: "/ethiopia-guide/4",
+    link: "/ethiopia-travel-guide/hotels-lodges-ethiopia",
   },
   {
     title: "Ethiopia Safaris",
-    link: "/ethiopia-guide/5",
+    link: "/ethiopia-travel-guide/ethiopia-safaris",
   },
   {
     title: "Popular Wildlife in Ethiopia",
-    link: "/ethiopia-guide/6",
+    link: "/ethiopia-travel-guide/ethiopia-wildlife-tours",
   },
   {
     title: "Safety in Ethiopia",
-    link: "/ethiopia-guide/7",
+    link: "/ethiopia-travel-guide/ethiopia-travel-safety",
   },
   {
     title: "How to Plan Your Trip",
-    link: "/ethiopia-guide/8",
+    link: "/ethiopia-travel-guide/how-to-plan-ethiopia-trip",
   },
 
   {
     title: "General Travel Tips",
-    link: "/ethiopia-guide/9",
+    link: "/ethiopia-travel-guide/ethiopia-travel-tips",
   },
 ];
 
@@ -671,7 +671,7 @@ export const GridPackagesArray: GridPackage[] = [
   {
     title: "Ethiopia Guide",
     image: Images.gonder3,
-    link: "/ethiopia-guide",
+    link: "/ethiopia-travel-guide",
   },
 ];
 
