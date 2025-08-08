@@ -151,6 +151,17 @@ const Images = {
   photo2: "/assets/photography/photo_2.jpg",
   photo3: "/assets/photography/photo_3.jpg",
   photo4: "/assets/photography/photo_4.jpg",
+  gheraltaLodge1: "/assets/gheralta_lodge_1.jpg",
+  baleLodge1: "/assets/bale_lodge_1.jpg",
+  camping1: "/assets/camping_1.jpg",
+  camping2: "/assets/camping_2.jpg",
+  camping3: "/assets/camping_3.jpg",
+  campingCrew1: "/assets/camping_crew_1.jpg",
+  filmCrewGear1: "/assets/film_crew_gear_1.png",
+  filmCrewAction1: "/assets/film_crew_action_1.png",
+  lodge1: "/assets/lodge_1.jpg",
+  lodge2: "/assets/lodge_2.jpg",
+  lodge3: "/assets/lodge_3.jpg",
 };
 
 export default Images;

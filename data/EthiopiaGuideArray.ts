@@ -580,7 +580,7 @@ export const EthiopiaGuideArray: Guide[] = [
     metaTitle:
       "Hotels, Lodges & Eco Retreats in Ethiopia | Where to Stay with Sawla Tours",
     description: "",
-    image: images.chebera2,
+    image: images.gheraltaLodge1,
     link: "#description",
     linkname: "Read More",
     index: false,
@@ -592,8 +592,8 @@ export const EthiopiaGuideArray: Guide[] = [
           "Experience a diverse range of accommodation options in Ethiopia, from vibrant cities to off-the-beaten-path locations. Whether you seek budget-friendly hotels or luxurious retreats, Sawla Tours offers a selection of intimate and environmentally conscious lodges to enhance your stay.",
         ],
         lr: true,
-        img1: images.axum3,
-        img2: images.axum5,
+        img1: images.baleLodge1,
+        img2: images.lodge1,
         button: "Planning Your Trip",
         link: "/enquire",
       },
@@ -666,7 +666,7 @@ export const EthiopiaGuideArray: Guide[] = [
                 "Indulge in the refined elegance of Limalimo Lodge, one of Ethiopia's finest retreats. With its floor-to-ceiling windows and sunbed-adorned terrace, the lodge offers breathtaking views of Simien Mountains National Park.",
                 "Enjoy the cozy comfort of the 12 en-suite rooms, savor delicious meals in the dining hall centered around an open fireplace, and experience the wonders of the Simien Mountains with excursions to the best viewpoints, hiking routes, and wildlife encounters.",
               ],
-              image: images.simien2,
+              image: images.lodge2,
             },
             {
               title: "Bale Mountain Lodge, Bale Mountains National Park",
@@ -674,7 +674,7 @@ export const EthiopiaGuideArray: Guide[] = [
                 "Immerse yourself in the natural splendor of Bale Mountains National Park at the Bale Mountain Lodge. This boutique lodge, nestled within the Harenna Forest, offers enchanting rooms with fireplaces, en-suite bathrooms, and balconies boasting magnificent mountain and forest views.",
                 "Embracing eco-tourism principles, the lodge seamlessly blends into its surroundings. Awaken to breathtaking sunrises over the massifs while sipping your morning coffee on the terrace.",
               ],
-              image: images.bale2,
+              image: images.baleLodge1,
             },
             {
               title: "Korkor Lodge, Tigray",
@@ -682,7 +682,7 @@ export const EthiopiaGuideArray: Guide[] = [
                 "In the captivating Tigray region, surrounded by towering sandstone cliffs, discover the exquisite Korkor Lodge. This eco-tourism gem harmonizes service, functionality, and aesthetics to create an exceptional accommodation experience. Crafted from stone walls and adorned with wooden floors and ceilings, the lodge's bungalows feature en-suite bathrooms, French-style doors, and adjoining terraces.",
                 "With its integration into the stunning Gheralta landscape, Korkor Lodge serves as the perfect base for exploring the rock churches of Tigray.",
               ],
-              image: images.tigray3,
+              image: images.lodge2,
             },
             {
               title: "Kuriftu Resort & Spa, Bahir Dar",
@@ -690,7 +690,7 @@ export const EthiopiaGuideArray: Guide[] = [
                 "Nestled on the shores of Lake Tana, Kuriftu Resort & Spa stands as the premier accommodation option in Bahir Dar. Combining the elegance of a boutique lodge with the amenities of an up-market hotel, this resort provides outstanding service, stylish design, and picturesque lakeside views.",
                 "Revel in romantic lakeside dinners and immerse yourself in the natural beauty of the surroundings. While stretching the definition of luxury, Kuriftu Resort & Spa surpasses other options in the area and offers a comfortable and refined stay.",
               ],
-              image: images.bahirdar4,
+              image: images.lodge1,
             },
             {
               title: "Boutique and Eco Lodges in Ethiopia",

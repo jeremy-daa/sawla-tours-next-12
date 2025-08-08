@@ -324,112 +324,117 @@ const AboutPageData: AboutPageDataType[] = [
     content: [],
   },
   {
-  id: 5,
-  slug: "meet-our-drivers",
-  title: "Meet Our Expert Drivers",
-  metaTitle: "Sawla Tours – Meet Our Expert Drivers for Safe Ethiopia Travel",
-  metaDescription: "Get to know the expert drivers at Sawla Tours—licensed, experienced, courteous and friendly professionals who ensure your Ethiopian journey is safe, smooth, and enjoyable.",
-  description: "Safe, Smooth, and Enjoyable Journeys Across Ethiopia",
-  image: Images.danakil2, // Image showing vehicles navigating a challenging landscape
-  link: "#content",
-  linkname: "Meet the Drivers",
-  index: true,
+    id: 5,
+    slug: "meet-our-drivers",
+    title: "Meet Our Expert Drivers",
+    metaTitle: "Sawla Tours – Meet Our Expert Drivers for Safe Ethiopia Travel",
+    metaDescription:
+      "Get to know the expert drivers at Sawla Tours—licensed, experienced, courteous and friendly professionals who ensure your Ethiopian journey is safe, smooth, and enjoyable.",
+    description: "Safe, Smooth, and Enjoyable Journeys Across Ethiopia",
+    image: Images.danakil2, // Image showing vehicles navigating a challenging landscape
+    link: "#content",
+    linkname: "Meet the Drivers",
+    index: true,
 
-  // The content for this page is composed of two 'intro' blocks.
-  intro: [
-    {
-      title: "Meet Our Drivers",
-      subtitle: "The Steady Hands of Your Journey",
-      description: [
-        "At Sawla Tours, our drivers aren't just wheelmen; they are the steady hands navigating your journey across Ethiopia's diverse terrains. Each with a driving experience ranging from seven to twenty years, they are seasoned navigators, adept at traversing every nook and corner of our country, in all weather conditions.",
-        "Our drivers not only hold valid licenses but also undergo annual scrutiny of their driving records. To keep their skills sharp, we provide rigorous training each year, ensuring their expertise remains at the forefront of safe and efficient driving practices.",
-      ],
-      img1: Images.chebera1,
-      img2: Images.bale4,
-      lr: false,
-    },
-    {
-      title: "More Than Just Drivers",
-      subtitle: "Your Courteous & Knowledgeable Hosts on the Road",
-      description: [
-        "But they are more than skilled drivers. Handpicked for their excellent communication abilities, our drivers are courteous, responsible, and honest. They are armed with local knowledge and a genuine passion for hospitality, making your ride not just comfortable, but also enlightening and enjoyable.",
-        "So, buckle up and relax! With Sawla Tours, you're in good hands, steering your Ethiopian adventure toward unforgettable experiences.",
-      ],
-      img1: Images.hamer1,
-      img2: Images.addis8,
-      lr: true,
-    },
-  ],
-
-  // No other content blocks are needed for this page.
-  content: [],
-},{
-  id: 6,
-  slug: "ethiopia-mobile-safari",
-  title: "Sawla Mobile Safari",
-  metaTitle: "Ethiopia Mobile Safari & Camping Crew | Sawla Tours",
-  metaDescription: "Experience an Ethiopia mobile safari with Sawla Tours. Our expert camping crew, luxury tented camps, and fly camps bring you closer to nature.",
-  description: "Luxury Camping in the Heart of Ethiopia's Wild Beauty",
-  image: Images.chebera2, // A stunning camping/safari hero image
-  link: "#content",
-  linkname: "Explore Our Camps",
-  index: true,
-
-  intro: [
-    {
-      title: "Embrace the Soul of Ethiopia with Sawla Mobile Safari",
-      subtitle: "Join the Sawla Tours Outdoor Family",
-      description: [
-        "Journey into the very heart of Ethiopia, a land where history weaves with wild beauty, where each horizon offers a tale as old as time. With Sawla Tours, every 2-3 days brings a new enchanting landscape waiting to embrace you, paired with the serene luxury of solitude and our unmatched camping experience.",
-      ],
-      img1: Images.chebera1,
-      img2: Images.tigray1,
-      lr: true,
-    },
-    {
-      title: "Meet the Spirits Behind Your Adventure: Our Mobile Camping Crew",
-      subtitle: "Your Guides, Chefs, and Storytellers in the Wild",
-      description: [
-        "At Sawla Tours, it's not just about the journey; it's about the people who make it unforgettable. Our camping crew, with their undying love for Ethiopia's splendors, ensures that your sojourn is more than just a trip.",
-        "They are your storytellers, your chefs, your guides – making sure you relish not just the sight, but the very spirit of Ethiopia.",
-      ],
-      img1: Images.awash2,
-      img2: Images.adey1,
-      lr: false,
-    },
-  ],
-
-  content: [
-    {
-      destinationdescription: {
-        destination: "Dwell Amidst the Whispers of Nature with Our Tailored Accommodations",
+    // The content for this page is composed of two 'intro' blocks.
+    intro: [
+      {
+        title: "Meet Our Drivers",
+        subtitle: "The Steady Hands of Your Journey",
         description: [
-          "No two travelers are the same, and neither are their dreams. Whether it's the allure of Ethiopia’s grand legacy like Lalibela, Gondar, and Axum, or the call of the unknown, our camping accommodations promise to be your haven.",
+          "At Sawla Tours, our drivers aren't just wheelmen; they are the steady hands navigating your journey across Ethiopia's diverse terrains. Each with a driving experience ranging from seven to twenty years, they are seasoned navigators, adept at traversing every nook and corner of our country, in all weather conditions.",
+          "Our drivers not only hold valid licenses but also undergo annual scrutiny of their driving records. To keep their skills sharp, we provide rigorous training each year, ensuring their expertise remains at the forefront of safe and efficient driving practices.",
         ],
-        reasons: [
-          {
-            title: "Expeditions Mobile Tented Camps",
-            image: Images.hamer2,
-            description: [
-              "Step into a realm where traditional Ethiopian camping melds with luxury. Our walk-in tents, equipped with twin beds and ensuite facilities, are your cocoon amidst nature.",
-              "Indulge in culinary delights, three courses of authentic Ethiopian gastronomy, prepared with love and the freshest ingredients.",
-              "Let our seasoned camp staff cater to your every whim, crafting moments you’ll treasure forever.",
-            ],
-          },
-          {
-            title: "Fly Camp Expeditions",
-            image: Images.benna1,
-            description: [
-              "If your spirit seeks the thrill of discovery, our mobile camps are designed to be your moving sanctuaries.",
-              "After a day of exploration, let the bow-down tents cradle you, and a designated dining area awaits for those heartfelt conversations.",
-              "Each camping spot is handpicked not just for its beauty, but also with a promise to leave nature untouched.",
-            ],
-          },
-        ],
+        img1: Images.chebera1,
+        img2: Images.bale4,
+        lr: false,
       },
-    },
-  ],
-}
+      {
+        title: "More Than Just Drivers",
+        subtitle: "Your Courteous & Knowledgeable Hosts on the Road",
+        description: [
+          "But they are more than skilled drivers. Handpicked for their excellent communication abilities, our drivers are courteous, responsible, and honest. They are armed with local knowledge and a genuine passion for hospitality, making your ride not just comfortable, but also enlightening and enjoyable.",
+          "So, buckle up and relax! With Sawla Tours, you're in good hands, steering your Ethiopian adventure toward unforgettable experiences.",
+        ],
+        img1: Images.hamer1,
+        img2: Images.addis8,
+        lr: true,
+      },
+    ],
+
+    // No other content blocks are needed for this page.
+    content: [],
+  },
+  {
+    id: 6,
+    slug: "ethiopia-mobile-safari",
+    title: "Sawla Mobile Safari",
+    metaTitle: "Ethiopia Mobile Safari & Camping Crew | Sawla Tours",
+    metaDescription:
+      "Experience an Ethiopia mobile safari with Sawla Tours. Our expert camping crew, luxury tented camps, and fly camps bring you closer to nature.",
+    description: "Luxury Camping in the Heart of Ethiopia's Wild Beauty",
+    image: Images.camping2,
+    link: "#content",
+    linkname: "Explore Our Camps",
+    index: true,
+
+    intro: [
+      {
+        title: "Embrace the Soul of Ethiopia with Sawla Mobile Safari",
+        subtitle: "Join the Sawla Tours Outdoor Family",
+        description: [
+          "Journey into the very heart of Ethiopia, a land where history weaves with wild beauty, where each horizon offers a tale as old as time. With Sawla Tours, every 2-3 days brings a new enchanting landscape waiting to embrace you, paired with the serene luxury of solitude and our unmatched camping experience.",
+        ],
+        img1: Images.camping1,
+        img2: Images.camping3,
+        lr: true,
+      },
+      {
+        title:
+          "Meet the Spirits Behind Your Adventure: Our Mobile Camping Crew",
+        subtitle: "Your Guides, Chefs, and Storytellers in the Wild",
+        description: [
+          "At Sawla Tours, it's not just about the journey; it's about the people who make it unforgettable. Our camping crew, with their undying love for Ethiopia's splendors, ensures that your sojourn is more than just a trip.",
+          "They are your storytellers, your chefs, your guides – making sure you relish not just the sight, but the very spirit of Ethiopia.",
+        ],
+        img1: Images.campingCrew1,
+        img2: Images.filmCrewGear1,
+        lr: false,
+      },
+    ],
+
+    content: [
+      {
+        destinationdescription: {
+          destination:
+            "Dwell Amidst the Whispers of Nature with Our Tailored Accommodations",
+          description: [
+            "No two travelers are the same, and neither are their dreams. Whether it's the allure of Ethiopia’s grand legacy like Lalibela, Gondar, and Axum, or the call of the unknown, our camping accommodations promise to be your haven.",
+          ],
+          reasons: [
+            {
+              title: "Expeditions Mobile Tented Camps",
+              image: Images.hamer2,
+              description: [
+                "Step into a realm where traditional Ethiopian camping melds with luxury. Our walk-in tents, equipped with twin beds and ensuite facilities, are your cocoon amidst nature.",
+                "Indulge in culinary delights, three courses of authentic Ethiopian gastronomy, prepared with love and the freshest ingredients.",
+                "Let our seasoned camp staff cater to your every whim, crafting moments you’ll treasure forever.",
+              ],
+            },
+            {
+              title: "Fly Camp Expeditions",
+              image: Images.benna1,
+              description: [
+                "If your spirit seeks the thrill of discovery, our mobile camps are designed to be your moving sanctuaries.",
+                "After a day of exploration, let the bow-down tents cradle you, and a designated dining area awaits for those heartfelt conversations.",
+                "Each camping spot is handpicked not just for its beauty, but also with a promise to leave nature untouched.",
+              ],
+            },
+          ],
+        },
+      },
+    ],
+  },
 ];
 
 const getAboutPageData = (slug: string) => {
