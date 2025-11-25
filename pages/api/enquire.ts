@@ -24,14 +24,17 @@ const handler = async (req: any, res: any) => {
     const credentials = fetchCredentials();
 
     const transporter = nodemailer.createTransport({
-      service: "gmail",
+      host: "mail.sawlatours.com",
+      port: 465,
+      secure: true,
       auth: {
         user: credentials.email,
         pass: credentials.password,
       },
-      tls: {
-        rejectUnauthorized: false,
-      },
+      // tls: {
+      //   ciphers: "SSLv3",
+      //   rejectUnauthorized: false,
+      // },
     });
     const addBreaks = (str: string) => {
       return str.replace(/\n/g, "<br />");
