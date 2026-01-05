@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "node server.js",
     "build": "next build",
+    "generate-sitemap": "ts-node --project tsconfig.sitemap.json scripts/generate-sitemap.ts",
     "start": "NODE_ENV=production node server.js"
   },
   "dependencies": {

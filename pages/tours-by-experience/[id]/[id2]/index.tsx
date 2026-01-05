@@ -38,6 +38,33 @@ const page = ({ id, id2, itinerary }: params) => {
           href={`https://www.sawlatours.com/tours-by-experience/${id}/${id2}`}
           key="canonical"
         />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "TouristTrip",
+              name: itinerary ? itinerary.title : "",
+              description: itinerary ? itinerary.description : "",
+              image: itinerary ? itinerary.image : "",
+              offeredBy: {
+                "@type": "TravelAgency",
+                name: "Sawla Tours",
+                url: "https://www.sawlatours.com",
+              },
+              itinerary: itinerary?.itinerarydescription?.itineraries?.map(
+                (item) => ({
+                  "@type": "City",
+                  name: item.title,
+                  description:
+                    item.description && typeof item.description !== "string"
+                      ? item.description.join(" ")
+                      : item.description,
+                })
+              ),
+            }),
+          }}
+        />
       </Head>
       <div>
         {itinerary ? (

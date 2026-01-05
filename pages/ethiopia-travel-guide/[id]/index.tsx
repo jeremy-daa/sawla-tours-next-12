@@ -34,6 +34,36 @@ const page = ({ id, guide, index }: params) => {
           }`}
           key="canonical"
         />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Article",
+              headline: guide ? guide.title : "",
+              image: guide ? guide.image : "",
+              author: {
+                "@type": "Organization",
+                name: "Sawla Tours",
+              },
+              publisher: {
+                "@type": "Organization",
+                name: "Sawla Tours",
+                logo: {
+                  "@type": "ImageObject",
+                  url: "https://www.sawlatours.com/assets/logo.png",
+                },
+              },
+              description: guide ? guide.description : "",
+              mainEntityOfPage: {
+                "@type": "WebPage",
+                "@id": `https://www.sawlatours.com/ethiopia-travel-guide/${
+                  guide ? guide.slug : ""
+                }`,
+              },
+            }),
+          }}
+        />
       </Head>
       {guide ? (
         <>
