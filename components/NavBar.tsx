@@ -51,11 +51,11 @@ const NavBar = () => {
         <div className="logo" data-aos="fade-right">
           {scrollPosition > 150 ? (
             <Link href={"/"} onClick={closeNavbar}>
-              <Image src={LogoDark} alt="Sawla Tours Logo" />
+              <Image src={LogoDark} alt="Sawla Tours Logo" sizes="60px" />
             </Link>
           ) : (
             <Link href={"/"}>
-              <Image src={Logo} alt="Sawla Tours Logo" />
+              <Image src={Logo} alt="Sawla Tours Logo" sizes="60px" />
             </Link>
           )}
         </div>

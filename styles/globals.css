@@ -29,16 +29,19 @@
 @font-face {
   font-family: "Arizonia";
   src: url("../public/fonts/Arizonia/Arizonia-Regular.ttf");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Averia Serif Libre";
   src: url("../public/fonts/Averia_Serif_Libre/AveriaSerifLibre-Regular.ttf");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Lato";
   src: url("../public/fonts/Lato/Lato-Light.ttf");
+  font-display: swap;
 }
 
 a {

@@ -16,7 +16,13 @@ const Footer = () => {
       <div className="footer-column">
         <div className="footer-logo">
           <Link href="/">
-            <Image src={Logo} alt="SawlaTours Logo" />
+            <Image
+              src={Logo}
+              alt="SawlaTours Logo"
+              width={80}
+              height={80}
+              sizes="80px"
+            />
           </Link>
         </div>
         <div className="footer-contact">

@@ -18,6 +18,7 @@ const Map = ({ title, description, image }: Props) => {
         className="map inset-blurr"
         width={1000}
         height={1000}
+        sizes="(max-width: 1100px) 80vw, 60vw"
       />
     </div>
   );

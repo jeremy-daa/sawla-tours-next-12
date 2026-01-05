@@ -41,12 +41,14 @@ const Intro = (props: Props) => {
               alt="Intro image"
               width={400}
               height={400}
+              sizes="(max-width: 800px) 50vw, 25vw"
             />
             <Image
               src={props.img2}
               alt="Intro image"
               width={400}
               height={400}
+              sizes="(max-width: 800px) 50vw, 25vw"
             />
           </div>
         </div>
@@ -60,12 +62,14 @@ const Intro = (props: Props) => {
               alt="Intro image"
               width={400}
               height={400}
+              sizes="(max-width: 800px) 50vw, 25vw"
             />
             <Image
               src={props.img2}
               alt="Intro image"
               width={400}
               height={400}
+              sizes="(max-width: 800px) 50vw, 25vw"
             />
           </div>
           <div className="intro-text" data-aos="fade-right">

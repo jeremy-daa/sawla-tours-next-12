@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { spawn } from "node:child_process";
+import Image from "next/image";
 
 interface Props {
   destination?: string;
@@ -27,10 +27,15 @@ const DestinationDescription = ({
       <div className="destination-reasons">
         {reasons?.map((reason, index) => (
           <div className="destination-reason" key={index}>
-            <div
-              className="reason-image"
-              style={{ backgroundImage: `url(${reason.image})` }}
-            ></div>
+            <div className="reason-image" style={{ position: "relative" }}>
+              <Image
+                src={reason.image}
+                alt={reason.title}
+                fill
+                style={{ objectFit: "cover" }}
+                sizes="(max-width: 1200px) 100vw, 50vw"
+              />
+            </div>
 
             <div className="reason-description">
               <h2>{reason.title}</h2>

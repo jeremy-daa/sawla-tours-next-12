@@ -16,6 +16,7 @@ const GenericGrid = () => {
                   className="grid-package-img"
                   width={500}
                   height={500}
+                  sizes="(max-width: 550px) 100vw, (max-width: 800px) 50vw, (max-width: 1100px) 33vw, 25vw"
                 />
               </div>
               <div className="grid-package-description">
